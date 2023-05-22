@@ -31,7 +31,7 @@ for w in nodes:
     if int(w[2:]) == 0:
         plt.plot(float(nodes[w][0]), float(nodes[w][1]), "g.", markersize=15)
     elif int(w[2:]) < 5:
-        plt.plot(float(nodes[w][0]), float(nodes[w][1]), "b.")
+        plt.plot(float(nodes[w][0]), float(nodes[w][1]), "b.", markersize=15)
     elif int(w[2:]) == 5 :
         plt.plot(float(nodes[w][0]), float(nodes[w][1]), "r.", markersize=15)
     else:
