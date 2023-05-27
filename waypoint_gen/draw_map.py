@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 
 showPath = False    # Show path contained in "path.txt"
+showExpectedPath = True    # Show path contained in "expected_path.txt"
 
 nodes = {}
 with open("waypoints.txt", "r") as f:
@@ -51,7 +52,16 @@ if showPath:
         w1 = f.readline().strip()
         for line in f:
             w2 = line.strip()
-            plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "lime", linewidth=0.8)
+            plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "lime", linewidth=2)
+            w1 = w2
+            
+# Show expected path
+if showExpectedPath:
+    with open("expected_path.txt", "r") as f:
+        w1 = f.readline().strip()
+        for line in f:
+            w2 = line.strip()
+            plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "darkorange", linewidth=1.5)
             w1 = w2
 
 plt.show()

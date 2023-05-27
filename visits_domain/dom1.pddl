@@ -1,6 +1,6 @@
 (define (domain localization)
 
-(:requirements :typing :durative-actions :numeric-fluents :negative-preconditions :action-costs :conditional-effects :equality :fluents )
+(:requirements :strips :typing :durative-actions :numeric-fluents :negative-preconditions :action-costs :conditional-effects :equality :fluents )
 
 
 (:types 	robot region 
@@ -8,11 +8,14 @@
 
 (:predicates
 		(robot_in ?v - robot ?r - region) (visited ?r - region )
+		(assignment_in ?r - region)
+		(is_desk ?r - region)
+		(delivered)
 	      
 )
 
 (:functions 
-		(act-cost) (triggered ?from ?to - region) (dummy)
+		(act-cost) (triggered ?from ?to - region) (dummy) (carrying ?r - robot)
 )
 
 (:durative-action goto_region
@@ -24,6 +27,18 @@
                 (at end (increase (act-cost) (dummy))))
 )
 
+(:action aux
+	:parameters (?r - robot ?l - region)
+	:precondition (and (robot_in ?r ?l) (delivered))
+	:effect (and (not (delivered)))
+)
+
+
+; (:action pick_up
+; 	:parameters (?r - robot ?l - region)
+; 	:precondition (and (robot_in ?r ?l) (assignment_in ?l))
+; 	:effect (and (increase (carrying ?r) 1) (not (assignment_in ?l)))
+; )
 
 ;;(:durative-action localize
 ;; ...................
