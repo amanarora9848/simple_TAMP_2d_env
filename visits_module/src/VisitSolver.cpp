@@ -25,6 +25,9 @@
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <unordered_map>
+#include <stack>
+#include <limits>
 
 #include "armadillo"
 #include <initializer_list>
@@ -73,56 +76,56 @@ void VisitSolver::loadSolver(string *parameters, int n)
 	string connections_file = "../waypoint_gen/graph.txt";
 	parseConnections(connections_file);
 
-	cout << "\n Waypoints Map: \n"
-		 << endl;
+	std::cout << "\n Waypoints Map: \n"
+			  << endl;
 	for (auto it = waypoint.begin(); it != waypoint.end(); ++it)
 	{
-		cout << it->first << " ";
+		std::cout << it->first << " ";
 		for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2)
 		{
-			cout << *it2 << " ";
+			std::cout << *it2 << " ";
 		}
-		cout << endl;
+		std::cout << endl;
 	}
 
-	cout << "\n Regions Map: \n"
-		 << endl;
+	std::cout << "\n Regions Map: \n"
+			  << endl;
 	for (auto it = region_mapping.begin(); it != region_mapping.end(); ++it)
 	{
-		cout << it->first << " ";
+		std::cout << it->first << " ";
 		for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2)
 		{
-			cout << *it2 << " ";
+			std::cout << *it2 << " ";
 		}
-		cout << endl;
+		std::cout << endl;
 	}
 
-	cout << " \n Connections Map: \n" << endl;
+	std::cout << " \n Connections Map: \n"
+			  << endl;
 	for (auto it = connection.begin(); it != connection.end(); ++it)
 	{
-		cout << it->first << " ";
+		std::cout << it->first << " ";
 		for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2)
 		{
-			cout << *it2 << " ";
+			std::cout << *it2 << " ";
 		}
-		cout << endl;
+		std::cout << endl;
 	}
 
-	heuristic_gbf(region_mapping["r1"][0]);
+	// heuristic_astar(region_mapping["r1"][0]);
 
-	cout << "\n Cost Map: \n"
-		 << endl;
-	for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
-	{
-		cout << it->first << " ";
-		cout << it->second << endl;
-	}
-	
+	// std::cout << "\n Cost Map: \n"
+	// 		  << endl;
+	// for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
+	// {
+	// 	std::cout << it->first << " ";
+	// 	std::cout << it->second << endl;
+	// }
+
 	// startEKF();
-	
-	cout << "\n\n Parse test: " << region_mapping["r2"][0] << " " << waypoint[region_mapping["r2"][0]][0] << " " << waypoint[region_mapping["r2"][0]][1] << endl << endl;
 
-	
+	std::cout << "\n\n Parse test: " << region_mapping["r2"][0] << " " << waypoint[region_mapping["r2"][0]][0] << " " << waypoint[region_mapping["r2"][0]][1] << endl
+			  << endl;
 }
 
 map<string, double> VisitSolver::callExternalSolver(map<string, double> initialState, bool isHeuristic)
@@ -165,13 +168,8 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 					string from = tmp.substr(0, 2);
 					string to = tmp.substr(3, 2);
 
-					// cout << "\nfrom: " << from << "\nto: " << to << endl;
-					// cout << "##########################\n" << region_mapping[from][0] << endl << endl;
-					
-					
-					// cout << "\n\nEucliean Distance between :: " << region_mapping[from][0] << " and " << region_mapping[to][0] << ": " << distance_euc(region_mapping[from][0], region_mapping[to][0]) << endl << endl;
-					
-					act_cost = pathfinder(from, to);
+					act_cost = pathfinder(from, to, "astar");
+					cout << "PATHFINDER ACT-COST " << act_cost << endl;
 				}
 			}
 		}
@@ -179,10 +177,12 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 		{
 			if (function == "dummy")
 			{
+				cout << "\nDUMMY " << value << endl;
 				dummy = value;
 			}
 			else if (function == "act-cost")
 			{
+				cout << "\nACT-COST " << value << endl;
 				act_cost = value;
 			} // else if(function=="dummy1"){
 			  // duy = value;
@@ -261,7 +261,7 @@ void VisitSolver::parseRegion(string region_file)
 			// A line looks like "r4 wp4"
 			int curr = line.find(" ");
 			string region_name = line.substr(0, curr);
-			string waypoint_name = line.substr(curr+1, line.length());
+			string waypoint_name = line.substr(curr + 1, line.length());
 			region_mapping[region_name].push_back(waypoint_name);
 		}
 	}
@@ -299,7 +299,8 @@ void VisitSolver::parseWaypoint(string waypoint_file)
 	}
 }
 
-void VisitSolver::parseConnections(string connections_file) {
+void VisitSolver::parseConnections(string connections_file)
+{
 	string line;
 	ifstream connectionsFile(connections_file);
 	if (connectionsFile.is_open())
@@ -310,24 +311,25 @@ void VisitSolver::parseConnections(string connections_file) {
 			// Set the map "connection" key to first waypoint and value list to the rest of the waypoints
 			int curr = line.find(",");
 			string waypoint_name = line.substr(0, curr);
-			cout << "Current waypoint: " << waypoint_name << endl;
-			string rest_waypoints = line.substr(curr+1, line.length());
+			std::cout << "Current waypoint: " << waypoint_name << endl;
+			string rest_waypoints = line.substr(curr + 1, line.length());
 			// Split the rest_waypoints string by comma and store in a vector
 			vector<string> rest_waypoints_list;
 			stringstream ss(rest_waypoints);
-			while (ss.good()) {
+			while (ss.good())
+			{
 				string substr;
 				getline(ss, substr, ',');
 				rest_waypoints_list.push_back(substr);
 			}
-			for (int i = 0; i < rest_waypoints_list.size(); i++) {
-				cout << rest_waypoints_list[i] << " ";
+			for (int i = 0; i < rest_waypoints_list.size(); i++)
+			{
+				std::cout << rest_waypoints_list[i] << " ";
 			}
-			cout << endl;
+			std::cout << endl;
 			connection[waypoint_name] = rest_waypoints_list;
 		}
 	}
-	
 }
 
 void VisitSolver::parseLandmark(string landmark_file)
@@ -362,7 +364,8 @@ void VisitSolver::parseLandmark(string landmark_file)
 	}
 }
 
-float VisitSolver::distance_euc(string from_wp, string to_wp){
+float VisitSolver::distance_euc(string from_wp, string to_wp)
+{
 
 	float from_x = waypoint[from_wp][0];
 	float from_y = waypoint[from_wp][1];
@@ -373,68 +376,127 @@ float VisitSolver::distance_euc(string from_wp, string to_wp){
 	float eu_dist = sqrt(pow((from_x - to_x), 2) + pow((from_y - to_y), 2));
 
 	return eu_dist;
-
 }
 
-void VisitSolver::heuristic_gbf(string goal_wp){
+void VisitSolver::heuristic_gbf(string goal_wp)
+{
 
 	// goal_wp wpxx
-	cout << "INSIDE HEURISTIC GBF" << endl << endl;
+	std::cout << "INSIDE HEURISTIC GBF" << endl
+			  << endl;
 
 	for (auto it = waypoint.begin(); it != waypoint.end(); ++it)
 	{
 		cost_map[it->first] = distance_euc(it->first, goal_wp);
 	}
-
 }
 
-float VisitSolver::pathfinder(string from_region, string to_region) {
+void VisitSolver::heuristic_astar(string goal_wp)
+{
+
+	cost_map.clear();
+    cost_map[goal_wp] = 0;
+    std::vector<std::string> explore{goal_wp};
+
+    while (!explore.empty())
+    {
+        std::string x = explore.back();
+        explore.pop_back();
+
+        for (const std::string& w : connection.at(x))
+        {
+            float cost = cost_map[x] + distance_euc(w, x);
+
+            if (cost_map.find(w) == cost_map.end() || cost_map[w] > cost)
+            {
+                cost_map[w] = cost;
+                explore.push_back(w);
+            }
+        }
+    }
+}
+
+
+float VisitSolver::pathfinder(string from_region, string to_region, string algo)
+{
 	// BFS Algorithm
 	// Input: from, to. from and to are regions like r0, etc. Waypoint name corresponding to region is stored in region_mapping
 	// Output: Cost
 
 	// Calculate heuristics for every waypoint
 
-	cout << "INSIDE PATHFINDER" << endl << endl;
-	cout << from_region << " " << to_region << endl;
-
 	string from_wp = region_mapping[from_region][0];
-	cout << "from_wp: " << from_wp << endl;
+	std::cout << "from_wp: " << from_wp << endl;
 	string to_wp = region_mapping[to_region][0];
-	cout << "to_wp: " << to_wp << endl;
+	std::cout << "to_wp: " << to_wp << endl;
 
-	cout << "INSIDE PATHFINDER AFTER PARSING" << endl << endl;
-
-	heuristic_gbf(to_wp);
-
-	cout << "Post call to heuristic" << endl;
-	
-	float cost = 0;
+	float total_cost = 0;
 
 	string curr_wp = from_wp;
 	string next_wp;
+	ofstream pathFile("../waypoint_gen/path.txt", ios::app);
 
-	while (next_wp != to_wp) {
+	if (from_wp == to_wp)
+	{
+		return 0;
+	}
+	
 
-		// Find the next waypoint to go to
-		float min_cost = 1000000;
-		for (auto it = connection[curr_wp].begin(); it != connection[curr_wp].end(); ++it)
-		{
-			if (cost_map[*it] < min_cost) {
-				min_cost = cost_map[*it];
-				next_wp = *it;
-				cout << "Next waypoint inside while: " << next_wp << endl;
-			}
-		}
+	if (algo == "gbfs")
+	{
+		heuristic_gbf(to_wp);
+	} else heuristic_astar(to_wp);
 
-		// Calculate the cost to go to next waypoint
-		cost += distance_euc(curr_wp, next_wp);
-
-		// Update the current waypoint
-		curr_wp = next_wp;
-		
+	std::cout << "\n Cost Map: \n"
+			  << endl;
+	for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
+	{
+		std::cout << it->first << " ";
+		std::cout << it->second << endl;
 	}
 
-	return cost;
+	if (pathFile.is_open())
+	{
+		pathFile << from_wp << endl;
+		while (next_wp != to_wp)
+		{
 
+			// Find the next waypoint to go to
+			float min_cost = 1000000.0;
+			for (const std::string& w : connection.at(curr_wp))
+			{
+				float cost;
+				if ((algo != "gbfs") && (curr_wp == from_wp)) {
+					cost = cost_map[w] + distance_euc(w, curr_wp);
+				} else {
+					cost = cost_map[w];
+				}
+				cout << "Node: " << w << endl;
+				cout << "cost considered: " << cost_map[w] << endl;
+				cout << "distance: " << distance_euc(w, curr_wp) << endl;
+				if (cost < min_cost)
+				{
+					min_cost = cost;
+					next_wp = w;
+				}
+			}
+			cout << "minimal cost: " << min_cost << endl;
+
+			cout << "Next waypoint inside while: " << next_wp << endl;
+			pathFile << next_wp << endl;
+
+			// Calculate the cost to go to next waypoint
+			if (algo == "gbfs") {
+				total_cost += distance_euc(curr_wp, next_wp);
+			}
+			// cout << "Cost: " << cost << endl;
+			// Update the current waypoint
+			curr_wp = next_wp;
+		}
+	}
+
+	pathFile.close();
+	if (algo == "gbfs") {
+		return total_cost;
+	} else return cost_map[from_wp];
 }

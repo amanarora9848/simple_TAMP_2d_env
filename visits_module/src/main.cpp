@@ -38,6 +38,7 @@ int main(int argc, char **argv) {
     region.push_back("r2"); 
     region.push_back("r3"); 
     region.push_back("r4"); 
+    region.push_back("r5"); 
   
     // store the initial state fluents
     for (int i=0; i<region.size(); i++)   { 

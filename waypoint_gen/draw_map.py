@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-showPath = False    # Show path contained in "path.txt"
+showPath = True    # Show path contained in "path.txt"
 showExpectedPath = True    # Show path contained in "expected_path.txt"
 
 nodes = {}

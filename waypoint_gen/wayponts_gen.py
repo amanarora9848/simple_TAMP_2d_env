@@ -132,8 +132,11 @@ def pathfinder(from_w: str, to_w: str, app: bool = False):
             curr_w = next_w
     return cost_map[from_w]
             
-    
-    
-pathfinder("wp00", "wp01")
-pathfinder("wp01", "wp02", True)
-pathfinder("wp02", "wp05", True)
+
+# print(heuristicA("wp01"))
+x = pathfinder("wp00", "wp05")
+x += pathfinder("wp05", "wp01", True)
+x += pathfinder("wp01", "wp05", True)
+x += pathfinder("wp05", "wp02", True)
+x += pathfinder("wp02", "wp05", True)
+print(f"Total cost: {x}")

@@ -1,0 +1,801 @@
+Current waypoint: wp00
+wp06 wp07 wp08 wp09 
+Current waypoint: wp06
+wp00 wp05 wp07 wp17 
+Current waypoint: wp07
+wp00 wp02 wp06 wp08 
+Current waypoint: wp08
+wp00 wp02 wp07 wp09 
+Current waypoint: wp09
+wp00 wp08 wp10 wp11 
+Current waypoint: wp01
+wp23 wp22 wp11 wp10 
+Current waypoint: wp23
+wp01 wp22 wp11 wp24 
+Current waypoint: wp22
+wp01 wp21 wp10 wp23 
+Current waypoint: wp11
+wp01 wp09 wp10 wp12 
+Current waypoint: wp10
+wp01 wp09 wp11 wp00 
+Current waypoint: wp02
+wp20 wp19 wp07 wp08 
+Current waypoint: wp20
+wp02 wp08 wp19 wp21 
+Current waypoint: wp19
+wp02 wp05 wp18 wp07 
+Current waypoint: wp03
+wp26 wp25 wp14 wp13 
+Current waypoint: wp26
+wp03 wp25 wp14 wp27 
+Current waypoint: wp25
+wp03 wp24 wp13 wp26 
+Current waypoint: wp14
+wp03 wp12 wp13 wp15 
+Current waypoint: wp13
+wp03 wp12 wp14 wp00 
+Current waypoint: wp04
+wp29 wp28 wp17 wp16 
+Current waypoint: wp29
+wp04 wp05 wp18 wp28 
+Current waypoint: wp28
+wp04 wp27 wp16 wp29 
+Current waypoint: wp17
+wp04 wp06 wp15 wp16 
+Current waypoint: wp16
+wp04 wp15 wp17 wp14 
+Current waypoint: wp05
+wp18 wp19 wp29 wp06 
+Current waypoint: wp18
+wp05 wp06 wp19 wp29 
+Current waypoint: wp12
+wp11 wp13 wp14 wp00 
+Current waypoint: wp15
+wp14 wp16 wp17 wp00 
+Current waypoint: wp21
+wp20 wp09 wp22 wp10 
+Current waypoint: wp24
+wp23 wp12 wp25 wp13 
+Current waypoint: wp27
+wp26 wp15 wp28 wp16 
+
+ Waypoints Map: 
+
+wp00 0.000 0.000 0.000 
+wp01 -2.500 2.500 0.000 
+wp02 2.500 2.500 0.000 
+wp03 -2.500 -2.500 0.000 
+wp04 2.500 -2.500 0.000 
+wp05 3.000 0.000 0.000 
+wp06 1.250 0.000 0.000 
+wp07 1.083 0.625 0.000 
+wp08 0.625 1.083 0.000 
+wp09 0.000 1.250 0.000 
+wp10 -0.625 1.083 0.000 
+wp11 -1.083 0.625 0.000 
+wp12 -1.250 0.000 0.000 
+wp13 -1.083 -0.625 0.000 
+wp14 -0.625 -1.083 0.000 
+wp15 -0.000 -1.250 0.000 
+wp16 0.625 -1.083 0.000 
+wp17 1.083 -0.625 0.000 
+wp18 2.500 0.000 0.000 
+wp19 2.165 1.250 0.000 
+wp20 1.250 2.165 0.000 
+wp21 0.000 2.500 0.000 
+wp22 -1.250 2.165 0.000 
+wp23 -2.165 1.250 0.000 
+wp24 -2.500 0.000 0.000 
+wp25 -2.165 -1.250 0.000 
+wp26 -1.250 -2.165 0.000 
+wp27 -0.000 -2.500 0.000 
+wp28 1.250 -2.165 0.000 
+wp29 2.165 -1.250 0.000 
+
+ Regions Map: 
+
+r0 wp00 wp00 
+r1 wp01 wp01 
+r2 wp02 wp02 
+r3 wp03 wp03 
+r4 wp04 wp04 
+r5 wp05 wp05 
+ 
+ Connections Map: 
+
+wp00 wp06 wp07 wp08 wp09 
+wp01 wp23 wp22 wp11 wp10 
+wp02 wp20 wp19 wp07 wp08 
+wp03 wp26 wp25 wp14 wp13 
+wp04 wp29 wp28 wp17 wp16 
+wp05 wp18 wp19 wp29 wp06 
+wp06 wp00 wp05 wp07 wp17 
+wp07 wp00 wp02 wp06 wp08 
+wp08 wp00 wp02 wp07 wp09 
+wp09 wp00 wp08 wp10 wp11 
+wp10 wp01 wp09 wp11 wp00 
+wp11 wp01 wp09 wp10 wp12 
+wp12 wp11 wp13 wp14 wp00 
+wp13 wp03 wp12 wp14 wp00 
+wp14 wp03 wp12 wp13 wp15 
+wp15 wp14 wp16 wp17 wp00 
+wp16 wp04 wp15 wp17 wp14 
+wp17 wp04 wp06 wp15 wp16 
+wp18 wp05 wp06 wp19 wp29 
+wp19 wp02 wp05 wp18 wp07 
+wp20 wp02 wp08 wp19 wp21 
+wp21 wp20 wp09 wp22 wp10 
+wp22 wp01 wp21 wp10 wp23 
+wp23 wp01 wp22 wp11 wp24 
+wp24 wp23 wp12 wp25 wp13 
+wp25 wp03 wp24 wp13 wp26 
+wp26 wp03 wp25 wp14 wp27 
+wp27 wp26 wp15 wp28 wp16 
+wp28 wp04 wp27 wp16 wp29 
+wp29 wp04 wp05 wp18 wp28 
+
+
+ Parse test: wp02 2.500 2.500
+
+Number of literals: 7
+Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
+No semaphore facts found, returning
+Have identified that bigger values of (assignment_in r1) are preferable
+Have identified that bigger values of (assignment_in r2) are preferable
+Have identified that bigger values of (assignment_in r3) are preferable
+Have identified that bigger values of (assignment_in r4) are preferable
+Have identified that bigger values of (collected) are preferable
+Have identified that bigger values of (assignment_in r0) are preferable
+Have identified that bigger values of (assignment_in r5) are preferable
+[01;34mNo analytic limits found, not considering limit effects of goal-only operators[00m
+Not looking for earlier-is-better time-dependent rewards: no goal limits
+
+ACT-COST 0.000
+
+DUMMY 0.000
+
+ACT-COST 0.000
+
+DUMMY 0.000
+None of the ground temporal actions in this problem have been recognised as compression-safe
+Initial heuristic = 7.000
+
+ACT-COST 0.000
+
+DUMMY 0.000
+from_wp: wp00
+to_wp: wp05
+
+ Cost Map: 
+
+wp00 3.000
+wp01 6.689
+wp02 2.797
+wp03 6.645
+wp04 2.797
+wp05 0.000
+wp06 1.750
+wp07 2.397
+wp08 3.044
+wp09 3.691
+wp10 4.338
+wp11 4.941
+wp12 5.544
+wp13 4.941
+wp14 4.294
+wp15 3.647
+wp16 3.044
+wp17 2.397
+wp18 0.500
+wp19 1.503
+wp20 4.091
+wp21 5.385
+wp22 6.680
+wp23 7.974
+wp24 7.974
+wp25 6.680
+wp26 5.385
+wp27 4.091
+wp28 2.797
+wp29 1.503
+Node: wp06
+cost considered: 1.750
+distance: 1.250
+Node: wp07
+cost considered: 2.397
+distance: 1.250
+Node: wp08
+cost considered: 3.044
+distance: 1.250
+Node: wp09
+cost considered: 3.691
+distance: 1.250
+minimal cost: 3.000
+Next waypoint inside while: wp06
+Node: wp00
+cost considered: 3.000
+distance: 1.250
+Node: wp05
+cost considered: 0.000
+distance: 1.750
+Node: wp07
+cost considered: 2.397
+distance: 0.647
+Node: wp17
+cost considered: 2.397
+distance: 0.647
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 3.000
+b (6.000 | 100.000)
+ACT-COST 3.000
+
+DUMMY 3.000
+b (5.000 | 100.000)
+ACT-COST 3.000
+
+DUMMY 3.000
+from_wp: wp05
+to_wp: wp01
+
+ Cost Map: 
+
+wp00 3.600
+wp01 0.000
+wp02 5.176
+wp03 5.176
+wp04 7.848
+wp05 6.600
+wp06 4.850
+wp07 4.292
+wp08 3.645
+wp09 2.998
+wp10 2.350
+wp11 2.350
+wp12 2.998
+wp13 3.645
+wp14 4.248
+wp15 4.895
+wp16 5.542
+wp17 5.498
+wp18 6.470
+wp19 5.176
+wp20 3.882
+wp21 2.588
+wp22 1.294
+wp23 1.294
+wp24 2.588
+wp25 3.882
+wp26 5.176
+wp27 6.470
+wp28 7.765
+wp29 7.765
+Node: wp18
+cost considered: 6.470
+distance: 0.500
+Node: wp19
+cost considered: 5.176
+distance: 1.503
+Node: wp29
+cost considered: 7.765
+distance: 1.503
+Node: wp06
+cost considered: 4.850
+distance: 1.750
+minimal cost: 6.600
+Next waypoint inside while: wp06
+Node: wp00
+cost considered: 3.600
+distance: 1.250
+Node: wp05
+cost considered: 6.600
+distance: 1.750
+Node: wp07
+cost considered: 4.292
+distance: 0.647
+Node: wp17
+cost considered: 5.498
+distance: 0.647
+minimal cost: 3.600
+Next waypoint inside while: wp00
+Node: wp06
+cost considered: 4.850
+distance: 1.250
+Node: wp07
+cost considered: 4.292
+distance: 1.250
+Node: wp08
+cost considered: 3.645
+distance: 1.250
+Node: wp09
+cost considered: 2.998
+distance: 1.250
+minimal cost: 2.998
+Next waypoint inside while: wp09
+Node: wp00
+cost considered: 3.600
+distance: 1.250
+Node: wp08
+cost considered: 3.645
+distance: 0.647
+Node: wp10
+cost considered: 2.350
+distance: 0.647
+Node: wp11
+cost considered: 2.350
+distance: 1.250
+minimal cost: 2.350
+Next waypoint inside while: wp10
+Node: wp01
+cost considered: 0.000
+distance: 2.350
+Node: wp09
+cost considered: 2.998
+distance: 0.647
+Node: wp11
+cost considered: 2.350
+distance: 0.647
+Node: wp00
+cost considered: 3.600
+distance: 1.250
+minimal cost: 0.000
+Next waypoint inside while: wp01
+PATHFINDER ACT-COST 6.600
+
+ACT-COST 9.600
+
+DUMMY 6.600
+
+ACT-COST 9.600
+
+DUMMY 9.600
+from_wp: wp01
+to_wp: wp05
+
+ Cost Map: 
+
+wp00 3.000
+wp01 6.689
+wp02 2.797
+wp03 6.645
+wp04 2.797
+wp05 0.000
+wp06 1.750
+wp07 2.397
+wp08 3.044
+wp09 3.691
+wp10 4.338
+wp11 4.941
+wp12 5.544
+wp13 4.941
+wp14 4.294
+wp15 3.647
+wp16 3.044
+wp17 2.397
+wp18 0.500
+wp19 1.503
+wp20 4.091
+wp21 5.385
+wp22 6.680
+wp23 7.974
+wp24 7.974
+wp25 6.680
+wp26 5.385
+wp27 4.091
+wp28 2.797
+wp29 1.503
+Node: wp23
+cost considered: 7.974
+distance: 1.294
+Node: wp22
+cost considered: 6.680
+distance: 1.294
+Node: wp11
+cost considered: 4.941
+distance: 2.350
+Node: wp10
+cost considered: 4.338
+distance: 2.350
+minimal cost: 6.689
+Next waypoint inside while: wp10
+Node: wp01
+cost considered: 6.689
+distance: 2.350
+Node: wp09
+cost considered: 3.691
+distance: 0.647
+Node: wp11
+cost considered: 4.941
+distance: 0.647
+Node: wp00
+cost considered: 3.000
+distance: 1.250
+minimal cost: 3.000
+Next waypoint inside while: wp00
+Node: wp06
+cost considered: 1.750
+distance: 1.250
+Node: wp07
+cost considered: 2.397
+distance: 1.250
+Node: wp08
+cost considered: 3.044
+distance: 1.250
+Node: wp09
+cost considered: 3.691
+distance: 1.250
+minimal cost: 1.750
+Next waypoint inside while: wp06
+Node: wp00
+cost considered: 3.000
+distance: 1.250
+Node: wp05
+cost considered: 0.000
+distance: 1.750
+Node: wp07
+cost considered: 2.397
+distance: 0.647
+Node: wp17
+cost considered: 2.397
+distance: 0.647
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 6.689
+
+ACT-COST 9.600
+
+DUMMY 9.600
+from_wp: wp01
+to_wp: wp05
+
+ Cost Map: 
+
+wp00 3.000
+wp01 6.689
+wp02 2.797
+wp03 6.645
+wp04 2.797
+wp05 0.000
+wp06 1.750
+wp07 2.397
+wp08 3.044
+wp09 3.691
+wp10 4.338
+wp11 4.941
+wp12 5.544
+wp13 4.941
+wp14 4.294
+wp15 3.647
+wp16 3.044
+wp17 2.397
+wp18 0.500
+wp19 1.503
+wp20 4.091
+wp21 5.385
+wp22 6.680
+wp23 7.974
+wp24 7.974
+wp25 6.680
+wp26 5.385
+wp27 4.091
+wp28 2.797
+wp29 1.503
+Node: wp23
+cost considered: 7.974
+distance: 1.294
+Node: wp22
+cost considered: 6.680
+distance: 1.294
+Node: wp11
+cost considered: 4.941
+distance: 2.350
+Node: wp10
+cost considered: 4.338
+distance: 2.350
+minimal cost: 6.689
+Next waypoint inside while: wp10
+Node: wp01
+cost considered: 6.689
+distance: 2.350
+Node: wp09
+cost considered: 3.691
+distance: 0.647
+Node: wp11
+cost considered: 4.941
+distance: 0.647
+Node: wp00
+cost considered: 3.000
+distance: 1.250
+minimal cost: 3.000
+Next waypoint inside while: wp00
+Node: wp06
+cost considered: 1.750
+distance: 1.250
+Node: wp07
+cost considered: 2.397
+distance: 1.250
+Node: wp08
+cost considered: 3.044
+distance: 1.250
+Node: wp09
+cost considered: 3.691
+distance: 1.250
+minimal cost: 1.750
+Next waypoint inside while: wp06
+Node: wp00
+cost considered: 3.000
+distance: 1.250
+Node: wp05
+cost considered: 0.000
+distance: 1.750
+Node: wp07
+cost considered: 2.397
+distance: 0.647
+Node: wp17
+cost considered: 2.397
+distance: 0.647
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 6.689
+
+ACT-COST 9.600
+
+DUMMY 9.600
+from_wp: wp01
+to_wp: wp02
+
+ Cost Map: 
+
+wp00 3.600
+wp01 5.176
+wp02 0.000
+wp03 7.892
+wp04 5.176
+wp05 2.797
+wp06 2.998
+wp07 2.350
+wp08 2.350
+wp09 2.998
+wp10 3.645
+wp11 4.248
+wp12 4.895
+wp13 5.542
+wp14 5.542
+wp15 4.895
+wp16 4.292
+wp17 3.645
+wp18 2.588
+wp19 1.294
+wp20 1.294
+wp21 2.588
+wp22 3.882
+wp23 5.176
+wp24 6.470
+wp25 7.765
+wp26 7.765
+wp27 6.470
+wp28 5.176
+wp29 3.882
+Node: wp23
+cost considered: 5.176
+distance: 1.294
+Node: wp22
+cost considered: 3.882
+distance: 1.294
+Node: wp11
+cost considered: 4.248
+distance: 2.350
+Node: wp10
+cost considered: 3.645
+distance: 2.350
+minimal cost: 5.176
+Next waypoint inside while: wp22
+Node: wp01
+cost considered: 5.176
+distance: 1.294
+Node: wp21
+cost considered: 2.588
+distance: 1.294
+Node: wp10
+cost considered: 3.645
+distance: 1.250
+Node: wp23
+cost considered: 5.176
+distance: 1.294
+minimal cost: 2.588
+Next waypoint inside while: wp21
+Node: wp20
+cost considered: 1.294
+distance: 1.294
+Node: wp09
+cost considered: 2.998
+distance: 1.250
+Node: wp22
+cost considered: 3.882
+distance: 1.294
+Node: wp10
+cost considered: 3.645
+distance: 1.549
+minimal cost: 1.294
+Next waypoint inside while: wp20
+Node: wp02
+cost considered: 0.000
+distance: 1.294
+Node: wp08
+cost considered: 2.350
+distance: 1.250
+Node: wp19
+cost considered: 1.294
+distance: 1.294
+Node: wp21
+cost considered: 2.588
+distance: 1.294
+minimal cost: 0.000
+Next waypoint inside while: wp02
+PATHFINDER ACT-COST 5.176
+
+ACT-COST 16.289
+
+DUMMY 6.689
+
+ACT-COST 16.289
+
+DUMMY 6.689
+b (4.000 | 300.003)
+ACT-COST 16.289
+
+DUMMY 16.289
+from_wp: wp05
+to_wp: wp02
+
+ Cost Map: 
+
+wp00 3.600
+wp01 5.176
+wp02 0.000
+wp03 7.892
+wp04 5.176
+wp05 2.797
+wp06 2.998
+wp07 2.350
+wp08 2.350
+wp09 2.998
+wp10 3.645
+wp11 4.248
+wp12 4.895
+wp13 5.542
+wp14 5.542
+wp15 4.895
+wp16 4.292
+wp17 3.645
+wp18 2.588
+wp19 1.294
+wp20 1.294
+wp21 2.588
+wp22 3.882
+wp23 5.176
+wp24 6.470
+wp25 7.765
+wp26 7.765
+wp27 6.470
+wp28 5.176
+wp29 3.882
+Node: wp18
+cost considered: 2.588
+distance: 0.500
+Node: wp19
+cost considered: 1.294
+distance: 1.503
+Node: wp29
+cost considered: 3.882
+distance: 1.503
+Node: wp06
+cost considered: 2.998
+distance: 1.750
+minimal cost: 2.797
+Next waypoint inside while: wp19
+Node: wp02
+cost considered: 0.000
+distance: 1.294
+Node: wp05
+cost considered: 2.797
+distance: 1.503
+Node: wp18
+cost considered: 2.588
+distance: 1.294
+Node: wp07
+cost considered: 2.350
+distance: 1.250
+minimal cost: 0.000
+Next waypoint inside while: wp02
+PATHFINDER ACT-COST 2.797
+
+ACT-COST 19.086
+
+DUMMY 2.797
+b (3.000 | 400.005)
+ACT-COST 19.086
+
+DUMMY 19.086
+from_wp: wp02
+to_wp: wp05
+
+ Cost Map: 
+
+wp00 3.000
+wp01 6.689
+wp02 2.797
+wp03 6.645
+wp04 2.797
+wp05 0.000
+wp06 1.750
+wp07 2.397
+wp08 3.044
+wp09 3.691
+wp10 4.338
+wp11 4.941
+wp12 5.544
+wp13 4.941
+wp14 4.294
+wp15 3.647
+wp16 3.044
+wp17 2.397
+wp18 0.500
+wp19 1.503
+wp20 4.091
+wp21 5.385
+wp22 6.680
+wp23 7.974
+wp24 7.974
+wp25 6.680
+wp26 5.385
+wp27 4.091
+wp28 2.797
+wp29 1.503
+Node: wp20
+cost considered: 4.091
+distance: 1.294
+Node: wp19
+cost considered: 1.503
+distance: 1.294
+Node: wp07
+cost considered: 2.397
+distance: 2.350
+Node: wp08
+cost considered: 3.044
+distance: 2.350
+minimal cost: 2.797
+Next waypoint inside while: wp19
+Node: wp02
+cost considered: 2.797
+distance: 1.294
+Node: wp05
+cost considered: 0.000
+distance: 1.503
+Node: wp18
+cost considered: 0.500
+distance: 1.294
+Node: wp07
+cost considered: 2.397
+distance: 1.250
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 2.797
+b (2.000 | 500.006)
+ACT-COST 21.884
+
+DUMMY 2.797
+b (1.000 | 500.006);;;; Solution Found
+; States evaluated: 16
+; Cost: 21.884
+; External Solver: 0.000
+; Time 0.04
+0.000: (goto_region r2d2 r0 r5)  [100.000]
+100.001: (goto_region r2d2 r5 r1)  [100.000]
+200.002: (collect r2d2 r1)  [0.001]
+200.003: (goto_region r2d2 r1 r5)  [100.000]
+300.004: (goto_region r2d2 r5 r2)  [100.000]
+400.005: (collect r2d2 r2)  [0.001]
+400.006: (goto_region r2d2 r2 r5)  [100.000]
+500.007: (deliver r2d2 r5)  [0.001]

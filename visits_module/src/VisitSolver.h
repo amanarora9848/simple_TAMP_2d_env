@@ -16,7 +16,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 #ifndef TESTSOLVER_H
 #define TESTSOLVER_H
 
@@ -35,38 +34,37 @@ class VisitSolver : public ExternalSolver
 public:
     VisitSolver();
     ~VisitSolver();
-    virtual void loadSolver(string* parameters, int n);
-    virtual map<string,double> callExternalSolver(map<string,double> initialState, bool isHeuristic);
-    virtual  list<string> getParameters();
-    virtual  list<string> getDependencies();
+    virtual void loadSolver(string *parameters, int n);
+    virtual map<string, double> callExternalSolver(map<string, double> initialState, bool isHeuristic);
+    virtual list<string> getParameters();
+    virtual list<string> getDependencies();
     map<string, vector<double>> waypoint;
     map<string, vector<double>> landmark;
     map<string, vector<string>> region_mapping;
     map<string, vector<string>> connection;
 
     map<string, float> cost_map;
-   
+
     void parseRegion(string region_file);
     void parseWaypoint(string waypoint_file);
     void parseLandmark(string landmark_file);
     void parseConnections(string connections_file);
     float distance_euc(string from, string to);
     void heuristic_gbf(string goal);
-    float pathfinder(string from, string to);
-    vector <string> source, target;
+    void heuristic_astar(string goal);
+    float pathfinder(string from, string to, string algo);
+    vector<string> source, target;
     string starting_position;
-        
+
     void parseParameters(string parameters);
- 
 
 private:
     list<string> affected;
     list<string> dependencies;
-      
-    double calculateExtern(double external, double total_cost);
-    //void localize(string from, string to);
-    vector<string> findParameters(string line, int&n);
 
+    double calculateExtern(double external, double total_cost);
+    // void localize(string from, string to);
+    vector<string> findParameters(string line, int &n);
 };
 
 #endif // TESTSOLVER_H

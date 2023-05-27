@@ -19,7 +19,7 @@
      (and (delivered))
 )
 
-; (:metric minimize (act-cost) )
+(:metric minimize (act-cost) )
 )
 
 
