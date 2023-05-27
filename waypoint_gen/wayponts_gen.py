@@ -78,9 +78,18 @@ for i in range(len(keys)):
         min_dists.sort(key=lambda x: x[1])
         if len(min_dists) > k:
             min_dists.pop()
-    connections[keys[i]] = []
-    for w in min_dists:
-        connections[keys[i]].append(w[0])
+            
+    if keys[i] not in connections:
+        connections[keys[i]] = []
+    index = 0
+    while len(connections[keys[i]]) < k:
+        if min_dists[index][0] not in connections[keys[i]]:
+            connections[keys[i]].append(min_dists[index][0])
+        if min_dists[index][0] in connections and len(connections[min_dists[index][0]]) < k and keys[i] not in connections[min_dists[index][0]]:
+            connections[min_dists[index][0]].append(keys[i])
+        elif min_dists[index][0] not in connections:
+            connections[min_dists[index][0]] = [keys[i]]
+        index += 1
         
 
 # Write connections to a file        
