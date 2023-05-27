@@ -61,7 +61,7 @@ void VisitSolver::loadSolver(string *parameters, int n)
 	affected = list<string>(x, x + 1);
 	dependencies = list<string>(y, y + 2);
 
-	string waypoint_file = "waypoint.txt";
+	string waypoint_file = "../waypoint_gen/waypoints.txt";
 	parseWaypoint(waypoint_file);
 
 	string landmark_file = "landmark.txt";
@@ -70,7 +70,7 @@ void VisitSolver::loadSolver(string *parameters, int n)
 	string region_file = "region_poses.txt";
 	parseRegion(region_file);
 
-	string connections_file = "connection.txt";
+	string connections_file = "../waypoint_gen/graph.txt";
 	parseConnections(connections_file);
 
 	cout << "\n Waypoints Map: \n"
@@ -107,10 +107,22 @@ void VisitSolver::loadSolver(string *parameters, int n)
 		}
 		cout << endl;
 	}
+
+	heuristic_gbf(region_mapping["r1"][0]);
+
+	cout << "\n Cost Map: \n"
+		 << endl;
+	for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
+	{
+		cout << it->first << " ";
+		cout << it->second << endl;
+	}
 	
 	// startEKF();
 	
-	// cout << "\n\n Parse test: " << region_mapping["r2"][0] << " " << waypoint[region_mapping["r2"][0]][0] << " " << waypoint[region_mapping["r2"][0]][1] << endl << endl;
+	cout << "\n\n Parse test: " << region_mapping["r2"][0] << " " << waypoint[region_mapping["r2"][0]][0] << " " << waypoint[region_mapping["r2"][0]][1] << endl << endl;
+
+	
 }
 
 map<string, double> VisitSolver::callExternalSolver(map<string, double> initialState, bool isHeuristic)
@@ -123,6 +135,8 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 	double act_cost;
 
 	map<string, double> trigger;
+
+	// string from, to;
 
 	for (; iSIt != isEnd; ++iSIt)
 	{
@@ -150,10 +164,14 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 
 					string from = tmp.substr(0, 2);
 					string to = tmp.substr(3, 2);
-					// cout << "\nfrom: " << from << "\nto: " << to << endl;
 
-					cout << "\n\nEucliean Distance between :: " << from << " and " << to << ": " << distance_euc(from, to) << endl << endl;
-					// greedy_bfs(from, to);
+					// cout << "\nfrom: " << from << "\nto: " << to << endl;
+					// cout << "##########################\n" << region_mapping[from][0] << endl << endl;
+					
+					
+					// cout << "\n\nEucliean Distance between :: " << region_mapping[from][0] << " and " << region_mapping[to][0] << ": " << distance_euc(region_mapping[from][0], region_mapping[to][0]) << endl << endl;
+					
+					act_cost = pathfinder(from, to);
 				}
 			}
 		}
@@ -173,13 +191,16 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 		}
 	}
 
-	double results = calculateExtern(dummy, act_cost);
-	if (ExternalSolver::verbose)
-	{
-		cout << "(dummy) " << results << endl;
-	}
+	// double results = calculateExtern(dummy, act_cost);
 
-	toReturn["(dummy)"] = results;
+	// if (ExternalSolver::verbose)
+	// {
+	// 	cout << "(dummy) " << results << endl;
+	// }
+
+	// double results = pathfinder(from ,to);
+
+	toReturn["(dummy)"] = act_cost;
 
 	return toReturn;
 }
@@ -341,27 +362,79 @@ void VisitSolver::parseLandmark(string landmark_file)
 	}
 }
 
-float VisitSolver::distance_euc(string from, string to){
+float VisitSolver::distance_euc(string from_wp, string to_wp){
 
-	int from_x = waypoint[region_mapping[from][0]][0];
-	int from_y = waypoint[region_mapping[from][0]][1];
+	float from_x = waypoint[from_wp][0];
+	float from_y = waypoint[from_wp][1];
 
-	int to_x = waypoint[region_mapping[to][0]][0];
-	int to_y = waypoint[region_mapping[to][0]][1];
+	float to_x = waypoint[to_wp][0];
+	float to_y = waypoint[to_wp][1];
 
 	float eu_dist = sqrt(pow((from_x - to_x), 2) + pow((from_y - to_y), 2));
-
-	cout << "Euclidean distance between " << from << " and " << to << " is " << eu_dist << endl;
 
 	return eu_dist;
 
 }
 
-float VisitSolver::bfs(string from, string to) {
+void VisitSolver::heuristic_gbf(string goal_wp){
+
+	// goal_wp wpxx
+	cout << "INSIDE HEURISTIC GBF" << endl << endl;
+
+	for (auto it = waypoint.begin(); it != waypoint.end(); ++it)
+	{
+		cost_map[it->first] = distance_euc(it->first, goal_wp);
+	}
+
+}
+
+float VisitSolver::pathfinder(string from_region, string to_region) {
 	// BFS Algorithm
 	// Input: from, to. from and to are regions like r0, etc. Waypoint name corresponding to region is stored in region_mapping
 	// Output: Cost
 
-	float dist = distance_euc(from, to);
+	// Calculate heuristics for every waypoint
+
+	cout << "INSIDE PATHFINDER" << endl << endl;
+	cout << from_region << " " << to_region << endl;
+
+	string from_wp = region_mapping[from_region][0];
+	cout << "from_wp: " << from_wp << endl;
+	string to_wp = region_mapping[to_region][0];
+	cout << "to_wp: " << to_wp << endl;
+
+	cout << "INSIDE PATHFINDER AFTER PARSING" << endl << endl;
+
+	heuristic_gbf(to_wp);
+
+	cout << "Post call to heuristic" << endl;
+	
+	float cost = 0;
+
+	string curr_wp = from_wp;
+	string next_wp;
+
+	while (next_wp != to_wp) {
+
+		// Find the next waypoint to go to
+		float min_cost = 1000000;
+		for (auto it = connection[curr_wp].begin(); it != connection[curr_wp].end(); ++it)
+		{
+			if (cost_map[*it] < min_cost) {
+				min_cost = cost_map[*it];
+				next_wp = *it;
+				cout << "Next waypoint inside while: " << next_wp << endl;
+			}
+		}
+
+		// Calculate the cost to go to next waypoint
+		cost += distance_euc(curr_wp, next_wp);
+
+		// Update the current waypoint
+		curr_wp = next_wp;
+		
+	}
+
+	return cost;
 
 }
