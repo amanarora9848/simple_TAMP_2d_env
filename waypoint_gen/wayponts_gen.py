@@ -1,6 +1,6 @@
 import numpy as np
 
-k = 3
+k = 4
 n = 24      # Can be a maximum of 2 digits (<100) otherwise parsing breaks
 keep_waypoints = False
 random_waypoints = False

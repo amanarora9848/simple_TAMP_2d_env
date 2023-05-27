@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-showPath = False    # Show path contained in "path.txt"
+showPath = True    # Show path contained in "path.txt"
 
 nodes = {}
 with open("waypoints.txt", "r") as f:
@@ -51,7 +51,7 @@ if showPath:
         w1 = f.readline().strip()
         for line in f:
             w2 = line.strip()
-            plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "lime", linewidth=0.8)
+            plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "green", linewidth=2.0)
             w1 = w2
 
 plt.show()
