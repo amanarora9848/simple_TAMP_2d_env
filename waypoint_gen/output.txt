@@ -790,7 +790,7 @@ b (1.000 | 500.006);;;; Solution Found
 ; States evaluated: 16
 ; Cost: 21.884
 ; External Solver: 0.000
-; Time 0.04
+; Time 0.00
 0.000: (goto_region r2d2 r0 r5)  [100.000]
 100.001: (goto_region r2d2 r5 r1)  [100.000]
 200.002: (collect r2d2 r1)  [0.001]
