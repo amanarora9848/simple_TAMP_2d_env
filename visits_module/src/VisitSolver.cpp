@@ -447,13 +447,13 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 		heuristic_gbf(to_wp);
 	} else heuristic_astar(to_wp);
 
-	std::cout << "\n Cost Map: \n"
-			  << endl;
-	for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
-	{
-		std::cout << it->first << " ";
-		std::cout << it->second << endl;
-	}
+	// std::cout << "\n Cost Map: \n"
+	// 		  << endl;
+	// for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
+	// {
+	// 	std::cout << it->first << " ";
+	// 	std::cout << it->second << endl;
+	// }
 
 	if (pathFile.is_open())
 	{

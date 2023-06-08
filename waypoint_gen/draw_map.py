@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from file_read_backwards import FileReadBackwards
 
 showPath = True    # Show path contained in "path.txt"
 showExpectedPath = True    # Show path contained in "expected_path.txt"
@@ -40,19 +41,44 @@ for w in nodes:
         plt.plot(float(nodes[w][0]), float(nodes[w][1]),"k.")
 
 # Add node connections
+graph = {}
 with open("graph.txt", "r") as f:
     for line in f:
         waypoints = line[:-1].split(",")
+        graph[waypoints[0]] = waypoints[1:]
         for i in range(1, len(waypoints)):
             plt.plot([nodes[waypoints[0]][0], nodes[waypoints[i]][0]], [nodes[waypoints[0]][1], nodes[waypoints[i]][1]], "m", linewidth=0.5)
 
 # Show path
 if showPath:
+    path = []
+    with FileReadBackwards("output.txt") as f:
+        for line in f:
+            aux = line.split()
+            if aux[0] == ";":
+                break
+            if aux[1] != "(goto_region":
+                continue
+            path.append(aux[4][:-1])
+    path.reverse()
+            
+    
     with open("path.txt", "r") as f:
         w1 = f.readline().strip()
+        i = 0
+        draw = True
         for line in f:
-            w2 = line.strip()
-            plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "lime", linewidth=2)
+            w2 = line.strip()                
+            if w1 == f"wp0{path[i][1]}":
+                if w1 == w2 or w2 in graph[w1]:
+                    draw = True
+                    i += 1
+                else:
+                    draw = False
+            if i == len(path):
+                break
+            if draw:
+                plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "lime", linewidth=2)
             w1 = w2
             
 # Show expected path
