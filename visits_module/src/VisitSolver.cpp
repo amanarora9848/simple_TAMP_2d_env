@@ -112,7 +112,7 @@ void VisitSolver::loadSolver(string *parameters, int n)
 		std::cout << endl;
 	}
 
-	// heuristic_astar(region_mapping["r1"][0]);
+	// inverse_tracking(region_mapping["r1"][0]);
 
 	// std::cout << "\n Cost Map: \n"
 	// 		  << endl;
@@ -391,37 +391,33 @@ void VisitSolver::heuristic_gbf(string goal_wp)
 	}
 }
 
-void VisitSolver::heuristic_astar(string goal_wp)
+void VisitSolver::inverse_tracking(string goal_wp)
 {
 
 	cost_map.clear();
-    cost_map[goal_wp] = 0;
-    std::vector<std::string> explore{goal_wp};
+	cost_map[goal_wp] = 0;
+	std::vector<std::string> explore{goal_wp};
 
-    while (!explore.empty())
-    {
-        std::string x = explore.back();
-        explore.pop_back();
+	while (!explore.empty())
+	{
+		std::string x = explore.back();
+		explore.pop_back();
 
-        for (const std::string& w : connection.at(x))
-        {
-            float cost = cost_map[x] + distance_euc(w, x);
+		for (const std::string &w : connection.at(x))
+		{
+			float cost = cost_map[x] + distance_euc(w, x);
 
-            if (cost_map.find(w) == cost_map.end() || cost_map[w] > cost)
-            {
-                cost_map[w] = cost;
-                explore.push_back(w);
-            }
-        }
-    }
+			if (cost_map.find(w) == cost_map.end() || cost_map[w] > cost)
+			{
+				cost_map[w] = cost;
+				explore.push_back(w);
+			}
+		}
+	}
 }
-
 
 float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 {
-	// BFS Algorithm
-	// Input: from, to. from and to are regions like r0, etc. Waypoint name corresponding to region is stored in region_mapping
-	// Output: Cost
 
 	// Calculate heuristics for every waypoint
 
@@ -440,12 +436,13 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 	{
 		return 0;
 	}
-	
 
 	if (algo == "gbfs")
 	{
 		heuristic_gbf(to_wp);
-	} else heuristic_astar(to_wp);
+	}
+	else
+		inverse_tracking(to_wp);
 
 	// std::cout << "\n Cost Map: \n"
 	// 		  << endl;
@@ -455,30 +452,41 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 	// 	std::cout << it->second << endl;
 	// }
 
+	// map<std::string, float> alreadyVisited;
+
 	if (pathFile.is_open())
 	{
 		pathFile << from_wp << endl;
 		while (next_wp != to_wp)
 		{
-
 			// Find the next waypoint to go to
 			float min_cost = 1000000.0;
-			for (const std::string& w : connection.at(curr_wp))
+			for (const std::string &w : connection.at(curr_wp))
 			{
-				float cost;
-				if ((algo != "gbfs") && (curr_wp == from_wp)) {
-					cost = cost_map[w] + distance_euc(w, curr_wp);
-				} else {
-					cost = cost_map[w];
-				}
-				cout << "Node: " << w << endl;
-				cout << "cost considered: " << cost_map[w] << endl;
-				cout << "distance: " << distance_euc(w, curr_wp) << endl;
-				if (cost < min_cost)
-				{
-					min_cost = cost;
-					next_wp = w;
-				}
+				// if (alreadyVisited.count(w) == 0)
+				// {
+					float cost;
+					if ((algo != "gbfs") && (curr_wp == from_wp))
+					{
+						cost = cost_map[w] + distance_euc(w, curr_wp);
+					}
+					else
+					{
+						cost = cost_map[w];
+					}
+					cout << "Node: " << w << endl;
+					cout << "cost considered: " << cost_map[w] << endl;
+					cout << "distance: " << distance_euc(w, curr_wp) << endl;
+					if (cost <= min_cost)
+					{
+						min_cost = cost;
+						next_wp = w;
+					}
+				// }
+
+				// else {
+				// 	cout << "Already visited: " << w << endl;
+				// }
 			}
 			cout << "minimal cost: " << min_cost << endl;
 
@@ -486,17 +494,22 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 			pathFile << next_wp << endl;
 
 			// Calculate the cost to go to next waypoint
-			if (algo == "gbfs") {
+			if (algo == "gbfs")
+			{
 				total_cost += distance_euc(curr_wp, next_wp);
 			}
 			// cout << "Cost: " << cost << endl;
 			// Update the current waypoint
 			curr_wp = next_wp;
+			// alreadyVisited[curr_wp] = 1.0;
 		}
 	}
 
 	pathFile.close();
-	if (algo == "gbfs") {
+	if (algo == "gbfs")
+	{
 		return total_cost;
-	} else return cost_map[from_wp];
+	}
+	else
+		return cost_map[from_wp];
 }

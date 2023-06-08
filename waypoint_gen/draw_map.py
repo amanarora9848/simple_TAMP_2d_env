@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from file_read_backwards import FileReadBackwards
 
 showPath = True    # Show path contained in "path.txt"
-showExpectedPath = True    # Show path contained in "expected_path.txt"
+showExpectedPath = False    # Show path contained in "expected_path.txt"
 
 nodes = {}
 with open("waypoints.txt", "r") as f:

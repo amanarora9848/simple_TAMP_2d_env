@@ -51,7 +51,7 @@ public:
     void parseConnections(string connections_file);
     float distance_euc(string from, string to);
     void heuristic_gbf(string goal);
-    void heuristic_astar(string goal);
+    void inverse_tracking(string goal);
     float pathfinder(string from, string to, string algo);
     vector<string> source, target;
     string starting_position;

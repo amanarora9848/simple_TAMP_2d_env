@@ -72,7 +72,7 @@ cd $DOMAIN_DIR
 
 # Final command, using extmod if not disabled
 if $USE_EXTMOD; then
-    ../popf3-clp -x $DOM_FILE $PROB_FILE ../visits_module/build/libVisits.so region_poses.txt > ../waypoint_gen/output.txt
+    ../popf3-clp -E -x $DOM_FILE $PROB_FILE ../visits_module/build/libVisits.so region_poses.txt > ../waypoint_gen/output.txt
 else
     ../popf3-clp $DOM_FILE $PROB_FILE > ../waypoint_gen/output.txt
 fi
