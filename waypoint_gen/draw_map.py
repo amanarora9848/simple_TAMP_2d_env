@@ -62,24 +62,29 @@ if showPath:
             path.append(aux[4][:-1])
     path.reverse()
             
-    
+    regions = ["wp00", "wp01", "wp02", "wp03", "wp04", "wp05"]
     with open("path.txt", "r") as f:
         w1 = f.readline().strip()
         i = 0
-        draw = True
+        draw = [w1]
+        aux = [w1]
+        w1 = f.readline().strip()
+        aux.append(w1)
         for line in f:
             w2 = line.strip()                
-            if w1 == f"wp0{path[i][1]}":
-                if w1 == w2 or w2 in graph[w1]:
-                    draw = True
-                    i += 1
-                else:
-                    draw = False
             if i == len(path):
                 break
-            if draw:
-                plt.plot([nodes[w1][0], nodes[w2][0]], [nodes[w1][1], nodes[w2][1]], "lime", linewidth=2)
+            aux.append(w2)
             w1 = w2
+            if w1 in regions:
+                if w1 == f"wp0{path[i][1]}" and (draw[-1] == aux[0] or aux[0] in graph[draw[-1]]):
+                    draw += aux
+                    i += 1
+                aux = []
+                w1 = f.readline().strip()
+                aux.append(w1)
+        for i in range(len(draw)-1):
+            plt.plot([nodes[draw[i]][0], nodes[draw[i+1]][0]], [nodes[draw[i]][1], nodes[draw[i+1]][1]], "lime", linewidth=2)
             
 # Show expected path
 if showExpectedPath:
