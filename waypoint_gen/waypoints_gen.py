@@ -1,6 +1,6 @@
 import numpy as np
 
-k = 3
+k = 4
 n = 24      # Can be a maximum of 2 digits (<100) otherwise parsing breaks
 keep_waypoints = False
 random_waypoints = True
@@ -120,42 +120,57 @@ with open("graph.txt", "w+") as f:
 
 
 def heuristicA(goal_w: str):
-    cost_map = {goal_w: 0}
+    cost_map = {goal_w: [0, None]}
     explore = [goal_w]
     while len(explore) > 0:
         x = explore.pop()
         for w in connections[x]:
-            cost = cost_map[x] + dist(nodes[w], nodes[x])
-            if w not in cost_map or cost_map[w] > cost:
-                cost_map[w] = cost
+            cost = cost_map[x][0] + dist(nodes[w], nodes[x])
+            if w not in cost_map or cost_map[w][0] > cost:
+                cost_map[w] = [cost, x]
                 explore.append(w)
     return cost_map
 
 
-def pathfinder(from_w: str, to_w: str, app: bool = False):
-    curr_w = from_w
-    next_w = None
+def pathfollower(from_w: str, to_w: str, app: bool = False):
     cost_map = heuristicA(to_w)
     mode = "a" if app else "w+"
     with open("expected_path.txt", mode) as f:
         f.write(f"{from_w}\n")
-        while next_w != to_w:
-            min_dist = 10000
-            for w in connections[curr_w]:
-                cost = cost_map[w] + dist(nodes[curr_w], nodes[w]
-                                          ) if curr_w == from_w else cost_map[w]
-                if cost < min_dist:
-                    min_dist = cost
-                    next_w = w
-            f.write(f"{next_w}\n")
-            curr_w = next_w
-    return cost_map[from_w]
+        w = cost_map[from_w][1]
+        while w != to_w:
+            f.write(f"{w}\n")
+            w = cost_map[w][1]
+        f.write(f"{w}\n")
+    return cost_map[from_w][0]
 
 
 # print(heuristicA("wp01"))
-x = pathfinder("wp00", "wp01")
-x += pathfinder("wp01", "wp02", True)
-x += pathfinder("wp02", "wp05", True)
+x = pathfollower("wp00", "wp01")
+x += pathfollower("wp01", "wp02", True)
+x += pathfollower("wp02", "wp05", True)
 # x += pathfinder("wp05", "wp02", True)
 # x += pathfinder("wp02", "wp05", True)
 print(f"Expected cost: {x}")
+with open("expected_path.txt", "r") as f:
+    w1 = f.readline().strip()
+    t = 0
+    # aux = []
+    for line in f:
+        w2 = line.strip()
+        d = dist(nodes[w1], nodes[w2])
+        # aux.append(d)
+        # print(f"Distance {w1}-{w2}: {d}")
+        t += d
+        w1 = w2
+    # for i in range(len(aux)):
+    #     print(f"Cummulative addition: {sum(aux[i:])}")
+    print("Real distance:", t)
+      
+# d723 = dist(nodes["wp07"], nodes["wp23"])
+# d232 = dist(nodes["wp02"], nodes["wp23"])
+# d716 = dist(nodes["wp07"], nodes["wp16"])
+# d162 = dist(nodes["wp02"], nodes["wp16"])         
+# print("Expected:", d716 + d162)
+# print("Planned:", d723 + d232)
+# print("Difference:", d723 + d232 - d716 - d162)

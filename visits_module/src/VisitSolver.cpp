@@ -330,7 +330,7 @@ void VisitSolver::heuristic_gbf(string goal_wp)
 	std::cout << "INSIDE HEURISTIC GBF" << endl
 			  << endl;
 
-	for (auto it = waypoint.begin(); it != waypoint.end(); ++it)
+	for (auto it = waypoint.begin(); it != waypoint.end(); it++)
 	{
 		cost_map[it->first] = distance_euc(it->first, goal_wp);
 	}

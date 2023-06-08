@@ -1,65 +1,65 @@
 Current waypoint: wp00
-wp27 wp21 wp26 wp17 
-Current waypoint: wp27
-wp00 wp18 wp21 wp26 
-Current waypoint: wp21
-wp00 wp17 wp26 wp27 
-Current waypoint: wp26
-wp00 wp13 wp21 wp27 wp30 
-Current waypoint: wp01
-wp14 wp19 wp16 
-Current waypoint: wp14
-wp01 wp11 wp16 
-Current waypoint: wp19
-wp01 wp06 wp12 
-Current waypoint: wp16
-wp01 wp11 wp14 wp18 
-Current waypoint: wp02
-wp10 wp25 wp15 
+wp10 wp12 wp15 wp21 wp25 wp26 
 Current waypoint: wp10
-wp02 wp25 wp20 
-Current waypoint: wp25
-wp02 wp10 wp24 
-Current waypoint: wp15
-wp02 wp05 wp22 wp20 
-Current waypoint: wp03
-wp13 wp30 wp28 
-Current waypoint: wp13
-wp03 wp30 wp28 wp26 wp29 
-Current waypoint: wp30
-wp03 wp13 wp26 wp28 
-Current waypoint: wp28
-wp03 wp07 wp13 wp29 wp30 
-Current waypoint: wp04
-wp09 wp07 wp23 
-Current waypoint: wp09
-wp04 wp05 wp23 
-Current waypoint: wp07
-wp04 wp28 wp23 wp29 
-Current waypoint: wp23
-wp04 wp07 wp09 wp17 
-Current waypoint: wp05
-wp15 wp09 wp22 
-Current waypoint: wp22
-wp05 wp15 wp17 wp20 
-Current waypoint: wp06
-wp12 wp19 wp08 
+wp00 wp06 wp15 wp21 wp26 wp11 
 Current waypoint: wp12
-wp06 wp08 wp24 wp20 wp19 
-Current waypoint: wp08
-wp06 wp12 wp20 wp24 
-Current waypoint: wp29
-wp07 wp28 wp13 
-Current waypoint: wp20
-wp08 wp10 wp12 wp15 wp22 wp24 
-Current waypoint: wp24
-wp08 wp12 wp20 wp25 
+wp00 wp29 wp17 wp15 
+Current waypoint: wp15
+wp00 wp06 wp10 wp11 wp12 wp21 
+Current waypoint: wp21
+wp00 wp10 wp26 wp15 
+Current waypoint: wp01
+wp07 wp13 wp16 wp28 
+Current waypoint: wp07
+wp01 wp16 wp28 wp13 
+Current waypoint: wp13
+wp01 wp07 wp16 wp26 
+Current waypoint: wp16
+wp01 wp07 wp13 wp28 wp26 
+Current waypoint: wp28
+wp01 wp07 wp16 wp26 
+Current waypoint: wp02
+wp19 wp22 wp27 wp05 
+Current waypoint: wp19
+wp02 wp22 wp27 wp25 
+Current waypoint: wp22
+wp02 wp05 wp19 wp27 wp18 
+Current waypoint: wp27
+wp02 wp05 wp18 wp19 wp22 
+Current waypoint: wp05
+wp02 wp27 wp22 wp18 wp17 
+Current waypoint: wp03
+wp23 wp30 wp11 wp06 
+Current waypoint: wp23
+wp03 wp30 wp11 wp06 
+Current waypoint: wp30
+wp03 wp06 wp11 wp23 
 Current waypoint: wp11
-wp16 wp14 wp18 
+wp03 wp06 wp30 wp15 wp10 wp23 
+Current waypoint: wp06
+wp03 wp11 wp30 wp15 wp10 wp23 
+Current waypoint: wp04
+wp14 wp20 wp24 wp09 
+Current waypoint: wp14
+wp04 wp09 wp20 wp24 
+Current waypoint: wp20
+wp04 wp08 wp09 wp14 wp24 
+Current waypoint: wp24
+wp04 wp08 wp09 wp14 wp20 
+Current waypoint: wp09
+wp04 wp08 wp24 wp20 wp14 
 Current waypoint: wp18
-wp11 wp16 wp27 
+wp05 wp17 wp25 wp27 wp29 wp22 
 Current waypoint: wp17
-wp22 wp00 wp21 wp23 
+wp05 wp12 wp29 wp25 wp18 
+Current waypoint: wp08
+wp09 wp20 wp24 wp29 
+Current waypoint: wp29
+wp08 wp12 wp17 wp18 wp25 
+Current waypoint: wp26
+wp10 wp13 wp16 wp21 wp00 wp28 
+Current waypoint: wp25
+wp17 wp18 wp19 wp00 wp29 
 Number of literals: 7
 Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
 Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
@@ -98,56 +98,59 @@ from_wp: wp00
 to_wp: wp01
 INSIDE HEURISTIC GBF
 
-Node: wp27
-cost considered: 3.484
-distance: 0.471
+Node: wp10
+cost considered: 3.146
+distance: 0.439
+Node: wp12
+cost considered: 4.230
+distance: 0.721
+Node: wp15
+cost considered: 3.556
+distance: 0.744
 Node: wp21
-cost considered: 3.893
-distance: 0.562
+cost considered: 2.714
+distance: 0.888
+Node: wp25
+cost considered: 4.084
+distance: 1.023
 Node: wp26
-cost considered: 3.793
-distance: 0.578
-Node: wp17
-cost considered: 3.936
-distance: 0.587
-minimal cost: 3.484
-Next waypoint inside while: wp27
+cost considered: 2.242
+distance: 1.351
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.146
+distance: 1.048
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
 Node: wp00
 cost considered: 3.536
-distance: 0.471
-Node: wp18
-cost considered: 2.382
-distance: 1.309
-Node: wp21
-cost considered: 3.893
-distance: 0.414
-Node: wp26
-cost considered: 3.793
-distance: 0.310
-minimal cost: 2.382
-Next waypoint inside while: wp18
-Node: wp11
-cost considered: 1.981
-distance: 1.330
-Node: wp16
-cost considered: 1.610
-distance: 1.123
-Already visited: wp27
-minimal cost: 1.610
-Next waypoint inside while: wp16
+distance: 1.351
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
 Node: wp01
 cost considered: 0.000
-distance: 1.610
-Node: wp11
-cost considered: 1.981
-distance: 0.483
-Node: wp14
-cost considered: 0.734
-distance: 0.942
-Already visited: wp18
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
 minimal cost: 0.000
 Next waypoint inside while: wp01
-PATHFINDER ACT-COST 4.513
+PATHFINDER ACT-COST 3.946
 b (6.000 | 100.000)
 ACT-COST 0.000
 
@@ -156,3257 +159,4409 @@ from_wp: wp00
 to_wp: wp02
 INSIDE HEURISTIC GBF
 
-Node: wp27
-cost considered: 4.000
-distance: 0.471
-Node: wp21
-cost considered: 4.003
-distance: 0.562
-Node: wp26
-cost considered: 4.076
-distance: 0.578
-Node: wp17
-cost considered: 3.106
-distance: 0.587
-minimal cost: 3.106
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 2.681
-distance: 0.561
-Node: wp00
-cost considered: 3.536
-distance: 0.587
-Node: wp21
-cost considered: 4.003
-distance: 0.907
-Node: wp23
-cost considered: 3.833
-distance: 1.123
-minimal cost: 2.681
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 2.550
-distance: 1.884
-Node: wp15
-cost considered: 1.963
-distance: 1.285
-Already visited: wp17
-Node: wp20
-cost considered: 2.294
-distance: 1.060
-minimal cost: 1.963
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 0.000
-distance: 1.963
-Node: wp05
-cost considered: 2.550
-distance: 0.835
-Already visited: wp22
-Node: wp20
-cost considered: 2.294
-distance: 1.817
-minimal cost: 0.000
-Next waypoint inside while: wp02
-PATHFINDER ACT-COST 4.395
-
-ACT-COST 0.000
-
-DUMMY 0.000
-from_wp: wp00
-to_wp: wp03
-INSIDE HEURISTIC GBF
-
-Node: wp27
-cost considered: 3.073
-distance: 0.471
-Node: wp21
-cost considered: 3.099
-distance: 0.562
-Node: wp26
-cost considered: 3.009
-distance: 0.578
-Node: wp17
-cost considered: 4.005
-distance: 0.587
-minimal cost: 3.009
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Node: wp21
-cost considered: 3.099
-distance: 0.138
-Node: wp27
-cost considered: 3.073
-distance: 0.310
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
-Node: wp03
-cost considered: 0.000
-distance: 1.809
-Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
-minimal cost: 0.000
-Next waypoint inside while: wp03
-PATHFINDER ACT-COST 3.706
-
-ACT-COST 0.000
-
-DUMMY 0.000
-from_wp: wp00
-to_wp: wp04
-INSIDE HEURISTIC GBF
-
-Node: wp27
-cost considered: 3.648
-distance: 0.471
-Node: wp21
-cost considered: 3.236
-distance: 0.562
-Node: wp26
-cost considered: 3.359
-distance: 0.578
-Node: wp17
-cost considered: 3.193
-distance: 0.587
-minimal cost: 3.193
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 3.027
-distance: 0.561
-Node: wp00
-cost considered: 3.536
-distance: 0.587
-Node: wp21
-cost considered: 3.236
-distance: 0.907
-Node: wp23
-cost considered: 2.151
-distance: 1.123
-minimal cost: 2.151
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 0.000
-distance: 2.151
-Node: wp07
-cost considered: 1.976
-distance: 0.865
-Node: wp09
-cost considered: 0.678
-distance: 1.777
-Already visited: wp17
-minimal cost: 0.000
-Next waypoint inside while: wp04
-PATHFINDER ACT-COST 3.861
-
-ACT-COST 0.000
-
-DUMMY 0.000
-from_wp: wp00
-to_wp: wp05
-INSIDE HEURISTIC GBF
-
-Node: wp27
-cost considered: 3.397
-distance: 0.471
-Node: wp21
-cost considered: 3.136
-distance: 0.562
-Node: wp26
-cost considered: 3.267
-distance: 0.578
-Node: wp17
-cost considered: 2.416
-distance: 0.587
-minimal cost: 2.416
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 1.884
-distance: 0.561
-Node: wp00
-cost considered: 3.000
-distance: 0.587
-Node: wp21
-cost considered: 3.136
-distance: 0.907
-Node: wp23
-cost considered: 2.282
-distance: 1.123
-minimal cost: 1.884
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 0.000
-distance: 1.884
-Node: wp15
-cost considered: 0.835
-distance: 1.285
-Already visited: wp17
-Node: wp20
-cost considered: 2.613
-distance: 1.060
-minimal cost: 0.000
-Next waypoint inside while: wp05
-PATHFINDER ACT-COST 3.031
-
-ACT-COST 4.513
-
-DUMMY 4.513
-b (5.000 | 100.000)
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp05
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 6.020
-distance: 0.734
-Node: wp19
-cost considered: 4.776
-distance: 1.350
-Node: wp16
-cost considered: 5.593
-distance: 1.610
-minimal cost: 4.776
-Next waypoint inside while: wp19
-Node: wp01
-cost considered: 6.042
-distance: 1.350
-Node: wp06
-cost considered: 4.008
-distance: 0.996
+Node: wp10
+cost considered: 3.748
+distance: 0.439
 Node: wp12
-cost considered: 3.155
-distance: 1.627
-minimal cost: 3.155
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 4.008
-distance: 0.934
-Node: wp08
-cost considered: 2.985
-distance: 0.455
-Node: wp24
-cost considered: 3.099
-distance: 0.124
-Node: wp20
-cost considered: 2.613
-distance: 0.546
-Already visited: wp19
-minimal cost: 2.613
-Next waypoint inside while: wp20
-Node: wp08
-cost considered: 2.985
-distance: 0.490
-Node: wp10
-cost considered: 2.601
-distance: 1.651
-Already visited: wp12
+cost considered: 3.809
+distance: 0.721
 Node: wp15
-cost considered: 0.835
-distance: 1.817
-Node: wp22
-cost considered: 1.884
-distance: 1.060
-Node: wp24
-cost considered: 3.099
-distance: 0.513
-minimal cost: 0.835
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 2.550
-distance: 1.963
-Node: wp05
-cost considered: 0.000
-distance: 0.835
-Node: wp22
-cost considered: 1.884
-distance: 1.285
-Already visited: wp20
-minimal cost: 0.000
-Next waypoint inside while: wp05
-PATHFINDER ACT-COST 6.175
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp00
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 3.284
-distance: 0.734
-Node: wp19
-cost considered: 2.618
-distance: 1.350
-Node: wp16
-cost considered: 2.675
-distance: 1.610
-minimal cost: 2.618
-Next waypoint inside while: wp19
-Node: wp01
-cost considered: 3.536
-distance: 1.350
-Node: wp06
-cost considered: 1.622
-distance: 0.996
-Node: wp12
-cost considered: 1.460
-distance: 1.627
-minimal cost: 1.460
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 1.622
-distance: 0.934
-Node: wp08
-cost considered: 1.009
-distance: 0.455
-Node: wp24
-cost considered: 1.546
-distance: 0.124
-Node: wp20
-cost considered: 1.316
-distance: 0.546
-Already visited: wp19
-minimal cost: 1.009
-Next waypoint inside while: wp08
-Node: wp06
-cost considered: 1.622
-distance: 1.028
-Already visited: wp12
-Node: wp20
-cost considered: 1.316
-distance: 0.490
-Node: wp24
-cost considered: 1.546
-distance: 0.538
-minimal cost: 1.316
-Next waypoint inside while: wp20
-Already visited: wp08
-Node: wp10
-cost considered: 2.941
-distance: 1.651
-Already visited: wp12
-Node: wp15
-cost considered: 2.426
-distance: 1.817
-Node: wp22
-cost considered: 1.144
-distance: 1.060
-Node: wp24
-cost considered: 1.546
-distance: 0.513
-minimal cost: 1.144
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 3.000
-distance: 1.884
-Node: wp15
-cost considered: 2.426
-distance: 1.285
-Node: wp17
-cost considered: 0.587
-distance: 0.561
-Already visited: wp20
-minimal cost: 0.587
-Next waypoint inside while: wp17
-Already visited: wp22
-Node: wp00
-cost considered: 0.000
-distance: 0.587
+cost considered: 4.277
+distance: 0.744
 Node: wp21
-cost considered: 0.562
-distance: 0.907
-Node: wp23
-cost considered: 1.386
-distance: 1.123
-minimal cost: 0.000
-Next waypoint inside while: wp00
-PATHFINDER ACT-COST 6.128
-
-ACT-COST 4.513
-
-DUMMY 4.513
-PATHFINDER ACT-COST 0.000
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp02
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 5.288
-distance: 0.734
-Node: wp19
-cost considered: 3.662
-distance: 1.350
-Node: wp16
-cost considered: 5.274
-distance: 1.610
-minimal cost: 3.662
-Next waypoint inside while: wp19
-Node: wp01
-cost considered: 5.000
-distance: 1.350
-Node: wp06
-cost considered: 3.406
-distance: 0.996
-Node: wp12
-cost considered: 2.534
-distance: 1.627
-minimal cost: 2.534
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 3.406
-distance: 0.934
-Node: wp08
-cost considered: 2.763
-distance: 0.455
-Node: wp24
-cost considered: 2.411
-distance: 0.124
-Node: wp20
-cost considered: 2.294
-distance: 0.546
-Already visited: wp19
-minimal cost: 2.294
-Next waypoint inside while: wp20
-Node: wp08
-cost considered: 2.763
-distance: 0.490
-Node: wp10
-cost considered: 0.710
-distance: 1.651
-Already visited: wp12
-Node: wp15
-cost considered: 1.963
-distance: 1.817
-Node: wp22
-cost considered: 2.681
-distance: 1.060
-Node: wp24
-cost considered: 2.411
-distance: 0.513
-minimal cost: 0.710
-Next waypoint inside while: wp10
-Node: wp02
-cost considered: 0.000
-distance: 0.710
+cost considered: 3.346
+distance: 0.888
 Node: wp25
-cost considered: 1.233
-distance: 0.556
-Already visited: wp20
-minimal cost: 0.000
-Next waypoint inside while: wp02
-PATHFINDER ACT-COST 5.884
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp03
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 4.314
-distance: 0.734
-Node: wp19
-cost considered: 5.029
-distance: 1.350
-Node: wp16
-cost considered: 3.391
-distance: 1.610
-minimal cost: 3.391
-Next waypoint inside while: wp16
-Node: wp01
-cost considered: 5.000
-distance: 1.610
-Node: wp11
-cost considered: 3.075
-distance: 0.483
-Node: wp14
-cost considered: 4.314
-distance: 0.942
-Node: wp18
-cost considered: 2.965
-distance: 1.123
-minimal cost: 2.965
-Next waypoint inside while: wp18
-Node: wp11
-cost considered: 3.075
-distance: 1.330
-Already visited: wp16
-Node: wp27
-cost considered: 3.073
-distance: 1.309
-minimal cost: 3.073
-Next waypoint inside while: wp27
-Node: wp00
-cost considered: 3.536
-distance: 0.471
-Already visited: wp18
-Node: wp21
-cost considered: 3.099
-distance: 0.414
+cost considered: 2.651
+distance: 1.023
 Node: wp26
-cost considered: 3.009
-distance: 0.310
-minimal cost: 3.009
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Node: wp21
-cost considered: 3.099
-distance: 0.138
-Already visited: wp27
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
-Node: wp03
-cost considered: 0.000
-distance: 1.809
-Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
-minimal cost: 0.000
-Next waypoint inside while: wp03
-PATHFINDER ACT-COST 7.479
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp04
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 6.784
-distance: 0.734
-Node: wp19
-cost considered: 6.073
-distance: 1.350
-Node: wp16
-cost considered: 6.059
-distance: 1.610
-minimal cost: 6.059
-Next waypoint inside while: wp16
-Node: wp01
-cost considered: 7.071
-distance: 1.610
-Node: wp11
-cost considered: 6.175
-distance: 0.483
-Node: wp14
-cost considered: 6.784
-distance: 0.942
-Node: wp18
-cost considered: 4.938
-distance: 1.123
-minimal cost: 4.938
-Next waypoint inside while: wp18
-Node: wp11
-cost considered: 6.175
-distance: 1.330
-Already visited: wp16
-Node: wp27
-cost considered: 3.648
-distance: 1.309
-minimal cost: 3.648
-Next waypoint inside while: wp27
-Node: wp00
-cost considered: 3.536
-distance: 0.471
-Already visited: wp18
-Node: wp21
-cost considered: 3.236
-distance: 0.414
-Node: wp26
-cost considered: 3.359
-distance: 0.310
-minimal cost: 3.236
-Next waypoint inside while: wp21
-Node: wp00
-cost considered: 3.536
-distance: 0.562
-Node: wp17
-cost considered: 3.193
-distance: 0.907
-Node: wp26
-cost considered: 3.359
-distance: 0.138
-Already visited: wp27
-minimal cost: 3.193
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 3.027
-distance: 0.561
-Node: wp00
-cost considered: 3.536
-distance: 0.587
-Already visited: wp21
-Node: wp23
-cost considered: 2.151
-distance: 1.123
-minimal cost: 2.151
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 0.000
-distance: 2.151
-Node: wp07
-cost considered: 1.976
-distance: 0.865
-Node: wp09
-cost considered: 0.678
-distance: 1.777
-Already visited: wp17
-minimal cost: 0.000
-Next waypoint inside while: wp04
-PATHFINDER ACT-COST 8.636
-
-ACT-COST 4.395
-
-DUMMY 4.395
-
-ACT-COST 4.395
-
-DUMMY 4.395
-from_wp: wp02
-to_wp: wp05
-INSIDE HEURISTIC GBF
-
-Node: wp10
-cost considered: 2.601
-distance: 0.710
-Node: wp25
-cost considered: 2.979
-distance: 1.233
-Node: wp15
-cost considered: 0.835
-distance: 1.963
-minimal cost: 0.835
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 2.550
-distance: 1.963
-Node: wp05
-cost considered: 0.000
-distance: 0.835
-Node: wp22
-cost considered: 1.884
-distance: 1.285
-Node: wp20
-cost considered: 2.613
-distance: 1.817
-minimal cost: 0.000
-Next waypoint inside while: wp05
-PATHFINDER ACT-COST 2.798
-
-ACT-COST 4.395
-
-DUMMY 4.395
-from_wp: wp02
-to_wp: wp00
-INSIDE HEURISTIC GBF
-
-Node: wp10
-cost considered: 2.941
-distance: 0.710
-Node: wp25
-cost considered: 2.737
-distance: 1.233
-Node: wp15
-cost considered: 2.426
-distance: 1.963
-minimal cost: 2.426
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 3.536
-distance: 1.963
-Node: wp05
-cost considered: 3.000
-distance: 0.835
-Node: wp22
-cost considered: 1.144
-distance: 1.285
-Node: wp20
-cost considered: 1.316
-distance: 1.817
-minimal cost: 1.144
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 3.000
-distance: 1.884
-Already visited: wp15
-Node: wp17
-cost considered: 0.587
-distance: 0.561
-Node: wp20
-cost considered: 1.316
-distance: 1.060
-minimal cost: 0.587
-Next waypoint inside while: wp17
-Already visited: wp22
-Node: wp00
-cost considered: 0.000
-distance: 0.587
-Node: wp21
-cost considered: 0.562
-distance: 0.907
-Node: wp23
-cost considered: 1.386
-distance: 1.123
-minimal cost: 0.000
-Next waypoint inside while: wp00
-PATHFINDER ACT-COST 4.395
-
-ACT-COST 4.395
-
-DUMMY 4.395
-from_wp: wp02
-to_wp: wp01
-INSIDE HEURISTIC GBF
-
-Node: wp10
-cost considered: 4.318
-distance: 0.710
-Node: wp25
-cost considered: 3.770
-distance: 1.233
-Node: wp15
-cost considered: 5.244
-distance: 1.963
-minimal cost: 3.770
+cost considered: 3.483
+distance: 1.351
+minimal cost: 2.651
 Next waypoint inside while: wp25
-Node: wp02
-cost considered: 5.000
-distance: 1.233
-Node: wp10
-cost considered: 4.318
-distance: 0.556
-Node: wp24
-cost considered: 2.966
-distance: 1.329
-minimal cost: 2.966
-Next waypoint inside while: wp24
-Node: wp08
-cost considered: 3.079
-distance: 0.538
-Node: wp12
-cost considered: 2.895
-distance: 0.124
-Node: wp20
-cost considered: 3.430
-distance: 0.513
-Already visited: wp25
-minimal cost: 2.895
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 2.054
-distance: 0.934
-Node: wp08
-cost considered: 3.079
-distance: 0.455
-Already visited: wp24
-Node: wp20
-cost considered: 3.430
-distance: 0.546
+Node: wp17
+cost considered: 3.111
+distance: 0.566
+Node: wp18
+cost considered: 2.563
+distance: 0.572
 Node: wp19
-cost considered: 1.350
-distance: 1.627
-minimal cost: 1.350
+cost considered: 0.679
+distance: 2.329
+Node: wp00
+cost considered: 3.536
+distance: 1.023
+Node: wp29
+cost considered: 3.558
+distance: 1.065
+minimal cost: 0.679
 Next waypoint inside while: wp19
-Node: wp01
+Node: wp02
 cost considered: 0.000
-distance: 1.350
-Node: wp06
-cost considered: 2.054
-distance: 0.996
-Already visited: wp12
+distance: 0.679
+Node: wp22
+cost considered: 1.468
+distance: 1.741
+Node: wp27
+cost considered: 1.900
+distance: 1.948
+Already visited: wp25
 minimal cost: 0.000
-Next waypoint inside while: wp01
-PATHFINDER ACT-COST 5.663
+Next waypoint inside while: wp02
+PATHFINDER ACT-COST 4.031
 
-ACT-COST 4.395
+ACT-COST 0.000
 
-DUMMY 4.395
-PATHFINDER ACT-COST 0.000
-
-ACT-COST 4.395
-
-DUMMY 4.395
-from_wp: wp02
+DUMMY 0.000
+from_wp: wp00
 to_wp: wp03
 INSIDE HEURISTIC GBF
 
 Node: wp10
-cost considered: 6.465
-distance: 0.710
-Node: wp25
-cost considered: 6.202
-distance: 1.233
+cost considered: 3.367
+distance: 0.439
+Node: wp12
+cost considered: 3.395
+distance: 0.721
 Node: wp15
-cost considered: 5.737
-distance: 1.963
-minimal cost: 5.737
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 7.071
-distance: 1.963
-Node: wp05
-cost considered: 6.042
-distance: 0.835
-Node: wp22
-cost considered: 4.520
-distance: 1.285
-Node: wp20
-cost considered: 4.817
-distance: 1.817
-minimal cost: 4.520
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 6.042
-distance: 1.884
-Already visited: wp15
-Node: wp17
-cost considered: 4.005
-distance: 0.561
-Node: wp20
-cost considered: 4.817
-distance: 1.060
-minimal cost: 4.005
-Next waypoint inside while: wp17
-Already visited: wp22
-Node: wp00
-cost considered: 3.536
-distance: 0.587
+cost considered: 2.795
+distance: 0.744
 Node: wp21
-cost considered: 3.099
-distance: 0.907
-Node: wp23
-cost considered: 3.761
-distance: 1.123
-minimal cost: 3.099
-Next waypoint inside while: wp21
-Node: wp00
-cost considered: 3.536
-distance: 0.562
-Already visited: wp17
+cost considered: 3.922
+distance: 0.888
+Node: wp25
+cost considered: 4.480
+distance: 1.023
 Node: wp26
-cost considered: 3.009
-distance: 0.138
-Node: wp27
-cost considered: 3.073
-distance: 0.414
-minimal cost: 3.009
-Next waypoint inside while: wp26
+cost considered: 4.065
+distance: 1.351
+minimal cost: 2.795
+Next waypoint inside while: wp15
 Node: wp00
 cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Already visited: wp21
-Node: wp27
-cost considered: 3.073
-distance: 0.310
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
+distance: 0.744
+Node: wp06
+cost considered: 1.831
+distance: 1.256
+Node: wp10
+cost considered: 3.367
+distance: 0.645
+Node: wp11
+cost considered: 1.746
+distance: 1.264
+Node: wp12
+cost considered: 3.395
+distance: 0.916
+Node: wp21
+cost considered: 3.922
+distance: 1.297
+minimal cost: 1.746
+Next waypoint inside while: wp11
 Node: wp03
 cost considered: 0.000
-distance: 1.809
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
 Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
+cost considered: 1.359
+distance: 0.978
+Already visited: wp15
+Node: wp10
+cost considered: 3.367
+distance: 1.709
+Node: wp23
+cost considered: 0.676
+distance: 1.940
 minimal cost: 0.000
 Next waypoint inside while: wp03
-PATHFINDER ACT-COST 7.981
+PATHFINDER ACT-COST 3.753
 
-ACT-COST 4.395
+ACT-COST 0.000
 
-DUMMY 4.395
-from_wp: wp02
+DUMMY 0.000
+from_wp: wp00
 to_wp: wp04
 INSIDE HEURISTIC GBF
 
 Node: wp10
-cost considered: 4.864
-distance: 0.710
-Node: wp25
-cost considered: 5.076
-distance: 1.233
+cost considered: 3.935
+distance: 0.439
+Node: wp12
+cost considered: 2.854
+distance: 0.721
 Node: wp15
-cost considered: 3.045
-distance: 1.963
-minimal cost: 3.045
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 5.000
-distance: 1.963
-Node: wp05
-cost considered: 2.550
-distance: 0.835
-Node: wp22
-cost considered: 3.027
-distance: 1.285
-Node: wp20
-cost considered: 4.086
-distance: 1.817
-minimal cost: 2.550
-Next waypoint inside while: wp05
-Already visited: wp15
+cost considered: 3.669
+distance: 0.744
+Node: wp21
+cost considered: 4.383
+distance: 0.888
+Node: wp25
+cost considered: 3.227
+distance: 1.023
+Node: wp26
+cost considered: 4.861
+distance: 1.351
+minimal cost: 2.854
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 3.536
+distance: 0.721
+Node: wp29
+cost considered: 2.323
+distance: 0.668
+Node: wp17
+cost considered: 2.724
+distance: 0.780
+Node: wp15
+cost considered: 3.669
+distance: 0.916
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Already visited: wp12
+Node: wp17
+cost considered: 2.724
+distance: 0.500
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
 Node: wp09
-cost considered: 0.678
-distance: 1.883
-Node: wp22
-cost considered: 3.027
-distance: 1.884
-minimal cost: 0.678
-Next waypoint inside while: wp09
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
 Node: wp04
 cost considered: 0.000
-distance: 0.678
-Already visited: wp05
-Node: wp23
-cost considered: 2.151
-distance: 1.777
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
 minimal cost: 0.000
 Next waypoint inside while: wp04
-PATHFINDER ACT-COST 5.358
+PATHFINDER ACT-COST 4.008
 
-ACT-COST 3.706
+ACT-COST 0.000
 
-DUMMY 3.706
-
-ACT-COST 3.706
-
-DUMMY 3.706
-from_wp: wp03
+DUMMY 0.000
+from_wp: wp00
 to_wp: wp05
 INSIDE HEURISTIC GBF
 
-Node: wp13
-cost considered: 4.236
-distance: 1.809
-Node: wp30
-cost considered: 4.169
-distance: 1.913
-Node: wp28
-cost considered: 3.611
-distance: 2.576
-minimal cost: 3.611
-Next waypoint inside while: wp28
-Node: wp03
-cost considered: 6.042
-distance: 2.576
-Node: wp07
-cost considered: 2.973
-distance: 0.657
-Node: wp13
-cost considered: 4.236
-distance: 1.016
-Node: wp29
-cost considered: 4.129
-distance: 0.938
-Node: wp30
-cost considered: 4.169
-distance: 1.157
-minimal cost: 2.973
-Next waypoint inside while: wp07
-Node: wp04
-cost considered: 2.550
-distance: 1.976
-Already visited: wp28
-Node: wp23
-cost considered: 2.282
-distance: 0.865
-Node: wp29
-cost considered: 4.129
-distance: 1.279
-minimal cost: 2.282
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 2.550
-distance: 2.151
-Already visited: wp07
-Node: wp09
-cost considered: 1.883
-distance: 1.777
+Node: wp10
+cost considered: 3.418
+distance: 0.439
+Node: wp12
+cost considered: 2.737
+distance: 0.721
+Node: wp15
+cost considered: 3.598
+distance: 0.744
+Node: wp21
+cost considered: 3.477
+distance: 0.888
+Node: wp25
+cost considered: 2.062
+distance: 1.023
+Node: wp26
+cost considered: 3.884
+distance: 1.351
+minimal cost: 2.062
+Next waypoint inside while: wp25
 Node: wp17
-cost considered: 2.416
-distance: 1.123
-minimal cost: 1.883
-Next waypoint inside while: wp09
-Node: wp04
-cost considered: 2.550
-distance: 0.678
+cost considered: 2.011
+distance: 0.566
+Node: wp18
+cost considered: 1.505
+distance: 0.572
+Node: wp19
+cost considered: 2.768
+distance: 2.329
+Node: wp00
+cost considered: 3.000
+distance: 1.023
+Node: wp29
+cost considered: 2.128
+distance: 1.065
+minimal cost: 1.505
+Next waypoint inside while: wp18
 Node: wp05
 cost considered: 0.000
-distance: 1.883
-Already visited: wp23
+distance: 1.505
+Node: wp17
+cost considered: 2.011
+distance: 0.619
+Already visited: wp25
+Node: wp27
+cost considered: 0.944
+distance: 0.912
+Node: wp29
+cost considered: 2.128
+distance: 1.001
+Node: wp22
+cost considered: 1.081
+distance: 1.588
 minimal cost: 0.000
 Next waypoint inside while: wp05
-PATHFINDER ACT-COST 7.758
+PATHFINDER ACT-COST 3.100
 
-ACT-COST 3.706
+ACT-COST 3.946
 
-DUMMY 3.706
-from_wp: wp03
+DUMMY 3.946
+b (5.000 | 100.000)
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
+to_wp: wp05
+INSIDE HEURISTIC GBF
+
+Node: wp07
+cost considered: 5.455
+distance: 0.859
+Node: wp13
+cost considered: 5.306
+distance: 0.880
+Node: wp16
+cost considered: 4.859
+distance: 1.397
+Node: wp28
+cost considered: 5.466
+distance: 1.676
+minimal cost: 4.859
+Next waypoint inside while: wp16
+Node: wp01
+cost considered: 6.042
+distance: 1.397
+Node: wp07
+cost considered: 5.455
+distance: 0.613
+Node: wp13
+cost considered: 5.306
+distance: 1.214
+Node: wp28
+cost considered: 5.466
+distance: 0.933
+Node: wp26
+cost considered: 3.884
+distance: 0.976
+minimal cost: 3.884
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.418
+distance: 1.048
+Node: wp13
+cost considered: 5.306
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 3.477
+distance: 0.478
+Node: wp00
+cost considered: 3.000
+distance: 1.351
+Node: wp28
+cost considered: 5.466
+distance: 1.724
+minimal cost: 3.000
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.418
+distance: 0.439
+Node: wp12
+cost considered: 2.737
+distance: 0.721
+Node: wp15
+cost considered: 3.598
+distance: 0.744
+Node: wp21
+cost considered: 3.477
+distance: 0.888
+Node: wp25
+cost considered: 2.062
+distance: 1.023
+Already visited: wp26
+minimal cost: 2.062
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 2.011
+distance: 0.566
+Node: wp18
+cost considered: 1.505
+distance: 0.572
+Node: wp19
+cost considered: 2.768
+distance: 2.329
+Already visited: wp00
+Node: wp29
+cost considered: 2.128
+distance: 1.065
+minimal cost: 1.505
+Next waypoint inside while: wp18
+Node: wp05
+cost considered: 0.000
+distance: 1.505
+Node: wp17
+cost considered: 2.011
+distance: 0.619
+Already visited: wp25
+Node: wp27
+cost considered: 0.944
+distance: 0.912
+Node: wp29
+cost considered: 2.128
+distance: 1.001
+Node: wp22
+cost considered: 1.081
+distance: 1.588
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 6.824
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
 to_wp: wp00
 INSIDE HEURISTIC GBF
 
+Node: wp07
+cost considered: 2.768
+distance: 0.859
 Node: wp13
-cost considered: 1.893
-distance: 1.809
-Node: wp30
-cost considered: 1.694
-distance: 1.913
-Node: wp28
-cost considered: 2.070
-distance: 2.576
-minimal cost: 1.694
-Next waypoint inside while: wp30
-Node: wp03
-cost considered: 3.536
-distance: 1.913
-Node: wp13
-cost considered: 1.893
-distance: 0.248
-Node: wp26
-cost considered: 0.578
-distance: 1.129
-Node: wp28
-cost considered: 2.070
-distance: 1.157
-minimal cost: 0.578
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 0.000
-distance: 0.578
-Node: wp13
-cost considered: 1.893
-distance: 1.319
-Node: wp21
-cost considered: 0.562
-distance: 0.138
-Node: wp27
-cost considered: 0.471
-distance: 0.310
-Already visited: wp30
-minimal cost: 0.000
-Next waypoint inside while: wp00
-PATHFINDER ACT-COST 3.620
-
-ACT-COST 3.706
-
-DUMMY 3.706
-from_wp: wp03
-to_wp: wp01
-INSIDE HEURISTIC GBF
-
-Node: wp13
-cost considered: 4.468
-distance: 1.809
-Node: wp30
-cost considered: 4.229
-distance: 1.913
-Node: wp28
-cost considered: 5.228
-distance: 2.576
-minimal cost: 4.229
-Next waypoint inside while: wp30
-Node: wp03
-cost considered: 5.000
-distance: 1.913
-Node: wp13
-cost considered: 4.468
-distance: 0.248
-Node: wp26
-cost considered: 3.793
-distance: 1.129
-Node: wp28
-cost considered: 5.228
-distance: 1.157
-minimal cost: 3.793
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 4.468
-distance: 1.319
-Node: wp21
-cost considered: 3.893
-distance: 0.138
-Node: wp27
-cost considered: 3.484
-distance: 0.310
-Already visited: wp30
-minimal cost: 3.484
-Next waypoint inside while: wp27
-Node: wp00
-cost considered: 3.536
-distance: 0.471
-Node: wp18
-cost considered: 2.382
-distance: 1.309
-Node: wp21
-cost considered: 3.893
-distance: 0.414
-Already visited: wp26
-minimal cost: 2.382
-Next waypoint inside while: wp18
-Node: wp11
-cost considered: 1.981
-distance: 1.330
+cost considered: 3.066
+distance: 0.880
 Node: wp16
-cost considered: 1.610
-distance: 1.123
-Already visited: wp27
-minimal cost: 1.610
+cost considered: 2.160
+distance: 1.397
+Node: wp28
+cost considered: 2.542
+distance: 1.676
+minimal cost: 2.160
 Next waypoint inside while: wp16
 Node: wp01
+cost considered: 3.536
+distance: 1.397
+Node: wp07
+cost considered: 2.768
+distance: 0.613
+Node: wp13
+cost considered: 3.066
+distance: 1.214
+Node: wp28
+cost considered: 2.542
+distance: 0.933
+Node: wp26
+cost considered: 1.351
+distance: 0.976
+minimal cost: 1.351
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 0.439
+distance: 1.048
+Node: wp13
+cost considered: 3.066
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 0.888
+distance: 0.478
+Node: wp00
 cost considered: 0.000
-distance: 1.610
-Node: wp11
-cost considered: 1.981
-distance: 0.483
-Node: wp14
-cost considered: 0.734
-distance: 0.942
-Already visited: wp18
+distance: 1.351
+Node: wp28
+cost considered: 2.542
+distance: 1.724
 minimal cost: 0.000
-Next waypoint inside while: wp01
-PATHFINDER ACT-COST 7.394
+Next waypoint inside while: wp00
+PATHFINDER ACT-COST 3.724
 
-ACT-COST 3.706
+ACT-COST 3.946
 
-DUMMY 3.706
-from_wp: wp03
+DUMMY 3.946
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
 to_wp: wp02
 INSIDE HEURISTIC GBF
 
-Node: wp13
-cost considered: 5.376
-distance: 1.809
-Node: wp30
-cost considered: 5.203
-distance: 1.913
-Node: wp28
-cost considered: 5.189
-distance: 2.576
-minimal cost: 5.189
-Next waypoint inside while: wp28
-Node: wp03
-cost considered: 7.071
-distance: 2.576
 Node: wp07
-cost considered: 4.697
-distance: 0.657
+cost considered: 4.750
+distance: 0.859
 Node: wp13
-cost considered: 5.376
-distance: 1.016
-Node: wp29
-cost considered: 5.976
-distance: 0.938
-Node: wp30
-cost considered: 5.203
-distance: 1.157
-minimal cost: 4.697
-Next waypoint inside while: wp07
-Node: wp04
+cost considered: 4.127
+distance: 0.880
+Node: wp16
+cost considered: 4.304
+distance: 1.397
+Node: wp28
+cost considered: 5.181
+distance: 1.676
+minimal cost: 4.127
+Next waypoint inside while: wp13
+Node: wp01
 cost considered: 5.000
-distance: 1.976
-Already visited: wp28
-Node: wp23
-cost considered: 3.833
-distance: 0.865
-Node: wp29
-cost considered: 5.976
-distance: 1.279
-minimal cost: 3.833
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 5.000
-distance: 2.151
-Already visited: wp07
-Node: wp09
-cost considered: 4.323
-distance: 1.777
-Node: wp17
-cost considered: 3.106
-distance: 1.123
-minimal cost: 3.106
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 2.681
-distance: 0.561
+distance: 0.880
+Node: wp07
+cost considered: 4.750
+distance: 1.056
+Node: wp16
+cost considered: 4.304
+distance: 1.214
+Node: wp26
+cost considered: 3.483
+distance: 1.715
+minimal cost: 3.483
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.748
+distance: 1.048
+Already visited: wp13
+Node: wp16
+cost considered: 4.304
+distance: 0.976
+Node: wp21
+cost considered: 3.346
+distance: 0.478
 Node: wp00
 cost considered: 3.536
-distance: 0.587
-Node: wp21
-cost considered: 4.003
-distance: 0.907
-Already visited: wp23
-minimal cost: 2.681
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 2.550
-distance: 1.884
+distance: 1.351
+Node: wp28
+cost considered: 5.181
+distance: 1.724
+minimal cost: 3.346
+Next waypoint inside while: wp21
+Node: wp00
+cost considered: 3.536
+distance: 0.888
+Node: wp10
+cost considered: 3.748
+distance: 0.658
+Already visited: wp26
 Node: wp15
-cost considered: 1.963
-distance: 1.285
-Already visited: wp17
-Node: wp20
-cost considered: 2.294
-distance: 1.060
-minimal cost: 1.963
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 0.000
-distance: 1.963
-Node: wp05
-cost considered: 2.550
-distance: 0.835
-Already visited: wp22
-Node: wp20
-cost considered: 2.294
-distance: 1.817
-minimal cost: 0.000
-Next waypoint inside while: wp02
-PATHFINDER ACT-COST 9.030
-
-ACT-COST 3.706
-
-DUMMY 3.706
-PATHFINDER ACT-COST 0.000
-
-ACT-COST 3.706
-
-DUMMY 3.706
-from_wp: wp03
-to_wp: wp04
-INSIDE HEURISTIC GBF
-
-Node: wp13
-cost considered: 3.494
-distance: 1.809
-Node: wp30
-cost considered: 3.585
-distance: 1.913
-Node: wp28
-cost considered: 2.497
-distance: 2.576
-minimal cost: 2.497
-Next waypoint inside while: wp28
-Node: wp03
-cost considered: 5.000
-distance: 2.576
-Node: wp07
-cost considered: 1.976
-distance: 0.657
-Node: wp13
-cost considered: 3.494
-distance: 1.016
-Node: wp29
-cost considered: 2.390
-distance: 0.938
-Node: wp30
-cost considered: 3.585
-distance: 1.157
-minimal cost: 1.976
-Next waypoint inside while: wp07
-Node: wp04
-cost considered: 0.000
-distance: 1.976
-Already visited: wp28
-Node: wp23
-cost considered: 2.151
-distance: 0.865
-Node: wp29
-cost considered: 2.390
-distance: 1.279
-minimal cost: 0.000
-Next waypoint inside while: wp04
-PATHFINDER ACT-COST 5.209
-
-ACT-COST 3.861
-
-DUMMY 3.861
-
-ACT-COST 3.861
-
-DUMMY 3.861
-from_wp: wp04
-to_wp: wp05
-INSIDE HEURISTIC GBF
-
-Node: wp09
-cost considered: 1.883
-distance: 0.678
-Node: wp07
-cost considered: 2.973
-distance: 1.976
-Node: wp23
-cost considered: 2.282
-distance: 2.151
-minimal cost: 1.883
-Next waypoint inside while: wp09
-Node: wp04
-cost considered: 2.550
-distance: 0.678
-Node: wp05
-cost considered: 0.000
-distance: 1.883
-Node: wp23
-cost considered: 2.282
-distance: 1.777
-minimal cost: 0.000
-Next waypoint inside while: wp05
-PATHFINDER ACT-COST 2.560
-
-ACT-COST 3.861
-
-DUMMY 3.861
-from_wp: wp04
-to_wp: wp00
-INSIDE HEURISTIC GBF
-
-Node: wp09
-cost considered: 3.119
-distance: 0.678
-Node: wp07
-cost considered: 1.927
-distance: 1.976
-Node: wp23
-cost considered: 1.386
-distance: 2.151
-minimal cost: 1.386
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 3.536
-distance: 2.151
-Node: wp07
-cost considered: 1.927
-distance: 0.865
-Node: wp09
-cost considered: 3.119
-distance: 1.777
-Node: wp17
-cost considered: 0.587
-distance: 1.123
-minimal cost: 0.587
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 1.144
-distance: 0.561
-Node: wp00
-cost considered: 0.000
-distance: 0.587
-Node: wp21
-cost considered: 0.562
-distance: 0.907
-Already visited: wp23
-minimal cost: 0.000
-Next waypoint inside while: wp00
-PATHFINDER ACT-COST 3.861
-
-ACT-COST 3.861
-
-DUMMY 3.861
-from_wp: wp04
-to_wp: wp01
-INSIDE HEURISTIC GBF
-
-Node: wp09
-cost considered: 6.633
-distance: 0.678
-Node: wp07
-cost considered: 5.341
-distance: 1.976
-Node: wp23
-cost considered: 4.921
-distance: 2.151
-minimal cost: 4.921
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 7.071
-distance: 2.151
-Node: wp07
-cost considered: 5.341
-distance: 0.865
-Node: wp09
-cost considered: 6.633
-distance: 1.777
-Node: wp17
-cost considered: 3.936
-distance: 1.123
-minimal cost: 3.936
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 4.296
-distance: 0.561
-Node: wp00
-cost considered: 3.536
-distance: 0.587
-Node: wp21
-cost considered: 3.893
-distance: 0.907
-Already visited: wp23
+cost considered: 4.277
+distance: 1.297
 minimal cost: 3.536
 Next waypoint inside while: wp00
-Node: wp27
-cost considered: 3.484
-distance: 0.471
-Node: wp21
-cost considered: 3.893
-distance: 0.562
-Node: wp26
-cost considered: 3.793
-distance: 0.578
-Already visited: wp17
-minimal cost: 3.484
-Next waypoint inside while: wp27
+Node: wp10
+cost considered: 3.748
+distance: 0.439
+Node: wp12
+cost considered: 3.809
+distance: 0.721
+Node: wp15
+cost considered: 4.277
+distance: 0.744
+Already visited: wp21
+Node: wp25
+cost considered: 2.651
+distance: 1.023
+Already visited: wp26
+minimal cost: 2.651
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 3.111
+distance: 0.566
+Node: wp18
+cost considered: 2.563
+distance: 0.572
+Node: wp19
+cost considered: 0.679
+distance: 2.329
 Already visited: wp00
-Node: wp18
-cost considered: 2.382
-distance: 1.309
-Node: wp21
-cost considered: 3.893
-distance: 0.414
-Node: wp26
-cost considered: 3.793
-distance: 0.310
-minimal cost: 2.382
-Next waypoint inside while: wp18
-Node: wp11
-cost considered: 1.981
-distance: 1.330
-Node: wp16
-cost considered: 1.610
-distance: 1.123
-Already visited: wp27
-minimal cost: 1.610
-Next waypoint inside while: wp16
-Node: wp01
-cost considered: 0.000
-distance: 1.610
-Node: wp11
-cost considered: 1.981
-distance: 0.483
-Node: wp14
-cost considered: 0.734
-distance: 0.942
-Already visited: wp18
-minimal cost: 0.000
-Next waypoint inside while: wp01
-PATHFINDER ACT-COST 8.374
-
-ACT-COST 3.861
-
-DUMMY 3.861
-from_wp: wp04
-to_wp: wp02
-INSIDE HEURISTIC GBF
-
-Node: wp09
-cost considered: 4.323
-distance: 0.678
-Node: wp07
-cost considered: 4.697
-distance: 1.976
-Node: wp23
-cost considered: 3.833
-distance: 2.151
-minimal cost: 3.833
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 5.000
-distance: 2.151
-Node: wp07
-cost considered: 4.697
-distance: 0.865
-Node: wp09
-cost considered: 4.323
-distance: 1.777
-Node: wp17
-cost considered: 3.106
-distance: 1.123
-minimal cost: 3.106
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 2.681
-distance: 0.561
-Node: wp00
-cost considered: 3.536
-distance: 0.587
-Node: wp21
-cost considered: 4.003
-distance: 0.907
-Already visited: wp23
-minimal cost: 2.681
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 2.550
-distance: 1.884
-Node: wp15
-cost considered: 1.963
-distance: 1.285
-Already visited: wp17
-Node: wp20
-cost considered: 2.294
-distance: 1.060
-minimal cost: 1.963
-Next waypoint inside while: wp15
+Node: wp29
+cost considered: 3.558
+distance: 1.065
+minimal cost: 0.679
+Next waypoint inside while: wp19
 Node: wp02
 cost considered: 0.000
-distance: 1.963
-Node: wp05
-cost considered: 2.550
-distance: 0.835
-Already visited: wp22
-Node: wp20
-cost considered: 2.294
-distance: 1.817
+distance: 0.679
+Node: wp22
+cost considered: 1.468
+distance: 1.741
+Node: wp27
+cost considered: 1.900
+distance: 1.948
+Already visited: wp25
 minimal cost: 0.000
 Next waypoint inside while: wp02
-PATHFINDER ACT-COST 7.082
+PATHFINDER ACT-COST 7.992
 
-ACT-COST 3.861
+ACT-COST 3.946
 
-DUMMY 3.861
-from_wp: wp04
+DUMMY 3.946
+from_wp: wp01
 to_wp: wp03
 INSIDE HEURISTIC GBF
 
-Node: wp09
-cost considered: 5.076
-distance: 0.678
 Node: wp07
-cost considered: 3.220
-distance: 1.976
-Node: wp23
-cost considered: 3.761
-distance: 2.151
-minimal cost: 3.220
-Next waypoint inside while: wp07
-Node: wp04
-cost considered: 5.000
-distance: 1.976
+cost considered: 4.214
+distance: 0.859
+Node: wp13
+cost considered: 5.174
+distance: 0.880
+Node: wp16
+cost considered: 3.976
+distance: 1.397
 Node: wp28
-cost considered: 2.576
-distance: 0.657
-Node: wp23
-cost considered: 3.761
-distance: 0.865
-Node: wp29
-cost considered: 2.709
-distance: 1.279
-minimal cost: 2.576
+cost considered: 3.328
+distance: 1.676
+minimal cost: 3.328
 Next waypoint inside while: wp28
-Node: wp03
-cost considered: 0.000
-distance: 2.576
-Already visited: wp07
-Node: wp13
-cost considered: 1.809
-distance: 1.016
-Node: wp29
-cost considered: 2.709
-distance: 0.938
-Node: wp30
-cost considered: 1.913
-distance: 1.157
-minimal cost: 0.000
-Next waypoint inside while: wp03
-PATHFINDER ACT-COST 5.209
-
-ACT-COST 3.861
-
-DUMMY 3.861
-PATHFINDER ACT-COST 0.000
-
-ACT-COST 3.031
-
-DUMMY 3.031
-
-ACT-COST 3.031
-
-DUMMY 3.031
-from_wp: wp05
-to_wp: wp01
-INSIDE HEURISTIC GBF
-
-Node: wp15
-cost considered: 5.244
-distance: 0.835
-Node: wp09
-cost considered: 6.633
-distance: 1.883
-Node: wp22
-cost considered: 4.296
-distance: 1.884
-minimal cost: 4.296
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 6.042
-distance: 1.884
-Node: wp15
-cost considered: 5.244
-distance: 1.285
-Node: wp17
-cost considered: 3.936
-distance: 0.561
-Node: wp20
-cost considered: 3.430
-distance: 1.060
-minimal cost: 3.430
-Next waypoint inside while: wp20
-Node: wp08
-cost considered: 3.079
-distance: 0.490
-Node: wp10
-cost considered: 4.318
-distance: 1.651
-Node: wp12
-cost considered: 2.895
-distance: 0.546
-Node: wp15
-cost considered: 5.244
-distance: 1.817
-Already visited: wp22
-Node: wp24
-cost considered: 2.966
-distance: 0.513
-minimal cost: 2.895
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 2.054
-distance: 0.934
-Node: wp08
-cost considered: 3.079
-distance: 0.455
-Node: wp24
-cost considered: 2.966
-distance: 0.124
-Already visited: wp20
-Node: wp19
-cost considered: 1.350
-distance: 1.627
-minimal cost: 1.350
-Next waypoint inside while: wp19
-Node: wp01
-cost considered: 0.000
-distance: 1.350
-Node: wp06
-cost considered: 2.054
-distance: 0.996
-Already visited: wp12
-minimal cost: 0.000
-Next waypoint inside while: wp01
-PATHFINDER ACT-COST 6.466
-
-ACT-COST 3.031
-
-DUMMY 3.031
-from_wp: wp05
-to_wp: wp00
-INSIDE HEURISTIC GBF
-
-Node: wp15
-cost considered: 2.426
-distance: 0.835
-Node: wp09
-cost considered: 3.119
-distance: 1.883
-Node: wp22
-cost considered: 1.144
-distance: 1.884
-minimal cost: 1.144
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 3.000
-distance: 1.884
-Node: wp15
-cost considered: 2.426
-distance: 1.285
-Node: wp17
-cost considered: 0.587
-distance: 0.561
-Node: wp20
-cost considered: 1.316
-distance: 1.060
-minimal cost: 0.587
-Next waypoint inside while: wp17
-Already visited: wp22
-Node: wp00
-cost considered: 0.000
-distance: 0.587
-Node: wp21
-cost considered: 0.562
-distance: 0.907
-Node: wp23
-cost considered: 1.386
-distance: 1.123
-minimal cost: 0.000
-Next waypoint inside while: wp00
-PATHFINDER ACT-COST 3.031
-
-ACT-COST 3.031
-
-DUMMY 3.031
-from_wp: wp05
-to_wp: wp02
-INSIDE HEURISTIC GBF
-
-Node: wp15
-cost considered: 1.963
-distance: 0.835
-Node: wp09
-cost considered: 4.323
-distance: 1.883
-Node: wp22
-cost considered: 2.681
-distance: 1.884
-minimal cost: 1.963
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 0.000
-distance: 1.963
-Node: wp05
-cost considered: 2.550
-distance: 0.835
-Node: wp22
-cost considered: 2.681
-distance: 1.285
-Node: wp20
-cost considered: 2.294
-distance: 1.817
-minimal cost: 0.000
-Next waypoint inside while: wp02
-PATHFINDER ACT-COST 2.798
-
-ACT-COST 3.031
-
-DUMMY 3.031
-from_wp: wp05
-to_wp: wp03
-INSIDE HEURISTIC GBF
-
-Node: wp15
-cost considered: 5.737
-distance: 0.835
-Node: wp09
-cost considered: 5.076
-distance: 1.883
-Node: wp22
-cost considered: 4.520
-distance: 1.884
-minimal cost: 4.520
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 6.042
-distance: 1.884
-Node: wp15
-cost considered: 5.737
-distance: 1.285
-Node: wp17
-cost considered: 4.005
-distance: 0.561
-Node: wp20
-cost considered: 4.817
-distance: 1.060
-minimal cost: 4.005
-Next waypoint inside while: wp17
-Already visited: wp22
-Node: wp00
-cost considered: 3.536
-distance: 0.587
-Node: wp21
-cost considered: 3.099
-distance: 0.907
-Node: wp23
-cost considered: 3.761
-distance: 1.123
-minimal cost: 3.099
-Next waypoint inside while: wp21
-Node: wp00
-cost considered: 3.536
-distance: 0.562
-Already visited: wp17
-Node: wp26
-cost considered: 3.009
-distance: 0.138
-Node: wp27
-cost considered: 3.073
-distance: 0.414
-minimal cost: 3.009
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Already visited: wp21
-Node: wp27
-cost considered: 3.073
-distance: 0.310
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
-Node: wp03
-cost considered: 0.000
-distance: 1.809
-Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
-minimal cost: 0.000
-Next waypoint inside while: wp03
-PATHFINDER ACT-COST 6.617
-
-ACT-COST 3.031
-
-DUMMY 3.031
-from_wp: wp05
-to_wp: wp04
-INSIDE HEURISTIC GBF
-
-Node: wp15
-cost considered: 3.045
-distance: 0.835
-Node: wp09
-cost considered: 0.678
-distance: 1.883
-Node: wp22
-cost considered: 3.027
-distance: 1.884
-minimal cost: 0.678
-Next waypoint inside while: wp09
-Node: wp04
-cost considered: 0.000
-distance: 0.678
-Node: wp05
-cost considered: 2.550
-distance: 1.883
-Node: wp23
-cost considered: 2.151
-distance: 1.777
-minimal cost: 0.000
-Next waypoint inside while: wp04
-PATHFINDER ACT-COST 2.560
-
-ACT-COST 3.031
-
-DUMMY 3.031
-PATHFINDER ACT-COST 0.000
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp05
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 6.020
-distance: 0.734
-Node: wp19
-cost considered: 4.776
-distance: 1.350
-Node: wp16
-cost considered: 5.593
-distance: 1.610
-minimal cost: 4.776
-Next waypoint inside while: wp19
-Node: wp01
-cost considered: 6.042
-distance: 1.350
-Node: wp06
-cost considered: 4.008
-distance: 0.996
-Node: wp12
-cost considered: 3.155
-distance: 1.627
-minimal cost: 3.155
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 4.008
-distance: 0.934
-Node: wp08
-cost considered: 2.985
-distance: 0.455
-Node: wp24
-cost considered: 3.099
-distance: 0.124
-Node: wp20
-cost considered: 2.613
-distance: 0.546
-Already visited: wp19
-minimal cost: 2.613
-Next waypoint inside while: wp20
-Node: wp08
-cost considered: 2.985
-distance: 0.490
-Node: wp10
-cost considered: 2.601
-distance: 1.651
-Already visited: wp12
-Node: wp15
-cost considered: 0.835
-distance: 1.817
-Node: wp22
-cost considered: 1.884
-distance: 1.060
-Node: wp24
-cost considered: 3.099
-distance: 0.513
-minimal cost: 0.835
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 2.550
-distance: 1.963
-Node: wp05
-cost considered: 0.000
-distance: 0.835
-Node: wp22
-cost considered: 1.884
-distance: 1.285
-Already visited: wp20
-minimal cost: 0.000
-Next waypoint inside while: wp05
-PATHFINDER ACT-COST 6.175
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp02
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 5.288
-distance: 0.734
-Node: wp19
-cost considered: 3.662
-distance: 1.350
-Node: wp16
-cost considered: 5.274
-distance: 1.610
-minimal cost: 3.662
-Next waypoint inside while: wp19
 Node: wp01
 cost considered: 5.000
-distance: 1.350
-Node: wp06
-cost considered: 3.406
-distance: 0.996
-Node: wp12
-cost considered: 2.534
-distance: 1.627
-minimal cost: 2.534
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 3.406
-distance: 0.934
-Node: wp08
-cost considered: 2.763
-distance: 0.455
-Node: wp24
-cost considered: 2.411
-distance: 0.124
-Node: wp20
-cost considered: 2.294
-distance: 0.546
-Already visited: wp19
-minimal cost: 2.294
-Next waypoint inside while: wp20
-Node: wp08
-cost considered: 2.763
-distance: 0.490
-Node: wp10
-cost considered: 0.710
-distance: 1.651
-Already visited: wp12
-Node: wp15
-cost considered: 1.963
-distance: 1.817
-Node: wp22
-cost considered: 2.681
-distance: 1.060
-Node: wp24
-cost considered: 2.411
-distance: 0.513
-minimal cost: 0.710
-Next waypoint inside while: wp10
-Node: wp02
-cost considered: 0.000
-distance: 0.710
-Node: wp25
-cost considered: 1.233
-distance: 0.556
-Already visited: wp20
-minimal cost: 0.000
-Next waypoint inside while: wp02
-PATHFINDER ACT-COST 5.884
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp00
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 3.284
-distance: 0.734
-Node: wp19
-cost considered: 2.618
-distance: 1.350
-Node: wp16
-cost considered: 2.675
-distance: 1.610
-minimal cost: 2.618
-Next waypoint inside while: wp19
-Node: wp01
-cost considered: 3.536
-distance: 1.350
-Node: wp06
-cost considered: 1.622
-distance: 0.996
-Node: wp12
-cost considered: 1.460
-distance: 1.627
-minimal cost: 1.460
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 1.622
-distance: 0.934
-Node: wp08
-cost considered: 1.009
-distance: 0.455
-Node: wp24
-cost considered: 1.546
-distance: 0.124
-Node: wp20
-cost considered: 1.316
-distance: 0.546
-Already visited: wp19
-minimal cost: 1.009
-Next waypoint inside while: wp08
-Node: wp06
-cost considered: 1.622
-distance: 1.028
-Already visited: wp12
-Node: wp20
-cost considered: 1.316
-distance: 0.490
-Node: wp24
-cost considered: 1.546
-distance: 0.538
-minimal cost: 1.316
-Next waypoint inside while: wp20
-Already visited: wp08
-Node: wp10
-cost considered: 2.941
-distance: 1.651
-Already visited: wp12
-Node: wp15
-cost considered: 2.426
-distance: 1.817
-Node: wp22
-cost considered: 1.144
-distance: 1.060
-Node: wp24
-cost considered: 1.546
-distance: 0.513
-minimal cost: 1.144
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 3.000
-distance: 1.884
-Node: wp15
-cost considered: 2.426
-distance: 1.285
-Node: wp17
-cost considered: 0.587
-distance: 0.561
-Already visited: wp20
-minimal cost: 0.587
-Next waypoint inside while: wp17
-Already visited: wp22
-Node: wp00
-cost considered: 0.000
-distance: 0.587
-Node: wp21
-cost considered: 0.562
-distance: 0.907
-Node: wp23
-cost considered: 1.386
-distance: 1.123
-minimal cost: 0.000
-Next waypoint inside while: wp00
-PATHFINDER ACT-COST 6.128
-
-ACT-COST 4.513
-
-DUMMY 4.513
-PATHFINDER ACT-COST 0.000
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp03
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 4.314
-distance: 0.734
-Node: wp19
-cost considered: 5.029
-distance: 1.350
-Node: wp16
-cost considered: 3.391
-distance: 1.610
-minimal cost: 3.391
-Next waypoint inside while: wp16
-Node: wp01
-cost considered: 5.000
-distance: 1.610
-Node: wp11
-cost considered: 3.075
-distance: 0.483
-Node: wp14
-cost considered: 4.314
-distance: 0.942
-Node: wp18
-cost considered: 2.965
-distance: 1.123
-minimal cost: 2.965
-Next waypoint inside while: wp18
-Node: wp11
-cost considered: 3.075
-distance: 1.330
-Already visited: wp16
-Node: wp27
-cost considered: 3.073
-distance: 1.309
-minimal cost: 3.073
-Next waypoint inside while: wp27
-Node: wp00
-cost considered: 3.536
-distance: 0.471
-Already visited: wp18
-Node: wp21
-cost considered: 3.099
-distance: 0.414
-Node: wp26
-cost considered: 3.009
-distance: 0.310
-minimal cost: 3.009
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Node: wp21
-cost considered: 3.099
-distance: 0.138
-Already visited: wp27
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
-Node: wp03
-cost considered: 0.000
-distance: 1.809
-Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
-minimal cost: 0.000
-Next waypoint inside while: wp03
-PATHFINDER ACT-COST 7.479
-
-ACT-COST 4.513
-
-DUMMY 4.513
-from_wp: wp01
-to_wp: wp04
-INSIDE HEURISTIC GBF
-
-Node: wp14
-cost considered: 6.784
-distance: 0.734
-Node: wp19
-cost considered: 6.073
-distance: 1.350
-Node: wp16
-cost considered: 6.059
-distance: 1.610
-minimal cost: 6.059
-Next waypoint inside while: wp16
-Node: wp01
-cost considered: 7.071
-distance: 1.610
-Node: wp11
-cost considered: 6.175
-distance: 0.483
-Node: wp14
-cost considered: 6.784
-distance: 0.942
-Node: wp18
-cost considered: 4.938
-distance: 1.123
-minimal cost: 4.938
-Next waypoint inside while: wp18
-Node: wp11
-cost considered: 6.175
-distance: 1.330
-Already visited: wp16
-Node: wp27
-cost considered: 3.648
-distance: 1.309
-minimal cost: 3.648
-Next waypoint inside while: wp27
-Node: wp00
-cost considered: 3.536
-distance: 0.471
-Already visited: wp18
-Node: wp21
-cost considered: 3.236
-distance: 0.414
-Node: wp26
-cost considered: 3.359
-distance: 0.310
-minimal cost: 3.236
-Next waypoint inside while: wp21
-Node: wp00
-cost considered: 3.536
-distance: 0.562
-Node: wp17
-cost considered: 3.193
-distance: 0.907
-Node: wp26
-cost considered: 3.359
-distance: 0.138
-Already visited: wp27
-minimal cost: 3.193
-Next waypoint inside while: wp17
-Node: wp22
-cost considered: 3.027
-distance: 0.561
-Node: wp00
-cost considered: 3.536
-distance: 0.587
-Already visited: wp21
-Node: wp23
-cost considered: 2.151
-distance: 1.123
-minimal cost: 2.151
-Next waypoint inside while: wp23
-Node: wp04
-cost considered: 0.000
-distance: 2.151
+distance: 1.676
 Node: wp07
-cost considered: 1.976
-distance: 0.865
+cost considered: 4.214
+distance: 0.903
+Node: wp16
+cost considered: 3.976
+distance: 0.933
+Node: wp26
+cost considered: 4.065
+distance: 1.724
+minimal cost: 3.976
+Next waypoint inside while: wp16
+Node: wp01
+cost considered: 5.000
+distance: 1.397
+Node: wp07
+cost considered: 4.214
+distance: 0.613
+Node: wp13
+cost considered: 5.174
+distance: 1.214
+Already visited: wp28
+Node: wp26
+cost considered: 4.065
+distance: 0.976
+minimal cost: 4.065
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.367
+distance: 1.048
+Node: wp13
+cost considered: 5.174
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 3.922
+distance: 0.478
+Node: wp00
+cost considered: 3.536
+distance: 1.351
+Already visited: wp28
+minimal cost: 3.367
+Next waypoint inside while: wp10
+Node: wp00
+cost considered: 3.536
+distance: 0.439
+Node: wp06
+cost considered: 1.831
+distance: 1.666
+Node: wp15
+cost considered: 2.795
+distance: 0.645
+Node: wp21
+cost considered: 3.922
+distance: 0.658
+Already visited: wp26
+Node: wp11
+cost considered: 1.746
+distance: 1.709
+minimal cost: 1.746
+Next waypoint inside while: wp11
+Node: wp03
+cost considered: 0.000
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
+Node: wp30
+cost considered: 1.359
+distance: 0.978
+Node: wp15
+cost considered: 2.795
+distance: 1.264
+Already visited: wp10
+Node: wp23
+cost considered: 0.676
+distance: 1.940
+minimal cost: 0.000
+Next waypoint inside while: wp03
+PATHFINDER ACT-COST 8.088
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
+to_wp: wp04
+INSIDE HEURISTIC GBF
+
+Node: wp07
+cost considered: 6.292
+distance: 0.859
+Node: wp13
+cost considered: 6.560
+distance: 0.880
+Node: wp16
+cost considered: 5.690
+distance: 1.397
+Node: wp28
+cost considered: 5.925
+distance: 1.676
+minimal cost: 5.690
+Next waypoint inside while: wp16
+Node: wp01
+cost considered: 7.071
+distance: 1.397
+Node: wp07
+cost considered: 6.292
+distance: 0.613
+Node: wp13
+cost considered: 6.560
+distance: 1.214
+Node: wp28
+cost considered: 5.925
+distance: 0.933
+Node: wp26
+cost considered: 4.861
+distance: 0.976
+minimal cost: 4.861
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.935
+distance: 1.048
+Node: wp13
+cost considered: 6.560
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 4.383
+distance: 0.478
+Node: wp00
+cost considered: 3.536
+distance: 1.351
+Node: wp28
+cost considered: 5.925
+distance: 1.724
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.935
+distance: 0.439
+Node: wp12
+cost considered: 2.854
+distance: 0.721
+Node: wp15
+cost considered: 3.669
+distance: 0.744
+Node: wp21
+cost considered: 4.383
+distance: 0.888
+Node: wp25
+cost considered: 3.227
+distance: 1.023
+Already visited: wp26
+minimal cost: 2.854
+Next waypoint inside while: wp12
+Already visited: wp00
+Node: wp29
+cost considered: 2.323
+distance: 0.668
+Node: wp17
+cost considered: 2.724
+distance: 0.780
+Node: wp15
+cost considered: 3.669
+distance: 0.916
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Already visited: wp12
+Node: wp17
+cost considered: 2.724
+distance: 0.500
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
 Node: wp09
-cost considered: 0.678
-distance: 1.777
-Already visited: wp17
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
+Node: wp04
+cost considered: 0.000
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
 minimal cost: 0.000
 Next waypoint inside while: wp04
-PATHFINDER ACT-COST 8.636
+PATHFINDER ACT-COST 7.732
 
-ACT-COST 10.688
+ACT-COST 4.031
 
-DUMMY 6.175
-b (4.000 | 200.002)
-ACT-COST 10.688
+DUMMY 4.031
 
-DUMMY 10.688
+ACT-COST 4.031
+
+DUMMY 4.031
+from_wp: wp02
+to_wp: wp05
+INSIDE HEURISTIC GBF
+
+Node: wp19
+cost considered: 2.768
+distance: 0.679
+Node: wp22
+cost considered: 1.081
+distance: 1.468
+Node: wp27
+cost considered: 0.944
+distance: 1.900
+Node: wp05
+cost considered: 0.000
+distance: 2.550
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 2.550
+
+ACT-COST 4.031
+
+DUMMY 4.031
+from_wp: wp02
+to_wp: wp00
+INSIDE HEURISTIC GBF
+
+Node: wp19
+cost considered: 3.097
+distance: 0.679
+Node: wp22
+cost considered: 2.989
+distance: 1.468
+Node: wp27
+cost considered: 2.363
+distance: 1.900
+Node: wp05
+cost considered: 3.000
+distance: 2.550
+minimal cost: 2.363
+Next waypoint inside while: wp27
+Node: wp02
+cost considered: 3.536
+distance: 1.900
+Node: wp05
+cost considered: 3.000
+distance: 0.944
+Node: wp18
+cost considered: 1.508
+distance: 0.912
+Node: wp19
+cost considered: 3.097
+distance: 1.948
+Node: wp22
+cost considered: 2.989
+distance: 0.681
+minimal cost: 1.508
+Next waypoint inside while: wp18
+Node: wp05
+cost considered: 3.000
+distance: 1.505
+Node: wp17
+cost considered: 1.027
+distance: 0.619
+Node: wp25
+cost considered: 1.023
+distance: 0.572
+Already visited: wp27
+Node: wp29
+cost considered: 1.235
+distance: 1.001
+Node: wp22
+cost considered: 2.989
+distance: 1.588
+minimal cost: 1.023
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 1.027
+distance: 0.566
+Already visited: wp18
+Node: wp19
+cost considered: 3.097
+distance: 2.329
+Node: wp00
+cost considered: 0.000
+distance: 1.023
+Node: wp29
+cost considered: 1.235
+distance: 1.065
+minimal cost: 0.000
+Next waypoint inside while: wp00
+PATHFINDER ACT-COST 4.408
+
+ACT-COST 4.031
+
+DUMMY 4.031
+from_wp: wp02
+to_wp: wp01
+INSIDE HEURISTIC GBF
+
+Node: wp19
+cost considered: 4.321
+distance: 0.679
+Node: wp22
+cost considered: 5.486
+distance: 1.468
+Node: wp27
+cost considered: 5.141
+distance: 1.900
+Node: wp05
+cost considered: 6.042
+distance: 2.550
+minimal cost: 4.321
+Next waypoint inside while: wp19
+Node: wp02
+cost considered: 5.000
+distance: 0.679
+Node: wp22
+cost considered: 5.486
+distance: 1.741
+Node: wp27
+cost considered: 5.141
+distance: 1.948
+Node: wp25
+cost considered: 4.084
+distance: 2.329
+minimal cost: 4.084
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 4.437
+distance: 0.566
+Node: wp18
+cost considered: 4.646
+distance: 0.572
+Already visited: wp19
+Node: wp00
+cost considered: 3.536
+distance: 1.023
+Node: wp29
+cost considered: 4.760
+distance: 1.065
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.146
+distance: 0.439
+Node: wp12
+cost considered: 4.230
+distance: 0.721
+Node: wp15
+cost considered: 3.556
+distance: 0.744
+Node: wp21
+cost considered: 2.714
+distance: 0.888
+Already visited: wp25
+Node: wp26
+cost considered: 2.242
+distance: 1.351
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.146
+distance: 1.048
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
+Already visited: wp00
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
+Node: wp01
+cost considered: 0.000
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
+minimal cost: 0.000
+Next waypoint inside while: wp01
+PATHFINDER ACT-COST 7.977
+
+ACT-COST 4.031
+
+DUMMY 4.031
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 4.031
+
+DUMMY 4.031
+from_wp: wp02
+to_wp: wp03
+INSIDE HEURISTIC GBF
+
+Node: wp19
+cost considered: 6.612
+distance: 0.679
+Node: wp22
+cost considered: 6.381
+distance: 1.468
+Node: wp27
+cost considered: 5.706
+distance: 1.900
+Node: wp05
+cost considered: 6.042
+distance: 2.550
+minimal cost: 5.706
+Next waypoint inside while: wp27
+Node: wp02
+cost considered: 7.071
+distance: 1.900
+Node: wp05
+cost considered: 6.042
+distance: 0.944
+Node: wp18
+cost considered: 4.794
+distance: 0.912
+Node: wp19
+cost considered: 6.612
+distance: 1.948
+Node: wp22
+cost considered: 6.381
+distance: 0.681
+minimal cost: 4.794
+Next waypoint inside while: wp18
+Node: wp05
+cost considered: 6.042
+distance: 1.505
+Node: wp17
+cost considered: 4.175
+distance: 0.619
+Node: wp25
+cost considered: 4.480
+distance: 0.572
+Already visited: wp27
+Node: wp29
+cost considered: 3.924
+distance: 1.001
+Node: wp22
+cost considered: 6.381
+distance: 1.588
+minimal cost: 3.924
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 3.595
+distance: 0.756
+Node: wp12
+cost considered: 3.395
+distance: 0.668
+Node: wp17
+cost considered: 4.175
+distance: 0.500
+Already visited: wp18
+Node: wp25
+cost considered: 4.480
+distance: 1.065
+minimal cost: 3.395
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 3.536
+distance: 0.721
+Already visited: wp29
+Node: wp17
+cost considered: 4.175
+distance: 0.780
+Node: wp15
+cost considered: 2.795
+distance: 0.916
+minimal cost: 2.795
+Next waypoint inside while: wp15
+Node: wp00
+cost considered: 3.536
+distance: 0.744
+Node: wp06
+cost considered: 1.831
+distance: 1.256
+Node: wp10
+cost considered: 3.367
+distance: 0.645
+Node: wp11
+cost considered: 1.746
+distance: 1.264
+Already visited: wp12
+Node: wp21
+cost considered: 3.922
+distance: 1.297
+minimal cost: 1.746
+Next waypoint inside while: wp11
+Node: wp03
+cost considered: 0.000
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
+Node: wp30
+cost considered: 1.359
+distance: 0.978
+Already visited: wp15
+Node: wp10
+cost considered: 3.367
+distance: 1.709
+Node: wp23
+cost considered: 0.676
+distance: 1.940
+minimal cost: 0.000
+Next waypoint inside while: wp03
+PATHFINDER ACT-COST 8.407
+
+ACT-COST 4.031
+
+DUMMY 4.031
+from_wp: wp02
+to_wp: wp04
+INSIDE HEURISTIC GBF
+
+Node: wp19
+cost considered: 5.051
+distance: 0.679
+Node: wp22
+cost considered: 3.574
+distance: 1.468
+Node: wp27
+cost considered: 3.120
+distance: 1.900
+Node: wp05
+cost considered: 2.550
+distance: 2.550
+minimal cost: 2.550
+Next waypoint inside while: wp05
+Node: wp02
+cost considered: 5.000
+distance: 2.550
+Node: wp27
+cost considered: 3.120
+distance: 0.944
+Node: wp22
+cost considered: 3.574
+distance: 1.081
+Node: wp18
+cost considered: 2.822
+distance: 1.505
+Node: wp17
+cost considered: 2.724
+distance: 2.011
+minimal cost: 2.724
+Next waypoint inside while: wp17
+Already visited: wp05
+Node: wp12
+cost considered: 2.854
+distance: 0.780
+Node: wp29
+cost considered: 2.323
+distance: 0.500
+Node: wp25
+cost considered: 3.227
+distance: 0.566
+Node: wp18
+cost considered: 2.822
+distance: 0.619
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Node: wp12
+cost considered: 2.854
+distance: 0.668
+Already visited: wp17
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
+Node: wp04
+cost considered: 0.000
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
+minimal cost: 0.000
+Next waypoint inside while: wp04
+PATHFINDER ACT-COST 7.681
+
+ACT-COST 3.753
+
+DUMMY 3.753
+
+ACT-COST 3.753
+
+DUMMY 3.753
+from_wp: wp03
+to_wp: wp05
+INSIDE HEURISTIC GBF
+
+Node: wp23
+cost considered: 5.693
+distance: 0.676
+Node: wp30
+cost considered: 4.693
+distance: 1.359
+Node: wp11
+cost considered: 4.839
+distance: 1.746
+Node: wp06
+cost considered: 4.845
+distance: 1.831
+minimal cost: 4.693
+Next waypoint inside while: wp30
+Node: wp03
+cost considered: 6.042
+distance: 1.359
+Node: wp06
+cost considered: 4.845
+distance: 1.084
+Node: wp11
+cost considered: 4.839
+distance: 0.978
+Node: wp23
+cost considered: 5.693
+distance: 1.205
+minimal cost: 4.839
+Next waypoint inside while: wp11
+Node: wp03
+cost considered: 6.042
+distance: 1.746
+Node: wp06
+cost considered: 4.845
+distance: 0.109
+Already visited: wp30
+Node: wp15
+cost considered: 3.598
+distance: 1.264
+Node: wp10
+cost considered: 3.418
+distance: 1.709
+Node: wp23
+cost considered: 5.693
+distance: 1.940
+minimal cost: 3.418
+Next waypoint inside while: wp10
+Node: wp00
+cost considered: 3.000
+distance: 0.439
+Node: wp06
+cost considered: 4.845
+distance: 1.666
+Node: wp15
+cost considered: 3.598
+distance: 0.645
+Node: wp21
+cost considered: 3.477
+distance: 0.658
+Node: wp26
+cost considered: 3.884
+distance: 1.048
+Already visited: wp11
+minimal cost: 3.000
+Next waypoint inside while: wp00
+Already visited: wp10
+Node: wp12
+cost considered: 2.737
+distance: 0.721
+Node: wp15
+cost considered: 3.598
+distance: 0.744
+Node: wp21
+cost considered: 3.477
+distance: 0.888
+Node: wp25
+cost considered: 2.062
+distance: 1.023
+Node: wp26
+cost considered: 3.884
+distance: 1.351
+minimal cost: 2.062
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 2.011
+distance: 0.566
+Node: wp18
+cost considered: 1.505
+distance: 0.572
+Node: wp19
+cost considered: 2.768
+distance: 2.329
+Already visited: wp00
+Node: wp29
+cost considered: 2.128
+distance: 1.065
+minimal cost: 1.505
+Next waypoint inside while: wp18
+Node: wp05
+cost considered: 0.000
+distance: 1.505
+Node: wp17
+cost considered: 2.011
+distance: 0.619
+Already visited: wp25
+Node: wp27
+cost considered: 0.944
+distance: 0.912
+Node: wp29
+cost considered: 2.128
+distance: 1.001
+Node: wp22
+cost considered: 1.081
+distance: 1.588
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 7.585
+
+ACT-COST 3.753
+
+DUMMY 3.753
+from_wp: wp03
+to_wp: wp00
+INSIDE HEURISTIC GBF
+
+Node: wp23
+cost considered: 3.444
+distance: 0.676
+Node: wp30
+cost considered: 2.245
+distance: 1.359
+Node: wp11
+cost considered: 1.979
+distance: 1.746
+Node: wp06
+cost considered: 1.955
+distance: 1.831
+minimal cost: 1.955
+Next waypoint inside while: wp06
+Node: wp03
+cost considered: 3.536
+distance: 1.831
+Node: wp11
+cost considered: 1.979
+distance: 0.109
+Node: wp30
+cost considered: 2.245
+distance: 1.084
+Node: wp15
+cost considered: 0.744
+distance: 1.256
+Node: wp10
+cost considered: 0.439
+distance: 1.666
+Node: wp23
+cost considered: 3.444
+distance: 2.043
+minimal cost: 0.439
+Next waypoint inside while: wp10
+Node: wp00
+cost considered: 0.000
+distance: 0.439
+Already visited: wp06
+Node: wp15
+cost considered: 0.744
+distance: 0.645
+Node: wp21
+cost considered: 0.888
+distance: 0.658
+Node: wp26
+cost considered: 1.351
+distance: 1.048
+Node: wp11
+cost considered: 1.979
+distance: 1.709
+minimal cost: 0.000
+Next waypoint inside while: wp00
+PATHFINDER ACT-COST 3.937
+
+ACT-COST 3.753
+
+DUMMY 3.753
+from_wp: wp03
+to_wp: wp01
+INSIDE HEURISTIC GBF
+
+Node: wp23
+cost considered: 5.386
+distance: 0.676
+Node: wp30
+cost considered: 4.463
+distance: 1.359
+Node: wp11
+cost considered: 3.505
+distance: 1.746
+Node: wp06
+cost considered: 3.396
+distance: 1.831
+minimal cost: 3.396
+Next waypoint inside while: wp06
+Node: wp03
+cost considered: 5.000
+distance: 1.831
+Node: wp11
+cost considered: 3.505
+distance: 0.109
+Node: wp30
+cost considered: 4.463
+distance: 1.084
+Node: wp15
+cost considered: 3.556
+distance: 1.256
+Node: wp10
+cost considered: 3.146
+distance: 1.666
+Node: wp23
+cost considered: 5.386
+distance: 2.043
+minimal cost: 3.146
+Next waypoint inside while: wp10
+Node: wp00
+cost considered: 3.536
+distance: 0.439
+Already visited: wp06
+Node: wp15
+cost considered: 3.556
+distance: 0.645
+Node: wp21
+cost considered: 2.714
+distance: 0.658
+Node: wp26
+cost considered: 2.242
+distance: 1.048
+Node: wp11
+cost considered: 3.505
+distance: 1.709
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Already visited: wp10
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
+Node: wp00
+cost considered: 3.536
+distance: 1.351
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
+Node: wp01
+cost considered: 0.000
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
+minimal cost: 0.000
+Next waypoint inside while: wp01
+PATHFINDER ACT-COST 7.141
+
+ACT-COST 3.753
+
+DUMMY 3.753
+from_wp: wp03
+to_wp: wp02
+INSIDE HEURISTIC GBF
+
+Node: wp23
+cost considered: 6.947
+distance: 0.676
+Node: wp30
+cost considered: 5.765
+distance: 1.359
+Node: wp11
+cost considered: 5.457
+distance: 1.746
+Node: wp06
+cost considered: 5.412
+distance: 1.831
+minimal cost: 5.412
+Next waypoint inside while: wp06
+Node: wp03
+cost considered: 7.071
+distance: 1.831
+Node: wp11
+cost considered: 5.457
+distance: 0.109
+Node: wp30
+cost considered: 5.765
+distance: 1.084
+Node: wp15
+cost considered: 4.277
+distance: 1.256
+Node: wp10
+cost considered: 3.748
+distance: 1.666
+Node: wp23
+cost considered: 6.947
+distance: 2.043
+minimal cost: 3.748
+Next waypoint inside while: wp10
+Node: wp00
+cost considered: 3.536
+distance: 0.439
+Already visited: wp06
+Node: wp15
+cost considered: 4.277
+distance: 0.645
+Node: wp21
+cost considered: 3.346
+distance: 0.658
+Node: wp26
+cost considered: 3.483
+distance: 1.048
+Node: wp11
+cost considered: 5.457
+distance: 1.709
+minimal cost: 3.346
+Next waypoint inside while: wp21
+Node: wp00
+cost considered: 3.536
+distance: 0.888
+Already visited: wp10
+Node: wp26
+cost considered: 3.483
+distance: 0.478
+Node: wp15
+cost considered: 4.277
+distance: 1.297
+minimal cost: 3.483
+Next waypoint inside while: wp26
+Already visited: wp10
+Node: wp13
+cost considered: 4.127
+distance: 1.715
+Node: wp16
+cost considered: 4.304
+distance: 0.976
+Already visited: wp21
+Node: wp00
+cost considered: 3.536
+distance: 1.351
+Node: wp28
+cost considered: 5.181
+distance: 1.724
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Already visited: wp10
+Node: wp12
+cost considered: 3.809
+distance: 0.721
+Node: wp15
+cost considered: 4.277
+distance: 0.744
+Already visited: wp21
+Node: wp25
+cost considered: 2.651
+distance: 1.023
+Already visited: wp26
+minimal cost: 2.651
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 3.111
+distance: 0.566
+Node: wp18
+cost considered: 2.563
+distance: 0.572
+Node: wp19
+cost considered: 0.679
+distance: 2.329
+Already visited: wp00
+Node: wp29
+cost considered: 3.558
+distance: 1.065
+minimal cost: 0.679
+Next waypoint inside while: wp19
+Node: wp02
+cost considered: 0.000
+distance: 0.679
+Node: wp22
+cost considered: 1.468
+distance: 1.741
+Node: wp27
+cost considered: 1.900
+distance: 1.948
+Already visited: wp25
+minimal cost: 0.000
+Next waypoint inside while: wp02
+PATHFINDER ACT-COST 10.016
+
+ACT-COST 3.753
+
+DUMMY 3.753
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 3.753
+
+DUMMY 3.753
+from_wp: wp03
+to_wp: wp04
+INSIDE HEURISTIC GBF
+
+Node: wp23
+cost considered: 4.439
+distance: 0.676
+Node: wp30
+cost considered: 3.893
+distance: 1.359
+Node: wp11
+cost considered: 4.533
+distance: 1.746
+Node: wp06
+cost considered: 4.594
+distance: 1.831
+minimal cost: 3.893
+Next waypoint inside while: wp30
+Node: wp03
+cost considered: 5.000
+distance: 1.359
+Node: wp06
+cost considered: 4.594
+distance: 1.084
+Node: wp11
+cost considered: 4.533
+distance: 0.978
+Node: wp23
+cost considered: 4.439
+distance: 1.205
+minimal cost: 4.439
+Next waypoint inside while: wp23
+Node: wp03
+cost considered: 5.000
+distance: 0.676
+Already visited: wp30
+Node: wp11
+cost considered: 4.533
+distance: 1.940
+Node: wp06
+cost considered: 4.594
+distance: 2.043
+minimal cost: 4.533
+Next waypoint inside while: wp11
+Node: wp03
+cost considered: 5.000
+distance: 1.746
+Node: wp06
+cost considered: 4.594
+distance: 0.109
+Already visited: wp30
+Node: wp15
+cost considered: 3.669
+distance: 1.264
+Node: wp10
+cost considered: 3.935
+distance: 1.709
+Already visited: wp23
+minimal cost: 3.669
+Next waypoint inside while: wp15
+Node: wp00
+cost considered: 3.536
+distance: 0.744
+Node: wp06
+cost considered: 4.594
+distance: 1.256
+Node: wp10
+cost considered: 3.935
+distance: 0.645
+Already visited: wp11
+Node: wp12
+cost considered: 2.854
+distance: 0.916
+Node: wp21
+cost considered: 4.383
+distance: 1.297
+minimal cost: 2.854
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 3.536
+distance: 0.721
+Node: wp29
+cost considered: 2.323
+distance: 0.668
+Node: wp17
+cost considered: 2.724
+distance: 0.780
+Already visited: wp15
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Already visited: wp12
+Node: wp17
+cost considered: 2.724
+distance: 0.500
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
+Node: wp04
+cost considered: 0.000
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
+minimal cost: 0.000
+Next waypoint inside while: wp04
+PATHFINDER ACT-COST 9.971
+
+ACT-COST 4.008
+
+DUMMY 4.008
+
+ACT-COST 4.008
+
+DUMMY 4.008
+from_wp: wp04
+to_wp: wp05
+INSIDE HEURISTIC GBF
+
+Node: wp14
+cost considered: 2.546
+distance: 0.536
+Node: wp20
+cost considered: 2.452
+distance: 1.203
+Node: wp24
+cost considered: 2.964
+distance: 1.544
+Node: wp09
+cost considered: 2.775
+distance: 1.568
+minimal cost: 2.452
+Next waypoint inside while: wp20
+Node: wp04
+cost considered: 2.550
+distance: 1.203
+Node: wp08
+cost considered: 2.530
+distance: 0.661
+Node: wp09
+cost considered: 2.775
+distance: 0.428
+Node: wp14
+cost considered: 2.546
+distance: 0.688
+Node: wp24
+cost considered: 2.964
+distance: 0.540
+minimal cost: 2.530
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 2.775
+distance: 0.482
+Already visited: wp20
+Node: wp24
+cost considered: 2.964
+distance: 0.700
+Node: wp29
+cost considered: 2.128
+distance: 0.756
+minimal cost: 2.128
+Next waypoint inside while: wp29
+Already visited: wp08
+Node: wp12
+cost considered: 2.737
+distance: 0.668
+Node: wp17
+cost considered: 2.011
+distance: 0.500
+Node: wp18
+cost considered: 1.505
+distance: 1.001
+Node: wp25
+cost considered: 2.062
+distance: 1.065
+minimal cost: 1.505
+Next waypoint inside while: wp18
+Node: wp05
+cost considered: 0.000
+distance: 1.505
+Node: wp17
+cost considered: 2.011
+distance: 0.619
+Node: wp25
+cost considered: 2.062
+distance: 0.572
+Node: wp27
+cost considered: 0.944
+distance: 0.912
+Already visited: wp29
+Node: wp22
+cost considered: 1.081
+distance: 1.588
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 5.126
+
+ACT-COST 4.008
+
+DUMMY 4.008
+from_wp: wp04
+to_wp: wp00
+INSIDE HEURISTIC GBF
+
+Node: wp14
+cost considered: 3.069
+distance: 0.536
+Node: wp20
+cost considered: 2.396
+distance: 1.203
+Node: wp24
+cost considered: 2.393
+distance: 1.544
+Node: wp09
+cost considered: 2.210
+distance: 1.568
+minimal cost: 2.210
+Next waypoint inside while: wp09
+Node: wp04
+cost considered: 3.536
+distance: 1.568
+Node: wp08
+cost considered: 1.757
+distance: 0.482
+Node: wp24
+cost considered: 2.393
+distance: 0.228
+Node: wp20
+cost considered: 2.396
+distance: 0.428
+Node: wp14
+cost considered: 3.069
+distance: 1.032
+minimal cost: 1.757
+Next waypoint inside while: wp08
+Already visited: wp09
+Node: wp20
+cost considered: 2.396
+distance: 0.661
+Node: wp24
+cost considered: 2.393
+distance: 0.700
+Node: wp29
+cost considered: 1.235
+distance: 0.756
+minimal cost: 1.235
+Next waypoint inside while: wp29
+Already visited: wp08
+Node: wp12
+cost considered: 0.721
+distance: 0.668
+Node: wp17
+cost considered: 1.027
+distance: 0.500
+Node: wp18
+cost considered: 1.508
+distance: 1.001
+Node: wp25
+cost considered: 1.023
+distance: 1.065
+minimal cost: 0.721
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 0.000
+distance: 0.721
+Already visited: wp29
+Node: wp17
+cost considered: 1.027
+distance: 0.780
+Node: wp15
+cost considered: 0.744
+distance: 0.916
+minimal cost: 0.000
+Next waypoint inside while: wp00
+PATHFINDER ACT-COST 4.194
+
+ACT-COST 4.008
+
+DUMMY 4.008
+from_wp: wp04
+to_wp: wp01
+INSIDE HEURISTIC GBF
+
+Node: wp14
+cost considered: 6.599
+distance: 0.536
+Node: wp20
+cost considered: 5.919
+distance: 1.203
+Node: wp24
+cost considered: 5.837
+distance: 1.544
+Node: wp09
+cost considered: 5.684
+distance: 1.568
+minimal cost: 5.684
+Next waypoint inside while: wp09
+Node: wp04
+cost considered: 7.071
+distance: 1.568
+Node: wp08
+cost considered: 5.265
+distance: 0.482
+Node: wp24
+cost considered: 5.837
+distance: 0.228
+Node: wp20
+cost considered: 5.919
+distance: 0.428
+Node: wp14
+cost considered: 6.599
+distance: 1.032
+minimal cost: 5.265
+Next waypoint inside while: wp08
+Already visited: wp09
+Node: wp20
+cost considered: 5.919
+distance: 0.661
+Node: wp24
+cost considered: 5.837
+distance: 0.700
+Node: wp29
+cost considered: 4.760
+distance: 0.756
+minimal cost: 4.760
+Next waypoint inside while: wp29
+Already visited: wp08
+Node: wp12
+cost considered: 4.230
+distance: 0.668
+Node: wp17
+cost considered: 4.437
+distance: 0.500
+Node: wp18
+cost considered: 4.646
+distance: 1.001
+Node: wp25
+cost considered: 4.084
+distance: 1.065
+minimal cost: 4.084
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 4.437
+distance: 0.566
+Node: wp18
+cost considered: 4.646
+distance: 0.572
+Node: wp19
+cost considered: 4.321
+distance: 2.329
+Node: wp00
+cost considered: 3.536
+distance: 1.023
+Already visited: wp29
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.146
+distance: 0.439
+Node: wp12
+cost considered: 4.230
+distance: 0.721
+Node: wp15
+cost considered: 3.556
+distance: 0.744
+Node: wp21
+cost considered: 2.714
+distance: 0.888
+Already visited: wp25
+Node: wp26
+cost considered: 2.242
+distance: 1.351
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.146
+distance: 1.048
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
+Already visited: wp00
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
+Node: wp01
+cost considered: 0.000
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
+minimal cost: 0.000
+Next waypoint inside while: wp01
+PATHFINDER ACT-COST 8.840
+
+ACT-COST 4.008
+
+DUMMY 4.008
+from_wp: wp04
+to_wp: wp02
+INSIDE HEURISTIC GBF
+
+Node: wp14
+cost considered: 4.864
+distance: 0.536
+Node: wp20
+cost considered: 4.526
+distance: 1.203
+Node: wp24
+cost considered: 4.916
+distance: 1.544
+Node: wp09
+cost considered: 4.691
+distance: 1.568
+minimal cost: 4.526
+Next waypoint inside while: wp20
+Node: wp04
+cost considered: 5.000
+distance: 1.203
+Node: wp08
+cost considered: 4.272
+distance: 0.661
+Node: wp09
+cost considered: 4.691
+distance: 0.428
+Node: wp14
+cost considered: 4.864
+distance: 0.688
+Node: wp24
+cost considered: 4.916
+distance: 0.540
+minimal cost: 4.272
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 4.691
+distance: 0.482
+Already visited: wp20
+Node: wp24
+cost considered: 4.916
+distance: 0.700
+Node: wp29
+cost considered: 3.558
+distance: 0.756
+minimal cost: 3.558
+Next waypoint inside while: wp29
+Already visited: wp08
+Node: wp12
+cost considered: 3.809
+distance: 0.668
+Node: wp17
+cost considered: 3.111
+distance: 0.500
+Node: wp18
+cost considered: 2.563
+distance: 1.001
+Node: wp25
+cost considered: 2.651
+distance: 1.065
+minimal cost: 2.563
+Next waypoint inside while: wp18
+Node: wp05
+cost considered: 2.550
+distance: 1.505
+Node: wp17
+cost considered: 3.111
+distance: 0.619
+Node: wp25
+cost considered: 2.651
+distance: 0.572
+Node: wp27
+cost considered: 1.900
+distance: 0.912
+Already visited: wp29
+Node: wp22
+cost considered: 1.468
+distance: 1.588
+minimal cost: 1.468
+Next waypoint inside while: wp22
+Node: wp02
+cost considered: 0.000
+distance: 1.468
+Node: wp05
+cost considered: 2.550
+distance: 1.081
+Node: wp19
+cost considered: 0.679
+distance: 1.741
+Node: wp27
+cost considered: 1.900
+distance: 0.681
+Already visited: wp18
+minimal cost: 0.000
+Next waypoint inside while: wp02
+PATHFINDER ACT-COST 6.677
+
+ACT-COST 4.008
+
+DUMMY 4.008
+from_wp: wp04
+to_wp: wp03
+INSIDE HEURISTIC GBF
+
+Node: wp14
+cost considered: 4.492
+distance: 0.536
+Node: wp20
+cost considered: 3.999
+distance: 1.203
+Node: wp24
+cost considered: 3.505
+distance: 1.544
+Node: wp09
+cost considered: 3.572
+distance: 1.568
+minimal cost: 3.505
+Next waypoint inside while: wp24
+Node: wp04
+cost considered: 5.000
+distance: 1.544
+Node: wp08
+cost considered: 3.595
+distance: 0.700
+Node: wp09
+cost considered: 3.572
+distance: 0.228
+Node: wp14
+cost considered: 4.492
+distance: 1.012
+Node: wp20
+cost considered: 3.999
+distance: 0.540
+minimal cost: 3.572
+Next waypoint inside while: wp09
+Node: wp04
+cost considered: 5.000
+distance: 1.568
+Node: wp08
+cost considered: 3.595
+distance: 0.482
+Already visited: wp24
+Node: wp20
+cost considered: 3.999
+distance: 0.428
+Node: wp14
+cost considered: 4.492
+distance: 1.032
+minimal cost: 3.595
+Next waypoint inside while: wp08
+Already visited: wp09
+Node: wp20
+cost considered: 3.999
+distance: 0.661
+Already visited: wp24
+Node: wp29
+cost considered: 3.924
+distance: 0.756
+minimal cost: 3.924
+Next waypoint inside while: wp29
+Already visited: wp08
+Node: wp12
+cost considered: 3.395
+distance: 0.668
+Node: wp17
+cost considered: 4.175
+distance: 0.500
+Node: wp18
+cost considered: 4.794
+distance: 1.001
+Node: wp25
+cost considered: 4.480
+distance: 1.065
+minimal cost: 3.395
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 3.536
+distance: 0.721
+Already visited: wp29
+Node: wp17
+cost considered: 4.175
+distance: 0.780
+Node: wp15
+cost considered: 2.795
+distance: 0.916
+minimal cost: 2.795
+Next waypoint inside while: wp15
+Node: wp00
+cost considered: 3.536
+distance: 0.744
+Node: wp06
+cost considered: 1.831
+distance: 1.256
+Node: wp10
+cost considered: 3.367
+distance: 0.645
+Node: wp11
+cost considered: 1.746
+distance: 1.264
+Already visited: wp12
+Node: wp21
+cost considered: 3.922
+distance: 1.297
+minimal cost: 1.746
+Next waypoint inside while: wp11
+Node: wp03
+cost considered: 0.000
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
+Node: wp30
+cost considered: 1.359
+distance: 0.978
+Already visited: wp15
+Node: wp10
+cost considered: 3.367
+distance: 1.709
+Node: wp23
+cost considered: 0.676
+distance: 1.940
+minimal cost: 0.000
+Next waypoint inside while: wp03
+PATHFINDER ACT-COST 7.603
+
+ACT-COST 4.008
+
+DUMMY 4.008
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 3.100
+
+DUMMY 3.100
+
+ACT-COST 3.100
+
+DUMMY 3.100
+from_wp: wp05
+to_wp: wp01
+INSIDE HEURISTIC GBF
+
+Node: wp02
+cost considered: 5.000
+distance: 2.550
+Node: wp27
+cost considered: 5.141
+distance: 0.944
+Node: wp22
+cost considered: 5.486
+distance: 1.081
+Node: wp18
+cost considered: 4.646
+distance: 1.505
+Node: wp17
+cost considered: 4.437
+distance: 2.011
+minimal cost: 4.437
+Next waypoint inside while: wp17
+Node: wp05
+cost considered: 6.042
+distance: 2.011
+Node: wp12
+cost considered: 4.230
+distance: 0.780
+Node: wp29
+cost considered: 4.760
+distance: 0.500
+Node: wp25
+cost considered: 4.084
+distance: 0.566
+Node: wp18
+cost considered: 4.646
+distance: 0.619
+minimal cost: 4.084
+Next waypoint inside while: wp25
+Already visited: wp17
+Node: wp18
+cost considered: 4.646
+distance: 0.572
+Node: wp19
+cost considered: 4.321
+distance: 2.329
+Node: wp00
+cost considered: 3.536
+distance: 1.023
+Node: wp29
+cost considered: 4.760
+distance: 1.065
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.146
+distance: 0.439
+Node: wp12
+cost considered: 4.230
+distance: 0.721
+Node: wp15
+cost considered: 3.556
+distance: 0.744
+Node: wp21
+cost considered: 2.714
+distance: 0.888
+Already visited: wp25
+Node: wp26
+cost considered: 2.242
+distance: 1.351
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.146
+distance: 1.048
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
+Already visited: wp00
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
+Node: wp01
+cost considered: 0.000
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
+minimal cost: 0.000
+Next waypoint inside while: wp01
+PATHFINDER ACT-COST 7.546
+
+ACT-COST 3.100
+
+DUMMY 3.100
+from_wp: wp05
+to_wp: wp00
+INSIDE HEURISTIC GBF
+
+Node: wp02
+cost considered: 3.536
+distance: 2.550
+Node: wp27
+cost considered: 2.363
+distance: 0.944
+Node: wp22
+cost considered: 2.989
+distance: 1.081
+Node: wp18
+cost considered: 1.508
+distance: 1.505
+Node: wp17
+cost considered: 1.027
+distance: 2.011
+minimal cost: 1.027
+Next waypoint inside while: wp17
+Node: wp05
+cost considered: 3.000
+distance: 2.011
+Node: wp12
+cost considered: 0.721
+distance: 0.780
+Node: wp29
+cost considered: 1.235
+distance: 0.500
+Node: wp25
+cost considered: 1.023
+distance: 0.566
+Node: wp18
+cost considered: 1.508
+distance: 0.619
+minimal cost: 0.721
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 0.000
+distance: 0.721
+Node: wp29
+cost considered: 1.235
+distance: 0.668
+Already visited: wp17
+Node: wp15
+cost considered: 0.744
+distance: 0.916
+minimal cost: 0.000
+Next waypoint inside while: wp00
+PATHFINDER ACT-COST 3.512
+
+ACT-COST 3.100
+
+DUMMY 3.100
 from_wp: wp05
 to_wp: wp02
 INSIDE HEURISTIC GBF
 
-Node: wp15
-cost considered: 1.963
-distance: 0.835
-Node: wp09
-cost considered: 4.323
-distance: 1.883
-Node: wp22
-cost considered: 2.681
-distance: 1.884
-minimal cost: 1.963
-Next waypoint inside while: wp15
 Node: wp02
 cost considered: 0.000
-distance: 1.963
-Node: wp05
-cost considered: 2.550
-distance: 0.835
+distance: 2.550
+Node: wp27
+cost considered: 1.900
+distance: 0.944
 Node: wp22
-cost considered: 2.681
-distance: 1.285
-Node: wp20
-cost considered: 2.294
-distance: 1.817
+cost considered: 1.468
+distance: 1.081
+Node: wp18
+cost considered: 2.563
+distance: 1.505
+Node: wp17
+cost considered: 3.111
+distance: 2.011
 minimal cost: 0.000
 Next waypoint inside while: wp02
-PATHFINDER ACT-COST 2.798
+PATHFINDER ACT-COST 2.550
 
-ACT-COST 10.688
+ACT-COST 3.100
 
-DUMMY 10.688
+DUMMY 3.100
 from_wp: wp05
-to_wp: wp00
+to_wp: wp03
 INSIDE HEURISTIC GBF
 
-Node: wp15
-cost considered: 2.426
-distance: 0.835
-Node: wp09
-cost considered: 3.119
-distance: 1.883
+Node: wp02
+cost considered: 7.071
+distance: 2.550
+Node: wp27
+cost considered: 5.706
+distance: 0.944
 Node: wp22
-cost considered: 1.144
-distance: 1.884
-minimal cost: 1.144
-Next waypoint inside while: wp22
-Node: wp05
-cost considered: 3.000
-distance: 1.884
-Node: wp15
-cost considered: 2.426
-distance: 1.285
+cost considered: 6.381
+distance: 1.081
+Node: wp18
+cost considered: 4.794
+distance: 1.505
 Node: wp17
-cost considered: 0.587
-distance: 0.561
-Node: wp20
-cost considered: 1.316
-distance: 1.060
-minimal cost: 0.587
+cost considered: 4.175
+distance: 2.011
+minimal cost: 4.175
 Next waypoint inside while: wp17
-Already visited: wp22
-Node: wp00
-cost considered: 0.000
-distance: 0.587
-Node: wp21
-cost considered: 0.562
-distance: 0.907
-Node: wp23
-cost considered: 1.386
-distance: 1.123
-minimal cost: 0.000
-Next waypoint inside while: wp00
-PATHFINDER ACT-COST 3.031
-
-ACT-COST 10.688
-
-DUMMY 10.688
-from_wp: wp05
-to_wp: wp01
-INSIDE HEURISTIC GBF
-
-Node: wp15
-cost considered: 5.244
-distance: 0.835
-Node: wp09
-cost considered: 6.633
-distance: 1.883
-Node: wp22
-cost considered: 4.296
-distance: 1.884
-minimal cost: 4.296
-Next waypoint inside while: wp22
 Node: wp05
 cost considered: 6.042
-distance: 1.884
+distance: 2.011
+Node: wp12
+cost considered: 3.395
+distance: 0.780
+Node: wp29
+cost considered: 3.924
+distance: 0.500
+Node: wp25
+cost considered: 4.480
+distance: 0.566
+Node: wp18
+cost considered: 4.794
+distance: 0.619
+minimal cost: 3.395
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 3.536
+distance: 0.721
+Node: wp29
+cost considered: 3.924
+distance: 0.668
+Already visited: wp17
 Node: wp15
-cost considered: 5.244
-distance: 1.285
+cost considered: 2.795
+distance: 0.916
+minimal cost: 2.795
+Next waypoint inside while: wp15
+Node: wp00
+cost considered: 3.536
+distance: 0.744
+Node: wp06
+cost considered: 1.831
+distance: 1.256
+Node: wp10
+cost considered: 3.367
+distance: 0.645
+Node: wp11
+cost considered: 1.746
+distance: 1.264
+Already visited: wp12
+Node: wp21
+cost considered: 3.922
+distance: 1.297
+minimal cost: 1.746
+Next waypoint inside while: wp11
+Node: wp03
+cost considered: 0.000
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
+Node: wp30
+cost considered: 1.359
+distance: 0.978
+Already visited: wp15
+Node: wp10
+cost considered: 3.367
+distance: 1.709
+Node: wp23
+cost considered: 0.676
+distance: 1.940
+minimal cost: 0.000
+Next waypoint inside while: wp03
+PATHFINDER ACT-COST 6.717
+
+ACT-COST 3.100
+
+DUMMY 3.100
+from_wp: wp05
+to_wp: wp04
+INSIDE HEURISTIC GBF
+
+Node: wp02
+cost considered: 5.000
+distance: 2.550
+Node: wp27
+cost considered: 3.120
+distance: 0.944
+Node: wp22
+cost considered: 3.574
+distance: 1.081
+Node: wp18
+cost considered: 2.822
+distance: 1.505
 Node: wp17
-cost considered: 3.936
-distance: 0.561
+cost considered: 2.724
+distance: 2.011
+minimal cost: 2.724
+Next waypoint inside while: wp17
+Node: wp05
+cost considered: 2.550
+distance: 2.011
+Node: wp12
+cost considered: 2.854
+distance: 0.780
+Node: wp29
+cost considered: 2.323
+distance: 0.500
+Node: wp25
+cost considered: 3.227
+distance: 0.566
+Node: wp18
+cost considered: 2.822
+distance: 0.619
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Node: wp12
+cost considered: 2.854
+distance: 0.668
+Already visited: wp17
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.482
 Node: wp20
-cost considered: 3.430
-distance: 1.060
-minimal cost: 3.430
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
 Next waypoint inside while: wp20
-Node: wp08
-cost considered: 3.079
-distance: 0.490
+Node: wp04
+cost considered: 0.000
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
+minimal cost: 0.000
+Next waypoint inside while: wp04
+PATHFINDER ACT-COST 5.132
+
+ACT-COST 3.100
+
+DUMMY 3.100
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
+to_wp: wp05
+INSIDE HEURISTIC GBF
+
+Node: wp07
+cost considered: 5.455
+distance: 0.859
+Node: wp13
+cost considered: 5.306
+distance: 0.880
+Node: wp16
+cost considered: 4.859
+distance: 1.397
+Node: wp28
+cost considered: 5.466
+distance: 1.676
+minimal cost: 4.859
+Next waypoint inside while: wp16
+Node: wp01
+cost considered: 6.042
+distance: 1.397
+Node: wp07
+cost considered: 5.455
+distance: 0.613
+Node: wp13
+cost considered: 5.306
+distance: 1.214
+Node: wp28
+cost considered: 5.466
+distance: 0.933
+Node: wp26
+cost considered: 3.884
+distance: 0.976
+minimal cost: 3.884
+Next waypoint inside while: wp26
 Node: wp10
-cost considered: 4.318
-distance: 1.651
+cost considered: 3.418
+distance: 1.048
+Node: wp13
+cost considered: 5.306
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 3.477
+distance: 0.478
+Node: wp00
+cost considered: 3.000
+distance: 1.351
+Node: wp28
+cost considered: 5.466
+distance: 1.724
+minimal cost: 3.000
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.418
+distance: 0.439
 Node: wp12
-cost considered: 2.895
-distance: 0.546
+cost considered: 2.737
+distance: 0.721
 Node: wp15
-cost considered: 5.244
-distance: 1.817
-Already visited: wp22
-Node: wp24
-cost considered: 2.966
-distance: 0.513
-minimal cost: 2.895
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 2.054
-distance: 0.934
-Node: wp08
-cost considered: 3.079
-distance: 0.455
-Node: wp24
-cost considered: 2.966
-distance: 0.124
-Already visited: wp20
+cost considered: 3.598
+distance: 0.744
+Node: wp21
+cost considered: 3.477
+distance: 0.888
+Node: wp25
+cost considered: 2.062
+distance: 1.023
+Already visited: wp26
+minimal cost: 2.062
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 2.011
+distance: 0.566
+Node: wp18
+cost considered: 1.505
+distance: 0.572
 Node: wp19
-cost considered: 1.350
-distance: 1.627
-minimal cost: 1.350
+cost considered: 2.768
+distance: 2.329
+Already visited: wp00
+Node: wp29
+cost considered: 2.128
+distance: 1.065
+minimal cost: 1.505
+Next waypoint inside while: wp18
+Node: wp05
+cost considered: 0.000
+distance: 1.505
+Node: wp17
+cost considered: 2.011
+distance: 0.619
+Already visited: wp25
+Node: wp27
+cost considered: 0.944
+distance: 0.912
+Node: wp29
+cost considered: 2.128
+distance: 1.001
+Node: wp22
+cost considered: 1.081
+distance: 1.588
+minimal cost: 0.000
+Next waypoint inside while: wp05
+PATHFINDER ACT-COST 6.824
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
+to_wp: wp02
+INSIDE HEURISTIC GBF
+
+Node: wp07
+cost considered: 4.750
+distance: 0.859
+Node: wp13
+cost considered: 4.127
+distance: 0.880
+Node: wp16
+cost considered: 4.304
+distance: 1.397
+Node: wp28
+cost considered: 5.181
+distance: 1.676
+minimal cost: 4.127
+Next waypoint inside while: wp13
+Node: wp01
+cost considered: 5.000
+distance: 0.880
+Node: wp07
+cost considered: 4.750
+distance: 1.056
+Node: wp16
+cost considered: 4.304
+distance: 1.214
+Node: wp26
+cost considered: 3.483
+distance: 1.715
+minimal cost: 3.483
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.748
+distance: 1.048
+Already visited: wp13
+Node: wp16
+cost considered: 4.304
+distance: 0.976
+Node: wp21
+cost considered: 3.346
+distance: 0.478
+Node: wp00
+cost considered: 3.536
+distance: 1.351
+Node: wp28
+cost considered: 5.181
+distance: 1.724
+minimal cost: 3.346
+Next waypoint inside while: wp21
+Node: wp00
+cost considered: 3.536
+distance: 0.888
+Node: wp10
+cost considered: 3.748
+distance: 0.658
+Already visited: wp26
+Node: wp15
+cost considered: 4.277
+distance: 1.297
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.748
+distance: 0.439
+Node: wp12
+cost considered: 3.809
+distance: 0.721
+Node: wp15
+cost considered: 4.277
+distance: 0.744
+Already visited: wp21
+Node: wp25
+cost considered: 2.651
+distance: 1.023
+Already visited: wp26
+minimal cost: 2.651
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 3.111
+distance: 0.566
+Node: wp18
+cost considered: 2.563
+distance: 0.572
+Node: wp19
+cost considered: 0.679
+distance: 2.329
+Already visited: wp00
+Node: wp29
+cost considered: 3.558
+distance: 1.065
+minimal cost: 0.679
 Next waypoint inside while: wp19
+Node: wp02
+cost considered: 0.000
+distance: 0.679
+Node: wp22
+cost considered: 1.468
+distance: 1.741
+Node: wp27
+cost considered: 1.900
+distance: 1.948
+Already visited: wp25
+minimal cost: 0.000
+Next waypoint inside while: wp02
+PATHFINDER ACT-COST 7.992
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
+to_wp: wp00
+INSIDE HEURISTIC GBF
+
+Node: wp07
+cost considered: 2.768
+distance: 0.859
+Node: wp13
+cost considered: 3.066
+distance: 0.880
+Node: wp16
+cost considered: 2.160
+distance: 1.397
+Node: wp28
+cost considered: 2.542
+distance: 1.676
+minimal cost: 2.160
+Next waypoint inside while: wp16
+Node: wp01
+cost considered: 3.536
+distance: 1.397
+Node: wp07
+cost considered: 2.768
+distance: 0.613
+Node: wp13
+cost considered: 3.066
+distance: 1.214
+Node: wp28
+cost considered: 2.542
+distance: 0.933
+Node: wp26
+cost considered: 1.351
+distance: 0.976
+minimal cost: 1.351
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 0.439
+distance: 1.048
+Node: wp13
+cost considered: 3.066
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 0.888
+distance: 0.478
+Node: wp00
+cost considered: 0.000
+distance: 1.351
+Node: wp28
+cost considered: 2.542
+distance: 1.724
+minimal cost: 0.000
+Next waypoint inside while: wp00
+PATHFINDER ACT-COST 3.724
+
+ACT-COST 3.946
+
+DUMMY 3.946
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
+to_wp: wp03
+INSIDE HEURISTIC GBF
+
+Node: wp07
+cost considered: 4.214
+distance: 0.859
+Node: wp13
+cost considered: 5.174
+distance: 0.880
+Node: wp16
+cost considered: 3.976
+distance: 1.397
+Node: wp28
+cost considered: 3.328
+distance: 1.676
+minimal cost: 3.328
+Next waypoint inside while: wp28
+Node: wp01
+cost considered: 5.000
+distance: 1.676
+Node: wp07
+cost considered: 4.214
+distance: 0.903
+Node: wp16
+cost considered: 3.976
+distance: 0.933
+Node: wp26
+cost considered: 4.065
+distance: 1.724
+minimal cost: 3.976
+Next waypoint inside while: wp16
+Node: wp01
+cost considered: 5.000
+distance: 1.397
+Node: wp07
+cost considered: 4.214
+distance: 0.613
+Node: wp13
+cost considered: 5.174
+distance: 1.214
+Already visited: wp28
+Node: wp26
+cost considered: 4.065
+distance: 0.976
+minimal cost: 4.065
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.367
+distance: 1.048
+Node: wp13
+cost considered: 5.174
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 3.922
+distance: 0.478
+Node: wp00
+cost considered: 3.536
+distance: 1.351
+Already visited: wp28
+minimal cost: 3.367
+Next waypoint inside while: wp10
+Node: wp00
+cost considered: 3.536
+distance: 0.439
+Node: wp06
+cost considered: 1.831
+distance: 1.666
+Node: wp15
+cost considered: 2.795
+distance: 0.645
+Node: wp21
+cost considered: 3.922
+distance: 0.658
+Already visited: wp26
+Node: wp11
+cost considered: 1.746
+distance: 1.709
+minimal cost: 1.746
+Next waypoint inside while: wp11
+Node: wp03
+cost considered: 0.000
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
+Node: wp30
+cost considered: 1.359
+distance: 0.978
+Node: wp15
+cost considered: 2.795
+distance: 1.264
+Already visited: wp10
+Node: wp23
+cost considered: 0.676
+distance: 1.940
+minimal cost: 0.000
+Next waypoint inside while: wp03
+PATHFINDER ACT-COST 8.088
+
+ACT-COST 3.946
+
+DUMMY 3.946
+from_wp: wp01
+to_wp: wp04
+INSIDE HEURISTIC GBF
+
+Node: wp07
+cost considered: 6.292
+distance: 0.859
+Node: wp13
+cost considered: 6.560
+distance: 0.880
+Node: wp16
+cost considered: 5.690
+distance: 1.397
+Node: wp28
+cost considered: 5.925
+distance: 1.676
+minimal cost: 5.690
+Next waypoint inside while: wp16
+Node: wp01
+cost considered: 7.071
+distance: 1.397
+Node: wp07
+cost considered: 6.292
+distance: 0.613
+Node: wp13
+cost considered: 6.560
+distance: 1.214
+Node: wp28
+cost considered: 5.925
+distance: 0.933
+Node: wp26
+cost considered: 4.861
+distance: 0.976
+minimal cost: 4.861
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.935
+distance: 1.048
+Node: wp13
+cost considered: 6.560
+distance: 1.715
+Already visited: wp16
+Node: wp21
+cost considered: 4.383
+distance: 0.478
+Node: wp00
+cost considered: 3.536
+distance: 1.351
+Node: wp28
+cost considered: 5.925
+distance: 1.724
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.935
+distance: 0.439
+Node: wp12
+cost considered: 2.854
+distance: 0.721
+Node: wp15
+cost considered: 3.669
+distance: 0.744
+Node: wp21
+cost considered: 4.383
+distance: 0.888
+Node: wp25
+cost considered: 3.227
+distance: 1.023
+Already visited: wp26
+minimal cost: 2.854
+Next waypoint inside while: wp12
+Already visited: wp00
+Node: wp29
+cost considered: 2.323
+distance: 0.668
+Node: wp17
+cost considered: 2.724
+distance: 0.780
+Node: wp15
+cost considered: 3.669
+distance: 0.916
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Already visited: wp12
+Node: wp17
+cost considered: 2.724
+distance: 0.500
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
+Node: wp04
+cost considered: 0.000
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
+minimal cost: 0.000
+Next waypoint inside while: wp04
+PATHFINDER ACT-COST 7.732
+
+ACT-COST 10.770
+
+DUMMY 6.824
+b (4.000 | 200.002)
+ACT-COST 10.770
+
+DUMMY 10.770
+from_wp: wp05
+to_wp: wp02
+INSIDE HEURISTIC GBF
+
+Node: wp02
+cost considered: 0.000
+distance: 2.550
+Node: wp27
+cost considered: 1.900
+distance: 0.944
+Node: wp22
+cost considered: 1.468
+distance: 1.081
+Node: wp18
+cost considered: 2.563
+distance: 1.505
+Node: wp17
+cost considered: 3.111
+distance: 2.011
+minimal cost: 0.000
+Next waypoint inside while: wp02
+PATHFINDER ACT-COST 2.550
+
+ACT-COST 10.770
+
+DUMMY 10.770
+from_wp: wp05
+to_wp: wp00
+INSIDE HEURISTIC GBF
+
+Node: wp02
+cost considered: 3.536
+distance: 2.550
+Node: wp27
+cost considered: 2.363
+distance: 0.944
+Node: wp22
+cost considered: 2.989
+distance: 1.081
+Node: wp18
+cost considered: 1.508
+distance: 1.505
+Node: wp17
+cost considered: 1.027
+distance: 2.011
+minimal cost: 1.027
+Next waypoint inside while: wp17
+Node: wp05
+cost considered: 3.000
+distance: 2.011
+Node: wp12
+cost considered: 0.721
+distance: 0.780
+Node: wp29
+cost considered: 1.235
+distance: 0.500
+Node: wp25
+cost considered: 1.023
+distance: 0.566
+Node: wp18
+cost considered: 1.508
+distance: 0.619
+minimal cost: 0.721
+Next waypoint inside while: wp12
+Node: wp00
+cost considered: 0.000
+distance: 0.721
+Node: wp29
+cost considered: 1.235
+distance: 0.668
+Already visited: wp17
+Node: wp15
+cost considered: 0.744
+distance: 0.916
+minimal cost: 0.000
+Next waypoint inside while: wp00
+PATHFINDER ACT-COST 3.512
+
+ACT-COST 10.770
+
+DUMMY 10.770
+from_wp: wp05
+to_wp: wp01
+INSIDE HEURISTIC GBF
+
+Node: wp02
+cost considered: 5.000
+distance: 2.550
+Node: wp27
+cost considered: 5.141
+distance: 0.944
+Node: wp22
+cost considered: 5.486
+distance: 1.081
+Node: wp18
+cost considered: 4.646
+distance: 1.505
+Node: wp17
+cost considered: 4.437
+distance: 2.011
+minimal cost: 4.437
+Next waypoint inside while: wp17
+Node: wp05
+cost considered: 6.042
+distance: 2.011
+Node: wp12
+cost considered: 4.230
+distance: 0.780
+Node: wp29
+cost considered: 4.760
+distance: 0.500
+Node: wp25
+cost considered: 4.084
+distance: 0.566
+Node: wp18
+cost considered: 4.646
+distance: 0.619
+minimal cost: 4.084
+Next waypoint inside while: wp25
+Already visited: wp17
+Node: wp18
+cost considered: 4.646
+distance: 0.572
+Node: wp19
+cost considered: 4.321
+distance: 2.329
+Node: wp00
+cost considered: 3.536
+distance: 1.023
+Node: wp29
+cost considered: 4.760
+distance: 1.065
+minimal cost: 3.536
+Next waypoint inside while: wp00
+Node: wp10
+cost considered: 3.146
+distance: 0.439
+Node: wp12
+cost considered: 4.230
+distance: 0.721
+Node: wp15
+cost considered: 3.556
+distance: 0.744
+Node: wp21
+cost considered: 2.714
+distance: 0.888
+Already visited: wp25
+Node: wp26
+cost considered: 2.242
+distance: 1.351
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.146
+distance: 1.048
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
+Already visited: wp00
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
 Node: wp01
 cost considered: 0.000
-distance: 1.350
-Node: wp06
-cost considered: 2.054
-distance: 0.996
-Already visited: wp12
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
 minimal cost: 0.000
 Next waypoint inside while: wp01
-PATHFINDER ACT-COST 6.466
+PATHFINDER ACT-COST 7.546
 
-ACT-COST 10.688
+ACT-COST 10.770
 
-DUMMY 10.688
+DUMMY 10.770
 from_wp: wp05
 to_wp: wp03
 INSIDE HEURISTIC GBF
 
-Node: wp15
-cost considered: 5.737
-distance: 0.835
-Node: wp09
-cost considered: 5.076
-distance: 1.883
+Node: wp02
+cost considered: 7.071
+distance: 2.550
+Node: wp27
+cost considered: 5.706
+distance: 0.944
 Node: wp22
-cost considered: 4.520
-distance: 1.884
-minimal cost: 4.520
-Next waypoint inside while: wp22
+cost considered: 6.381
+distance: 1.081
+Node: wp18
+cost considered: 4.794
+distance: 1.505
+Node: wp17
+cost considered: 4.175
+distance: 2.011
+minimal cost: 4.175
+Next waypoint inside while: wp17
 Node: wp05
 cost considered: 6.042
-distance: 1.884
-Node: wp15
-cost considered: 5.737
-distance: 1.285
-Node: wp17
-cost considered: 4.005
-distance: 0.561
-Node: wp20
-cost considered: 4.817
-distance: 1.060
-minimal cost: 4.005
-Next waypoint inside while: wp17
-Already visited: wp22
+distance: 2.011
+Node: wp12
+cost considered: 3.395
+distance: 0.780
+Node: wp29
+cost considered: 3.924
+distance: 0.500
+Node: wp25
+cost considered: 4.480
+distance: 0.566
+Node: wp18
+cost considered: 4.794
+distance: 0.619
+minimal cost: 3.395
+Next waypoint inside while: wp12
 Node: wp00
 cost considered: 3.536
-distance: 0.587
-Node: wp21
-cost considered: 3.099
-distance: 0.907
-Node: wp23
-cost considered: 3.761
-distance: 1.123
-minimal cost: 3.099
-Next waypoint inside while: wp21
-Node: wp00
-cost considered: 3.536
-distance: 0.562
+distance: 0.721
+Node: wp29
+cost considered: 3.924
+distance: 0.668
 Already visited: wp17
-Node: wp26
-cost considered: 3.009
-distance: 0.138
-Node: wp27
-cost considered: 3.073
-distance: 0.414
-minimal cost: 3.009
-Next waypoint inside while: wp26
+Node: wp15
+cost considered: 2.795
+distance: 0.916
+minimal cost: 2.795
+Next waypoint inside while: wp15
 Node: wp00
 cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Already visited: wp21
-Node: wp27
-cost considered: 3.073
-distance: 0.310
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
+distance: 0.744
+Node: wp06
+cost considered: 1.831
+distance: 1.256
+Node: wp10
+cost considered: 3.367
+distance: 0.645
+Node: wp11
+cost considered: 1.746
+distance: 1.264
+Already visited: wp12
+Node: wp21
+cost considered: 3.922
+distance: 1.297
+minimal cost: 1.746
+Next waypoint inside while: wp11
 Node: wp03
 cost considered: 0.000
-distance: 1.809
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
 Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
+cost considered: 1.359
+distance: 0.978
+Already visited: wp15
+Node: wp10
+cost considered: 3.367
+distance: 1.709
+Node: wp23
+cost considered: 0.676
+distance: 1.940
 minimal cost: 0.000
 Next waypoint inside while: wp03
-PATHFINDER ACT-COST 6.617
+PATHFINDER ACT-COST 6.717
 
-ACT-COST 10.688
+ACT-COST 10.770
 
-DUMMY 10.688
+DUMMY 10.770
 from_wp: wp05
 to_wp: wp04
 INSIDE HEURISTIC GBF
 
-Node: wp15
-cost considered: 3.045
-distance: 0.835
-Node: wp09
-cost considered: 0.678
-distance: 1.883
+Node: wp02
+cost considered: 5.000
+distance: 2.550
+Node: wp27
+cost considered: 3.120
+distance: 0.944
 Node: wp22
-cost considered: 3.027
-distance: 1.884
-minimal cost: 0.678
-Next waypoint inside while: wp09
-Node: wp04
-cost considered: 0.000
-distance: 0.678
+cost considered: 3.574
+distance: 1.081
+Node: wp18
+cost considered: 2.822
+distance: 1.505
+Node: wp17
+cost considered: 2.724
+distance: 2.011
+minimal cost: 2.724
+Next waypoint inside while: wp17
 Node: wp05
 cost considered: 2.550
-distance: 1.883
-Node: wp23
-cost considered: 2.151
-distance: 1.777
+distance: 2.011
+Node: wp12
+cost considered: 2.854
+distance: 0.780
+Node: wp29
+cost considered: 2.323
+distance: 0.500
+Node: wp25
+cost considered: 3.227
+distance: 0.566
+Node: wp18
+cost considered: 2.822
+distance: 0.619
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Node: wp12
+cost considered: 2.854
+distance: 0.668
+Already visited: wp17
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
+Node: wp04
+cost considered: 0.000
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
 minimal cost: 0.000
 Next waypoint inside while: wp04
-PATHFINDER ACT-COST 2.560
+PATHFINDER ACT-COST 5.132
 
-ACT-COST 10.688
+ACT-COST 10.770
 
-DUMMY 10.688
+DUMMY 10.770
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 5.884
+DUMMY 7.992
 b (3.000 | 200.003)
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp05
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 2.601
-distance: 0.710
-Node: wp25
-cost considered: 2.979
-distance: 1.233
-Node: wp15
-cost considered: 0.835
-distance: 1.963
-minimal cost: 0.835
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 2.550
-distance: 1.963
+Node: wp19
+cost considered: 2.768
+distance: 0.679
+Node: wp22
+cost considered: 1.081
+distance: 1.468
+Node: wp27
+cost considered: 0.944
+distance: 1.900
 Node: wp05
 cost considered: 0.000
-distance: 0.835
-Node: wp22
-cost considered: 1.884
-distance: 1.285
-Node: wp20
-cost considered: 2.613
-distance: 1.817
+distance: 2.550
 minimal cost: 0.000
 Next waypoint inside while: wp05
-PATHFINDER ACT-COST 2.798
+PATHFINDER ACT-COST 2.550
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp00
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 2.941
-distance: 0.710
-Node: wp25
-cost considered: 2.737
-distance: 1.233
-Node: wp15
-cost considered: 2.426
-distance: 1.963
-minimal cost: 2.426
-Next waypoint inside while: wp15
+Node: wp19
+cost considered: 3.097
+distance: 0.679
+Node: wp22
+cost considered: 2.989
+distance: 1.468
+Node: wp27
+cost considered: 2.363
+distance: 1.900
+Node: wp05
+cost considered: 3.000
+distance: 2.550
+minimal cost: 2.363
+Next waypoint inside while: wp27
 Node: wp02
 cost considered: 3.536
-distance: 1.963
+distance: 1.900
 Node: wp05
 cost considered: 3.000
-distance: 0.835
+distance: 0.944
+Node: wp18
+cost considered: 1.508
+distance: 0.912
+Node: wp19
+cost considered: 3.097
+distance: 1.948
 Node: wp22
-cost considered: 1.144
-distance: 1.285
-Node: wp20
-cost considered: 1.316
-distance: 1.817
-minimal cost: 1.144
-Next waypoint inside while: wp22
+cost considered: 2.989
+distance: 0.681
+minimal cost: 1.508
+Next waypoint inside while: wp18
 Node: wp05
 cost considered: 3.000
-distance: 1.884
-Already visited: wp15
+distance: 1.505
 Node: wp17
-cost considered: 0.587
-distance: 0.561
-Node: wp20
-cost considered: 1.316
-distance: 1.060
-minimal cost: 0.587
-Next waypoint inside while: wp17
-Already visited: wp22
+cost considered: 1.027
+distance: 0.619
+Node: wp25
+cost considered: 1.023
+distance: 0.572
+Already visited: wp27
+Node: wp29
+cost considered: 1.235
+distance: 1.001
+Node: wp22
+cost considered: 2.989
+distance: 1.588
+minimal cost: 1.023
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 1.027
+distance: 0.566
+Already visited: wp18
+Node: wp19
+cost considered: 3.097
+distance: 2.329
 Node: wp00
 cost considered: 0.000
-distance: 0.587
-Node: wp21
-cost considered: 0.562
-distance: 0.907
-Node: wp23
-cost considered: 1.386
-distance: 1.123
+distance: 1.023
+Node: wp29
+cost considered: 1.235
+distance: 1.065
 minimal cost: 0.000
 Next waypoint inside while: wp00
-PATHFINDER ACT-COST 4.395
+PATHFINDER ACT-COST 4.408
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp01
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 4.318
-distance: 0.710
-Node: wp25
-cost considered: 3.770
-distance: 1.233
-Node: wp15
-cost considered: 5.244
-distance: 1.963
-minimal cost: 3.770
-Next waypoint inside while: wp25
+Node: wp19
+cost considered: 4.321
+distance: 0.679
+Node: wp22
+cost considered: 5.486
+distance: 1.468
+Node: wp27
+cost considered: 5.141
+distance: 1.900
+Node: wp05
+cost considered: 6.042
+distance: 2.550
+minimal cost: 4.321
+Next waypoint inside while: wp19
 Node: wp02
 cost considered: 5.000
-distance: 1.233
+distance: 0.679
+Node: wp22
+cost considered: 5.486
+distance: 1.741
+Node: wp27
+cost considered: 5.141
+distance: 1.948
+Node: wp25
+cost considered: 4.084
+distance: 2.329
+minimal cost: 4.084
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 4.437
+distance: 0.566
+Node: wp18
+cost considered: 4.646
+distance: 0.572
+Already visited: wp19
+Node: wp00
+cost considered: 3.536
+distance: 1.023
+Node: wp29
+cost considered: 4.760
+distance: 1.065
+minimal cost: 3.536
+Next waypoint inside while: wp00
 Node: wp10
-cost considered: 4.318
-distance: 0.556
-Node: wp24
-cost considered: 2.966
-distance: 1.329
-minimal cost: 2.966
-Next waypoint inside while: wp24
-Node: wp08
-cost considered: 3.079
-distance: 0.538
+cost considered: 3.146
+distance: 0.439
 Node: wp12
-cost considered: 2.895
-distance: 0.124
-Node: wp20
-cost considered: 3.430
-distance: 0.513
+cost considered: 4.230
+distance: 0.721
+Node: wp15
+cost considered: 3.556
+distance: 0.744
+Node: wp21
+cost considered: 2.714
+distance: 0.888
 Already visited: wp25
-minimal cost: 2.895
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 2.054
-distance: 0.934
-Node: wp08
-cost considered: 3.079
-distance: 0.455
-Already visited: wp24
-Node: wp20
-cost considered: 3.430
-distance: 0.546
-Node: wp19
-cost considered: 1.350
-distance: 1.627
-minimal cost: 1.350
-Next waypoint inside while: wp19
+Node: wp26
+cost considered: 2.242
+distance: 1.351
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.146
+distance: 1.048
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
+Already visited: wp00
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
 Node: wp01
 cost considered: 0.000
-distance: 1.350
-Node: wp06
-cost considered: 2.054
-distance: 0.996
-Already visited: wp12
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
 minimal cost: 0.000
 Next waypoint inside while: wp01
-PATHFINDER ACT-COST 5.663
+PATHFINDER ACT-COST 7.977
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp03
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 6.465
-distance: 0.710
-Node: wp25
-cost considered: 6.202
-distance: 1.233
-Node: wp15
-cost considered: 5.737
-distance: 1.963
-minimal cost: 5.737
-Next waypoint inside while: wp15
+Node: wp19
+cost considered: 6.612
+distance: 0.679
+Node: wp22
+cost considered: 6.381
+distance: 1.468
+Node: wp27
+cost considered: 5.706
+distance: 1.900
+Node: wp05
+cost considered: 6.042
+distance: 2.550
+minimal cost: 5.706
+Next waypoint inside while: wp27
 Node: wp02
 cost considered: 7.071
-distance: 1.963
+distance: 1.900
 Node: wp05
 cost considered: 6.042
-distance: 0.835
+distance: 0.944
+Node: wp18
+cost considered: 4.794
+distance: 0.912
+Node: wp19
+cost considered: 6.612
+distance: 1.948
 Node: wp22
-cost considered: 4.520
-distance: 1.285
-Node: wp20
-cost considered: 4.817
-distance: 1.817
-minimal cost: 4.520
-Next waypoint inside while: wp22
+cost considered: 6.381
+distance: 0.681
+minimal cost: 4.794
+Next waypoint inside while: wp18
 Node: wp05
 cost considered: 6.042
-distance: 1.884
-Already visited: wp15
+distance: 1.505
 Node: wp17
-cost considered: 4.005
-distance: 0.561
-Node: wp20
-cost considered: 4.817
-distance: 1.060
-minimal cost: 4.005
-Next waypoint inside while: wp17
-Already visited: wp22
+cost considered: 4.175
+distance: 0.619
+Node: wp25
+cost considered: 4.480
+distance: 0.572
+Already visited: wp27
+Node: wp29
+cost considered: 3.924
+distance: 1.001
+Node: wp22
+cost considered: 6.381
+distance: 1.588
+minimal cost: 3.924
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 3.595
+distance: 0.756
+Node: wp12
+cost considered: 3.395
+distance: 0.668
+Node: wp17
+cost considered: 4.175
+distance: 0.500
+Already visited: wp18
+Node: wp25
+cost considered: 4.480
+distance: 1.065
+minimal cost: 3.395
+Next waypoint inside while: wp12
 Node: wp00
 cost considered: 3.536
-distance: 0.587
+distance: 0.721
+Already visited: wp29
+Node: wp17
+cost considered: 4.175
+distance: 0.780
+Node: wp15
+cost considered: 2.795
+distance: 0.916
+minimal cost: 2.795
+Next waypoint inside while: wp15
+Node: wp00
+cost considered: 3.536
+distance: 0.744
+Node: wp06
+cost considered: 1.831
+distance: 1.256
+Node: wp10
+cost considered: 3.367
+distance: 0.645
+Node: wp11
+cost considered: 1.746
+distance: 1.264
+Already visited: wp12
 Node: wp21
-cost considered: 3.099
-distance: 0.907
-Node: wp23
-cost considered: 3.761
-distance: 1.123
-minimal cost: 3.099
-Next waypoint inside while: wp21
-Node: wp00
-cost considered: 3.536
-distance: 0.562
-Already visited: wp17
-Node: wp26
-cost considered: 3.009
-distance: 0.138
-Node: wp27
-cost considered: 3.073
-distance: 0.414
-minimal cost: 3.009
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Already visited: wp21
-Node: wp27
-cost considered: 3.073
-distance: 0.310
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
+cost considered: 3.922
+distance: 1.297
+minimal cost: 1.746
+Next waypoint inside while: wp11
 Node: wp03
 cost considered: 0.000
-distance: 1.809
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
 Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
+cost considered: 1.359
+distance: 0.978
+Already visited: wp15
+Node: wp10
+cost considered: 3.367
+distance: 1.709
+Node: wp23
+cost considered: 0.676
+distance: 1.940
 minimal cost: 0.000
 Next waypoint inside while: wp03
-PATHFINDER ACT-COST 7.981
+PATHFINDER ACT-COST 8.407
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp04
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 4.864
-distance: 0.710
-Node: wp25
-cost considered: 5.076
-distance: 1.233
-Node: wp15
-cost considered: 3.045
-distance: 1.963
-minimal cost: 3.045
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 5.000
-distance: 1.963
+Node: wp19
+cost considered: 5.051
+distance: 0.679
+Node: wp22
+cost considered: 3.574
+distance: 1.468
+Node: wp27
+cost considered: 3.120
+distance: 1.900
 Node: wp05
 cost considered: 2.550
-distance: 0.835
-Node: wp22
-cost considered: 3.027
-distance: 1.285
-Node: wp20
-cost considered: 4.086
-distance: 1.817
+distance: 2.550
 minimal cost: 2.550
 Next waypoint inside while: wp05
-Already visited: wp15
-Node: wp09
-cost considered: 0.678
-distance: 1.883
+Node: wp02
+cost considered: 5.000
+distance: 2.550
+Node: wp27
+cost considered: 3.120
+distance: 0.944
 Node: wp22
-cost considered: 3.027
-distance: 1.884
-minimal cost: 0.678
-Next waypoint inside while: wp09
+cost considered: 3.574
+distance: 1.081
+Node: wp18
+cost considered: 2.822
+distance: 1.505
+Node: wp17
+cost considered: 2.724
+distance: 2.011
+minimal cost: 2.724
+Next waypoint inside while: wp17
+Already visited: wp05
+Node: wp12
+cost considered: 2.854
+distance: 0.780
+Node: wp29
+cost considered: 2.323
+distance: 0.500
+Node: wp25
+cost considered: 3.227
+distance: 0.566
+Node: wp18
+cost considered: 2.822
+distance: 0.619
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Node: wp12
+cost considered: 2.854
+distance: 0.668
+Already visited: wp17
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
 Node: wp04
 cost considered: 0.000
-distance: 0.678
-Already visited: wp05
-Node: wp23
-cost considered: 2.151
-distance: 1.777
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
 minimal cost: 0.000
 Next waypoint inside while: wp04
-PATHFINDER ACT-COST 5.358
+PATHFINDER ACT-COST 7.681
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp05
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 2.601
-distance: 0.710
-Node: wp25
-cost considered: 2.979
-distance: 1.233
-Node: wp15
-cost considered: 0.835
-distance: 1.963
-minimal cost: 0.835
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 2.550
-distance: 1.963
+Node: wp19
+cost considered: 2.768
+distance: 0.679
+Node: wp22
+cost considered: 1.081
+distance: 1.468
+Node: wp27
+cost considered: 0.944
+distance: 1.900
 Node: wp05
 cost considered: 0.000
-distance: 0.835
-Node: wp22
-cost considered: 1.884
-distance: 1.285
-Node: wp20
-cost considered: 2.613
-distance: 1.817
+distance: 2.550
 minimal cost: 0.000
 Next waypoint inside while: wp05
-PATHFINDER ACT-COST 2.798
+PATHFINDER ACT-COST 2.550
 b (2.000 | 300.004)
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp00
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 2.941
-distance: 0.710
-Node: wp25
-cost considered: 2.737
-distance: 1.233
-Node: wp15
-cost considered: 2.426
-distance: 1.963
-minimal cost: 2.426
-Next waypoint inside while: wp15
+Node: wp19
+cost considered: 3.097
+distance: 0.679
+Node: wp22
+cost considered: 2.989
+distance: 1.468
+Node: wp27
+cost considered: 2.363
+distance: 1.900
+Node: wp05
+cost considered: 3.000
+distance: 2.550
+minimal cost: 2.363
+Next waypoint inside while: wp27
 Node: wp02
 cost considered: 3.536
-distance: 1.963
+distance: 1.900
 Node: wp05
 cost considered: 3.000
-distance: 0.835
+distance: 0.944
+Node: wp18
+cost considered: 1.508
+distance: 0.912
+Node: wp19
+cost considered: 3.097
+distance: 1.948
 Node: wp22
-cost considered: 1.144
-distance: 1.285
-Node: wp20
-cost considered: 1.316
-distance: 1.817
-minimal cost: 1.144
-Next waypoint inside while: wp22
+cost considered: 2.989
+distance: 0.681
+minimal cost: 1.508
+Next waypoint inside while: wp18
 Node: wp05
 cost considered: 3.000
-distance: 1.884
-Already visited: wp15
+distance: 1.505
 Node: wp17
-cost considered: 0.587
-distance: 0.561
-Node: wp20
-cost considered: 1.316
-distance: 1.060
-minimal cost: 0.587
-Next waypoint inside while: wp17
-Already visited: wp22
+cost considered: 1.027
+distance: 0.619
+Node: wp25
+cost considered: 1.023
+distance: 0.572
+Already visited: wp27
+Node: wp29
+cost considered: 1.235
+distance: 1.001
+Node: wp22
+cost considered: 2.989
+distance: 1.588
+minimal cost: 1.023
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 1.027
+distance: 0.566
+Already visited: wp18
+Node: wp19
+cost considered: 3.097
+distance: 2.329
 Node: wp00
 cost considered: 0.000
-distance: 0.587
-Node: wp21
-cost considered: 0.562
-distance: 0.907
-Node: wp23
-cost considered: 1.386
-distance: 1.123
+distance: 1.023
+Node: wp29
+cost considered: 1.235
+distance: 1.065
 minimal cost: 0.000
 Next waypoint inside while: wp00
-PATHFINDER ACT-COST 4.395
+PATHFINDER ACT-COST 4.408
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp01
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 4.318
-distance: 0.710
-Node: wp25
-cost considered: 3.770
-distance: 1.233
-Node: wp15
-cost considered: 5.244
-distance: 1.963
-minimal cost: 3.770
-Next waypoint inside while: wp25
+Node: wp19
+cost considered: 4.321
+distance: 0.679
+Node: wp22
+cost considered: 5.486
+distance: 1.468
+Node: wp27
+cost considered: 5.141
+distance: 1.900
+Node: wp05
+cost considered: 6.042
+distance: 2.550
+minimal cost: 4.321
+Next waypoint inside while: wp19
 Node: wp02
 cost considered: 5.000
-distance: 1.233
+distance: 0.679
+Node: wp22
+cost considered: 5.486
+distance: 1.741
+Node: wp27
+cost considered: 5.141
+distance: 1.948
+Node: wp25
+cost considered: 4.084
+distance: 2.329
+minimal cost: 4.084
+Next waypoint inside while: wp25
+Node: wp17
+cost considered: 4.437
+distance: 0.566
+Node: wp18
+cost considered: 4.646
+distance: 0.572
+Already visited: wp19
+Node: wp00
+cost considered: 3.536
+distance: 1.023
+Node: wp29
+cost considered: 4.760
+distance: 1.065
+minimal cost: 3.536
+Next waypoint inside while: wp00
 Node: wp10
-cost considered: 4.318
-distance: 0.556
-Node: wp24
-cost considered: 2.966
-distance: 1.329
-minimal cost: 2.966
-Next waypoint inside while: wp24
-Node: wp08
-cost considered: 3.079
-distance: 0.538
+cost considered: 3.146
+distance: 0.439
 Node: wp12
-cost considered: 2.895
-distance: 0.124
-Node: wp20
-cost considered: 3.430
-distance: 0.513
+cost considered: 4.230
+distance: 0.721
+Node: wp15
+cost considered: 3.556
+distance: 0.744
+Node: wp21
+cost considered: 2.714
+distance: 0.888
 Already visited: wp25
-minimal cost: 2.895
-Next waypoint inside while: wp12
-Node: wp06
-cost considered: 2.054
-distance: 0.934
-Node: wp08
-cost considered: 3.079
-distance: 0.455
-Already visited: wp24
-Node: wp20
-cost considered: 3.430
-distance: 0.546
-Node: wp19
-cost considered: 1.350
-distance: 1.627
-minimal cost: 1.350
-Next waypoint inside while: wp19
+Node: wp26
+cost considered: 2.242
+distance: 1.351
+minimal cost: 2.242
+Next waypoint inside while: wp26
+Node: wp10
+cost considered: 3.146
+distance: 1.048
+Node: wp13
+cost considered: 0.880
+distance: 1.715
+Node: wp16
+cost considered: 1.397
+distance: 0.976
+Node: wp21
+cost considered: 2.714
+distance: 0.478
+Already visited: wp00
+Node: wp28
+cost considered: 1.676
+distance: 1.724
+minimal cost: 0.880
+Next waypoint inside while: wp13
 Node: wp01
 cost considered: 0.000
-distance: 1.350
-Node: wp06
-cost considered: 2.054
-distance: 0.996
-Already visited: wp12
+distance: 0.880
+Node: wp07
+cost considered: 0.859
+distance: 1.056
+Node: wp16
+cost considered: 1.397
+distance: 1.214
+Already visited: wp26
 minimal cost: 0.000
 Next waypoint inside while: wp01
-PATHFINDER ACT-COST 5.663
+PATHFINDER ACT-COST 7.977
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp03
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 6.465
-distance: 0.710
-Node: wp25
-cost considered: 6.202
-distance: 1.233
-Node: wp15
-cost considered: 5.737
-distance: 1.963
-minimal cost: 5.737
-Next waypoint inside while: wp15
+Node: wp19
+cost considered: 6.612
+distance: 0.679
+Node: wp22
+cost considered: 6.381
+distance: 1.468
+Node: wp27
+cost considered: 5.706
+distance: 1.900
+Node: wp05
+cost considered: 6.042
+distance: 2.550
+minimal cost: 5.706
+Next waypoint inside while: wp27
 Node: wp02
 cost considered: 7.071
-distance: 1.963
+distance: 1.900
 Node: wp05
 cost considered: 6.042
-distance: 0.835
+distance: 0.944
+Node: wp18
+cost considered: 4.794
+distance: 0.912
+Node: wp19
+cost considered: 6.612
+distance: 1.948
 Node: wp22
-cost considered: 4.520
-distance: 1.285
-Node: wp20
-cost considered: 4.817
-distance: 1.817
-minimal cost: 4.520
-Next waypoint inside while: wp22
+cost considered: 6.381
+distance: 0.681
+minimal cost: 4.794
+Next waypoint inside while: wp18
 Node: wp05
 cost considered: 6.042
-distance: 1.884
-Already visited: wp15
+distance: 1.505
 Node: wp17
-cost considered: 4.005
-distance: 0.561
-Node: wp20
-cost considered: 4.817
-distance: 1.060
-minimal cost: 4.005
-Next waypoint inside while: wp17
-Already visited: wp22
+cost considered: 4.175
+distance: 0.619
+Node: wp25
+cost considered: 4.480
+distance: 0.572
+Already visited: wp27
+Node: wp29
+cost considered: 3.924
+distance: 1.001
+Node: wp22
+cost considered: 6.381
+distance: 1.588
+minimal cost: 3.924
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 3.595
+distance: 0.756
+Node: wp12
+cost considered: 3.395
+distance: 0.668
+Node: wp17
+cost considered: 4.175
+distance: 0.500
+Already visited: wp18
+Node: wp25
+cost considered: 4.480
+distance: 1.065
+minimal cost: 3.395
+Next waypoint inside while: wp12
 Node: wp00
 cost considered: 3.536
-distance: 0.587
+distance: 0.721
+Already visited: wp29
+Node: wp17
+cost considered: 4.175
+distance: 0.780
+Node: wp15
+cost considered: 2.795
+distance: 0.916
+minimal cost: 2.795
+Next waypoint inside while: wp15
+Node: wp00
+cost considered: 3.536
+distance: 0.744
+Node: wp06
+cost considered: 1.831
+distance: 1.256
+Node: wp10
+cost considered: 3.367
+distance: 0.645
+Node: wp11
+cost considered: 1.746
+distance: 1.264
+Already visited: wp12
 Node: wp21
-cost considered: 3.099
-distance: 0.907
-Node: wp23
-cost considered: 3.761
-distance: 1.123
-minimal cost: 3.099
-Next waypoint inside while: wp21
-Node: wp00
-cost considered: 3.536
-distance: 0.562
-Already visited: wp17
-Node: wp26
-cost considered: 3.009
-distance: 0.138
-Node: wp27
-cost considered: 3.073
-distance: 0.414
-minimal cost: 3.009
-Next waypoint inside while: wp26
-Node: wp00
-cost considered: 3.536
-distance: 0.578
-Node: wp13
-cost considered: 1.809
-distance: 1.319
-Already visited: wp21
-Node: wp27
-cost considered: 3.073
-distance: 0.310
-Node: wp30
-cost considered: 1.913
-distance: 1.129
-minimal cost: 1.809
-Next waypoint inside while: wp13
+cost considered: 3.922
+distance: 1.297
+minimal cost: 1.746
+Next waypoint inside while: wp11
 Node: wp03
 cost considered: 0.000
-distance: 1.809
+distance: 1.746
+Node: wp06
+cost considered: 1.831
+distance: 0.109
 Node: wp30
-cost considered: 1.913
-distance: 0.248
-Node: wp28
-cost considered: 2.576
-distance: 1.016
-Already visited: wp26
-Node: wp29
-cost considered: 2.709
-distance: 1.699
+cost considered: 1.359
+distance: 0.978
+Already visited: wp15
+Node: wp10
+cost considered: 3.367
+distance: 1.709
+Node: wp23
+cost considered: 0.676
+distance: 1.940
 minimal cost: 0.000
 Next waypoint inside while: wp03
-PATHFINDER ACT-COST 7.981
+PATHFINDER ACT-COST 8.407
 
-ACT-COST 10.397
+ACT-COST 11.938
 
-DUMMY 10.397
+DUMMY 11.938
 from_wp: wp02
 to_wp: wp04
 INSIDE HEURISTIC GBF
 
-Node: wp10
-cost considered: 4.864
-distance: 0.710
-Node: wp25
-cost considered: 5.076
-distance: 1.233
-Node: wp15
-cost considered: 3.045
-distance: 1.963
-minimal cost: 3.045
-Next waypoint inside while: wp15
-Node: wp02
-cost considered: 5.000
-distance: 1.963
+Node: wp19
+cost considered: 5.051
+distance: 0.679
+Node: wp22
+cost considered: 3.574
+distance: 1.468
+Node: wp27
+cost considered: 3.120
+distance: 1.900
 Node: wp05
 cost considered: 2.550
-distance: 0.835
-Node: wp22
-cost considered: 3.027
-distance: 1.285
-Node: wp20
-cost considered: 4.086
-distance: 1.817
+distance: 2.550
 minimal cost: 2.550
 Next waypoint inside while: wp05
-Already visited: wp15
-Node: wp09
-cost considered: 0.678
-distance: 1.883
+Node: wp02
+cost considered: 5.000
+distance: 2.550
+Node: wp27
+cost considered: 3.120
+distance: 0.944
 Node: wp22
-cost considered: 3.027
-distance: 1.884
-minimal cost: 0.678
-Next waypoint inside while: wp09
+cost considered: 3.574
+distance: 1.081
+Node: wp18
+cost considered: 2.822
+distance: 1.505
+Node: wp17
+cost considered: 2.724
+distance: 2.011
+minimal cost: 2.724
+Next waypoint inside while: wp17
+Already visited: wp05
+Node: wp12
+cost considered: 2.854
+distance: 0.780
+Node: wp29
+cost considered: 2.323
+distance: 0.500
+Node: wp25
+cost considered: 3.227
+distance: 0.566
+Node: wp18
+cost considered: 2.822
+distance: 0.619
+minimal cost: 2.323
+Next waypoint inside while: wp29
+Node: wp08
+cost considered: 1.858
+distance: 0.756
+Node: wp12
+cost considered: 2.854
+distance: 0.668
+Already visited: wp17
+Node: wp18
+cost considered: 2.822
+distance: 1.001
+Node: wp25
+cost considered: 3.227
+distance: 1.065
+minimal cost: 1.858
+Next waypoint inside while: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.482
+Node: wp20
+cost considered: 1.203
+distance: 0.661
+Node: wp24
+cost considered: 1.544
+distance: 0.700
+Already visited: wp29
+minimal cost: 1.203
+Next waypoint inside while: wp20
 Node: wp04
 cost considered: 0.000
-distance: 0.678
-Already visited: wp05
-Node: wp23
-cost considered: 2.151
-distance: 1.777
+distance: 1.203
+Already visited: wp08
+Node: wp09
+cost considered: 1.568
+distance: 0.428
+Node: wp14
+cost considered: 0.536
+distance: 0.688
+Node: wp24
+cost considered: 1.544
+distance: 0.540
 minimal cost: 0.000
 Next waypoint inside while: wp04
-PATHFINDER ACT-COST 5.358
+PATHFINDER ACT-COST 7.681
 
-ACT-COST 13.195
+ACT-COST 14.488
 
-DUMMY 2.798
+DUMMY 2.550
 b (1.000 | 300.004);;;; Solution Found
 ; States evaluated: 75
-; Cost: 13.195
-; External Solver: 0.020
-; Time 0.04
+; Cost: 14.488
+; External Solver: 0.040
+; Time 0.07
 0.000: (goto_region r2d2 r0 r1)  [100.000]
 100.001: (collect r2d2 r1)  [0.001]
 100.002: (goto_region r2d2 r1 r2)  [100.000]
