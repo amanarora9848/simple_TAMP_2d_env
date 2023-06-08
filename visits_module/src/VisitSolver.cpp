@@ -242,12 +242,12 @@ void VisitSolver::parseParameters(string parameters)
 	}
 }
 
-double VisitSolver::calculateExtern(double external, double total_cost)
-{
-	// float random1 = static_cast <float> (rand())/static_cast <float>(RAND_MAX);
-	double cost = 5; // random1;
-	return cost;
-}
+// double VisitSolver::calculateExtern(double external, double total_cost)
+// {
+// 	// float random1 = static_cast <float> (rand())/static_cast <float>(RAND_MAX);
+// 	double cost = 5; // random1;
+// 	return cost;
+// }
 
 void VisitSolver::parseRegion(string region_file)
 {
@@ -420,6 +420,11 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 {
 
 	// Calculate heuristics for every waypoint
+	
+	if (from_region == to_region)
+	{
+		return 0;
+	}
 
 	string from_wp = region_mapping[from_region][0];
 	std::cout << "from_wp: " << from_wp << endl;
