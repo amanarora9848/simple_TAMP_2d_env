@@ -2,7 +2,7 @@ import numpy as np
 
 k = 3
 n = 24      # Can be a maximum of 2 digits (<100) otherwise parsing breaks
-keep_waypoints = True
+keep_waypoints = False
 random_waypoints = True
 
 nodes = {

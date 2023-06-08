@@ -75,57 +75,6 @@ void VisitSolver::loadSolver(string *parameters, int n)
 
 	string connections_file = "../waypoint_gen/graph.txt";
 	parseConnections(connections_file);
-
-	std::cout << "\n Waypoints Map: \n"
-			  << endl;
-	for (auto it = waypoint.begin(); it != waypoint.end(); ++it)
-	{
-		std::cout << it->first << " ";
-		for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2)
-		{
-			std::cout << *it2 << " ";
-		}
-		std::cout << endl;
-	}
-
-	std::cout << "\n Regions Map: \n"
-			  << endl;
-	for (auto it = region_mapping.begin(); it != region_mapping.end(); ++it)
-	{
-		std::cout << it->first << " ";
-		for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2)
-		{
-			std::cout << *it2 << " ";
-		}
-		std::cout << endl;
-	}
-
-	std::cout << " \n Connections Map: \n"
-			  << endl;
-	for (auto it = connection.begin(); it != connection.end(); ++it)
-	{
-		std::cout << it->first << " ";
-		for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2)
-		{
-			std::cout << *it2 << " ";
-		}
-		std::cout << endl;
-	}
-
-	// inverse_tracking(region_mapping["r1"][0]);
-
-	// std::cout << "\n Cost Map: \n"
-	// 		  << endl;
-	// for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
-	// {
-	// 	std::cout << it->first << " ";
-	// 	std::cout << it->second << endl;
-	// }
-
-	// startEKF();
-
-	std::cout << "\n\n Parse test: " << region_mapping["r2"][0] << " " << waypoint[region_mapping["r2"][0]][0] << " " << waypoint[region_mapping["r2"][0]][1] << endl
-			  << endl;
 }
 
 map<string, double> VisitSolver::callExternalSolver(map<string, double> initialState, bool isHeuristic)
@@ -168,7 +117,7 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 					string from = tmp.substr(0, 2);
 					string to = tmp.substr(3, 2);
 
-					act_cost = pathfinder(from, to, "astar");
+					act_cost = pathfinder(from, to, "gbfs");
 					cout << "PATHFINDER ACT-COST " << act_cost << endl;
 				}
 			}
@@ -258,7 +207,6 @@ void VisitSolver::parseRegion(string region_file)
 	{
 		while (getline(regionsFile, line))
 		{
-			// A line looks like "r4 wp4"
 			int curr = line.find(" ");
 			string region_name = line.substr(0, curr);
 			string waypoint_name = line.substr(curr + 1, line.length());
@@ -307,13 +255,10 @@ void VisitSolver::parseConnections(string connections_file)
 	{
 		while (getline(connectionsFile, line))
 		{
-			// A line would look like wp0,wp3,wp4... an so on
-			// Set the map "connection" key to first waypoint and value list to the rest of the waypoints
 			int curr = line.find(",");
 			string waypoint_name = line.substr(0, curr);
 			std::cout << "Current waypoint: " << waypoint_name << endl;
 			string rest_waypoints = line.substr(curr + 1, line.length());
-			// Split the rest_waypoints string by comma and store in a vector
 			vector<string> rest_waypoints_list;
 			stringstream ss(rest_waypoints);
 			while (ss.good())
@@ -420,7 +365,7 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 {
 
 	// Calculate heuristics for every waypoint
-	
+
 	if (from_region == to_region)
 	{
 		return 0;
@@ -449,15 +394,7 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 	else
 		inverse_tracking(to_wp);
 
-	// std::cout << "\n Cost Map: \n"
-	// 		  << endl;
-	// for (auto it = cost_map.begin(); it != cost_map.end(); ++it)
-	// {
-	// 	std::cout << it->first << " ";
-	// 	std::cout << it->second << endl;
-	// }
-
-	// map<std::string, float> alreadyVisited;
+	map<std::string, float> alreadyVisited;
 
 	if (pathFile.is_open())
 	{
@@ -468,8 +405,8 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 			float min_cost = 1000000.0;
 			for (const std::string &w : connection.at(curr_wp))
 			{
-				// if (alreadyVisited.count(w) == 0)
-				// {
+				if (alreadyVisited.count(w) == 0)
+				{
 					float cost;
 					if ((algo != "gbfs") && (curr_wp == from_wp))
 					{
@@ -487,11 +424,12 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 						min_cost = cost;
 						next_wp = w;
 					}
-				// }
+				}
 
-				// else {
-				// 	cout << "Already visited: " << w << endl;
-				// }
+				else
+				{
+					cout << "Already visited: " << w << endl;
+				}
 			}
 			cout << "minimal cost: " << min_cost << endl;
 
@@ -503,10 +441,8 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 			{
 				total_cost += distance_euc(curr_wp, next_wp);
 			}
-			// cout << "Cost: " << cost << endl;
-			// Update the current waypoint
 			curr_wp = next_wp;
-			// alreadyVisited[curr_wp] = 1.0;
+			alreadyVisited[curr_wp] = 1.0;
 		}
 	}
 
