@@ -98,8 +98,9 @@ if showPath:
                 if w1 == f"wp0{path[i][1]}" and (draw[-1] == aux[0] or aux[0] in graph[draw[-1]]):
                     draw += aux
                     i += 1
-                aux = []
                 w1 = f.readline().strip()
+                if w1 in regions:
+                    aux = []
                 aux.append(w1)
 
         x = []
