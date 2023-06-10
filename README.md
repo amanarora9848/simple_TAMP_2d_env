@@ -39,4 +39,4 @@ More details are included in the attached report.
 
     This generates the planner output in the file `waypoint_gen/output.txt`, prints the motion costs on the terminal, and finally displays a map which shows the path the robot follows.
 
-6. Note that to keep generating new set of waypoints everytime, it is necessary to set the variable `keep_waypoints` to `False` and `random_waypoints` to `True` in the file waypoint_gen/waypoints_gen.py`
+6. Note that to keep generating new set of waypoints everytime, it is necessary to set the variable `keep_waypoints` to `False` and `random_waypoints` to `True` in the file `waypoint_gen/waypoints_gen.py`
