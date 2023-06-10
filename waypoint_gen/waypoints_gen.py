@@ -1,6 +1,6 @@
 import numpy as np
 
-k = 4
+k = 3
 n = 24      # n+6 must have a maximum of 2 digits (n < 94) otherwise parsing breaks
 keep_waypoints = False
 random_waypoints = True
@@ -119,7 +119,7 @@ with open("graph.txt", "w+") as f:
         f.write(msg + "\n")
 
 
-def heuristicA(goal_w: str):
+def inverse_tracking(goal_w: str):
     cost_map = {goal_w: [0, None]}
     explore = [goal_w]
     while len(explore) > 0:
@@ -133,7 +133,7 @@ def heuristicA(goal_w: str):
 
 
 def pathfollower(from_w: str, to_w: str, app: bool = False):
-    cost_map = heuristicA(to_w)
+    cost_map = inverse_tracking(to_w)
     mode = "a" if app else "w+"
     with open("expected_path.txt", mode) as f:
         f.write(f"{from_w}\n")

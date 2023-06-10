@@ -118,7 +118,7 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 					string to = tmp.substr(3, 2);
 
 					// act_cost = pathfinder(from, to, "gbfs");
-					act_cost = dynamic_pathfinder(from, to, "astar");
+					act_cost = dynamic_pathfinder(from, to, "gbfs");
 					cout << "PATHFINDER ACT-COST " << act_cost << endl;
 				}
 			}
@@ -337,30 +337,31 @@ void VisitSolver::heuristic_gbf(string goal_wp)
 	}
 }
 
-void VisitSolver::inverse_tracking(string goal_wp)
-{
+// Not working properly, need to update from the one in waypoints_gen.py
+// void VisitSolver::inverse_tracking(string goal_wp)
+// {
 
-	cost_map.clear();
-	cost_map[goal_wp] = 0;
-	std::vector<std::string> explore{goal_wp};
+// 	cost_map.clear();
+// 	cost_map[goal_wp] = 0;
+// 	std::vector<std::string> explore{goal_wp};
 
-	while (!explore.empty())
-	{
-		std::string x = explore.back();
-		explore.pop_back();
+// 	while (!explore.empty())
+// 	{
+// 		std::string x = explore.back();
+// 		explore.pop_back();
 
-		for (const std::string &w : connection.at(x))
-		{
-			float cost = cost_map[x] + distance_euc(w, x);
+// 		for (const std::string &w : connection.at(x))
+// 		{
+// 			float cost = cost_map[x] + distance_euc(w, x);
 
-			if (cost_map.find(w) == cost_map.end() || cost_map[w] > cost)
-			{
-				cost_map[w] = cost;
-				explore.push_back(w);
-			}
-		}
-	}
-}
+// 			if (cost_map.find(w) == cost_map.end() || cost_map[w] > cost)
+// 			{
+// 				cost_map[w] = cost;
+// 				explore.push_back(w);
+// 			}
+// 		}
+// 	}
+// }
 
 float VisitSolver::dynamic_pathfinder(string from_region, string to_region, string algo){
 	

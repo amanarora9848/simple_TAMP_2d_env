@@ -1,65 +1,65 @@
 Current waypoint: wp00
-wp15 wp07 wp06 wp11 
-Current waypoint: wp15
-wp00 wp06 wp07 wp11 
-Current waypoint: wp07
-wp00 wp06 wp15 wp30 wp10 
-Current waypoint: wp06
-wp00 wp01 wp07 wp15 wp24 wp10 wp12 wp22 wp30 
-Current waypoint: wp11
-wp00 wp14 wp27 wp15 wp16 
-Current waypoint: wp01
-wp22 wp12 wp24 wp06 
-Current waypoint: wp22
-wp01 wp12 wp24 wp06 
-Current waypoint: wp12
-wp01 wp24 wp22 wp06 
-Current waypoint: wp24
-wp01 wp06 wp12 wp22 
-Current waypoint: wp02
-wp09 wp29 wp13 wp20 wp21 
-Current waypoint: wp09
-wp02 wp29 wp20 wp13 
-Current waypoint: wp29
-wp02 wp05 wp09 wp20 wp13 
-Current waypoint: wp13
-wp02 wp09 wp16 wp21 wp14 wp29 
-Current waypoint: wp20
-wp02 wp05 wp09 wp17 wp29 wp27 wp28 
-Current waypoint: wp03
-wp25 wp19 wp23 wp18 
-Current waypoint: wp25
-wp03 wp08 wp18 wp19 wp23 
-Current waypoint: wp19
-wp03 wp18 wp25 wp23 
-Current waypoint: wp23
-wp03 wp18 wp19 wp25 
-Current waypoint: wp18
-wp03 wp08 wp23 wp19 wp25 
-Current waypoint: wp04
-wp26 wp28 wp05 wp17 
-Current waypoint: wp26
-wp04 wp28 wp17 wp05 
-Current waypoint: wp28
-wp04 wp05 wp17 wp26 wp20 
-Current waypoint: wp05
-wp04 wp28 wp17 wp20 wp29 wp26 
-Current waypoint: wp17
-wp04 wp05 wp20 wp28 wp27 wp26 
-Current waypoint: wp30
-wp07 wp08 wp10 wp06 
-Current waypoint: wp08
-wp30 wp10 wp25 wp18 
-Current waypoint: wp10
-wp08 wp30 wp07 wp06 
-Current waypoint: wp14
-wp11 wp13 wp16 wp27 wp21 
+wp27 wp20 wp16 wp15 
 Current waypoint: wp27
-wp11 wp14 wp17 wp20 
+wp00 wp10 wp16 
+Current waypoint: wp20
+wp00 wp12 wp17 wp25 
 Current waypoint: wp16
-wp13 wp14 wp21 wp11 
+wp00 wp06 wp07 wp10 wp27 
+Current waypoint: wp01
+wp30 wp13 wp14 
+Current waypoint: wp30
+wp01 wp13 wp06 
+Current waypoint: wp13
+wp01 wp07 wp14 wp30 
+Current waypoint: wp14
+wp01 wp07 wp13 wp26 
+Current waypoint: wp02
+wp22 wp18 wp11 
+Current waypoint: wp22
+wp02 wp11 wp18 
+Current waypoint: wp18
+wp02 wp05 wp22 wp11 
+Current waypoint: wp11
+wp02 wp09 wp22 wp28 wp18 
+Current waypoint: wp03
+wp23 wp21 wp26 
+Current waypoint: wp23
+wp03 wp26 wp12 
 Current waypoint: wp21
-wp13 wp16 wp14 wp02 
+wp03 wp17 wp12 wp25 
+Current waypoint: wp26
+wp03 wp14 wp23 wp07 
+Current waypoint: wp04
+wp19 wp08 wp29 
+Current waypoint: wp19
+wp04 wp08 wp29 wp24 
+Current waypoint: wp08
+wp04 wp05 wp19 wp24 wp15 
+Current waypoint: wp29
+wp04 wp19 wp24 wp25 
+Current waypoint: wp05
+wp15 wp18 wp08 
+Current waypoint: wp15
+wp05 wp08 wp24 wp00 
+Current waypoint: wp06
+wp16 wp10 wp09 wp28 wp30 
+Current waypoint: wp10
+wp06 wp16 wp27 
+Current waypoint: wp09
+wp06 wp28 wp11 
+Current waypoint: wp07
+wp14 wp13 wp16 wp26 
+Current waypoint: wp24
+wp08 wp15 wp19 wp29 
+Current waypoint: wp28
+wp09 wp11 wp06 
+Current waypoint: wp12
+wp17 wp25 wp20 wp21 wp23 
+Current waypoint: wp17
+wp12 wp25 wp20 wp21 
+Current waypoint: wp25
+wp12 wp17 wp20 wp21 wp29 
 Number of literals: 7
 Constructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
 Post filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]
@@ -97,13 +97,16 @@ DUMMY 0.000
 from_wp: wp00
 to_wp: wp01
 Best node found: wp00
-Best node found: wp15
-Best node found: wp06
+Best node found: wp16
+Best node found: wp07
+Best node found: wp13
 Found path to goal.
-Tracing back to: wp06
+Tracing back to: wp13
+Tracing back to: wp07
+Tracing back to: wp16
 Tracing back to: wp00
 Path reconstructed
-PATHFINDER ACT-COST 3.809
+PATHFINDER ACT-COST 4.376
 b (6.000 | 100.000)
 ACT-COST 0.000
 
@@ -111,16 +114,16 @@ DUMMY 0.000
 from_wp: wp00
 to_wp: wp02
 Best node found: wp00
-Best node found: wp11
-Best node found: wp27
-Best node found: wp20
+Best node found: wp15
+Best node found: wp05
+Best node found: wp18
 Found path to goal.
-Tracing back to: wp20
-Tracing back to: wp27
-Tracing back to: wp11
+Tracing back to: wp18
+Tracing back to: wp05
+Tracing back to: wp15
 Tracing back to: wp00
 Path reconstructed
-PATHFINDER ACT-COST 4.568
+PATHFINDER ACT-COST 5.797
 
 ACT-COST 0.000
 
@@ -128,19 +131,16 @@ DUMMY 0.000
 from_wp: wp00
 to_wp: wp03
 Best node found: wp00
-Best node found: wp15
-Best node found: wp07
-Best node found: wp10
-Best node found: wp08
-Best node found: wp25
+Best node found: wp20
+Best node found: wp12
+Best node found: wp23
 Found path to goal.
-Tracing back to: wp25
-Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp07
+Tracing back to: wp23
+Tracing back to: wp12
+Tracing back to: wp20
 Tracing back to: wp00
 Path reconstructed
-PATHFINDER ACT-COST 4.201
+PATHFINDER ACT-COST 4.406
 
 ACT-COST 0.000
 
@@ -149,24 +149,13 @@ from_wp: wp00
 to_wp: wp04
 Best node found: wp00
 Best node found: wp15
-Best node found: wp07
-Best node found: wp30
 Best node found: wp08
-Best node found: wp10
-Best node found: wp18
-Best node found: wp23
-Best node found: wp19
-Best node found: wp25
-Best node found: wp11
-Best node found: wp27
-Best node found: wp17
 Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
+Tracing back to: wp08
+Tracing back to: wp15
 Tracing back to: wp00
 Path reconstructed
-PATHFINDER ACT-COST 5.401
+PATHFINDER ACT-COST 3.961
 
 ACT-COST 0.000
 
@@ -174,1078 +163,925 @@ DUMMY 0.000
 from_wp: wp00
 to_wp: wp05
 Best node found: wp00
-Best node found: wp11
-Best node found: wp27
-Best node found: wp17
+Best node found: wp15
 Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
+Tracing back to: wp15
 Tracing back to: wp00
 Path reconstructed
-PATHFINDER ACT-COST 3.468
+PATHFINDER ACT-COST 3.012
 
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 b (5.000 | 100.000)
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 from_wp: wp01
 to_wp: wp05
 Best node found: wp01
-Best node found: wp22
-Best node found: wp24
-Best node found: wp06
-Best node found: wp15
-Best node found: wp00
-Best node found: wp11
-Best node found: wp27
-Best node found: wp17
-Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
-Tracing back to: wp00
-Tracing back to: wp15
-Tracing back to: wp06
-Tracing back to: wp24
-Tracing back to: wp01
-Path reconstructed
-PATHFINDER ACT-COST 7.284
-
-ACT-COST 3.809
-
-DUMMY 3.809
-from_wp: wp01
-to_wp: wp00
-Best node found: wp01
-Best node found: wp22
-Best node found: wp24
-Best node found: wp06
-Found path to goal.
-Tracing back to: wp06
-Tracing back to: wp24
-Tracing back to: wp01
-Path reconstructed
-PATHFINDER ACT-COST 3.816
-
-ACT-COST 3.809
-
-DUMMY 3.809
-PATHFINDER ACT-COST 0.000
-
-ACT-COST 3.809
-
-DUMMY 3.809
-from_wp: wp01
-to_wp: wp02
-Best node found: wp01
-Best node found: wp22
-Best node found: wp24
-Best node found: wp12
-Best node found: wp06
-Best node found: wp15
-Best node found: wp11
-Best node found: wp27
-Best node found: wp20
-Found path to goal.
-Tracing back to: wp20
-Tracing back to: wp27
-Tracing back to: wp11
-Tracing back to: wp15
-Tracing back to: wp06
-Tracing back to: wp01
-Path reconstructed
-PATHFINDER ACT-COST 8.279
-
-ACT-COST 3.809
-
-DUMMY 3.809
-from_wp: wp01
-to_wp: wp03
-Best node found: wp01
-Best node found: wp12
-Best node found: wp24
-Best node found: wp06
-Best node found: wp10
-Best node found: wp08
-Best node found: wp25
-Found path to goal.
-Tracing back to: wp25
-Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp06
-Tracing back to: wp24
-Tracing back to: wp01
-Path reconstructed
-PATHFINDER ACT-COST 6.387
-
-ACT-COST 3.809
-
-DUMMY 3.809
-from_wp: wp01
-to_wp: wp04
-Best node found: wp01
-Best node found: wp22
-Best node found: wp06
-Best node found: wp07
-Best node found: wp15
-Best node found: wp00
 Best node found: wp30
-Best node found: wp08
+Best node found: wp06
 Best node found: wp10
-Best node found: wp18
-Best node found: wp23
-Best node found: wp19
-Best node found: wp25
-Best node found: wp11
 Best node found: wp27
-Best node found: wp17
+Best node found: wp00
+Best node found: wp15
 Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
-Tracing back to: wp00
 Tracing back to: wp15
-Tracing back to: wp07
+Tracing back to: wp00
+Tracing back to: wp27
 Tracing back to: wp10
-Tracing back to: wp08
-Tracing back to: wp25
-Tracing back to: wp23
-Tracing back to: wp19
-Tracing back to: wp18
-Tracing back to: wp04
-Tracing back to: wp04
-Tracing back to: wp04
-Tracing back to: wp04
-Tracing back to: wp30
 Tracing back to: wp06
+Tracing back to: wp30
 Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 14.949
+PATHFINDER ACT-COST 7.249
 
-ACT-COST 4.568
+ACT-COST 4.376
 
-DUMMY 4.568
-
-ACT-COST 4.568
-
-DUMMY 4.568
-from_wp: wp02
-to_wp: wp05
-Best node found: wp02
-Best node found: wp29
-Found path to goal.
-Tracing back to: wp29
-Tracing back to: wp02
-Path reconstructed
-PATHFINDER ACT-COST 2.557
-
-ACT-COST 4.568
-
-DUMMY 4.568
-from_wp: wp02
+DUMMY 4.376
+from_wp: wp01
 to_wp: wp00
-Best node found: wp02
-Best node found: wp13
+Best node found: wp01
 Best node found: wp14
-Best node found: wp11
-Found path to goal.
-Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp13
-Tracing back to: wp02
-Path reconstructed
-PATHFINDER ACT-COST 3.989
-
-ACT-COST 4.568
-
-DUMMY 4.568
-from_wp: wp02
-to_wp: wp01
-Best node found: wp02
-Best node found: wp21
+Best node found: wp07
 Best node found: wp16
-Best node found: wp14
-Best node found: wp11
-Best node found: wp15
-Best node found: wp06
 Found path to goal.
-Tracing back to: wp06
-Tracing back to: wp15
-Tracing back to: wp11
 Tracing back to: wp16
+Tracing back to: wp07
 Tracing back to: wp14
-Tracing back to: wp21
-Tracing back to: wp02
+Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 10.538
+PATHFINDER ACT-COST 4.569
 
-ACT-COST 4.568
+ACT-COST 4.376
 
-DUMMY 4.568
+DUMMY 4.376
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 4.568
+ACT-COST 4.376
 
-DUMMY 4.568
-from_wp: wp02
-to_wp: wp03
-Best node found: wp02
-Best node found: wp13
-Best node found: wp14
-Best node found: wp11
-Best node found: wp00
-Best node found: wp15
-Best node found: wp07
-Best node found: wp10
-Best node found: wp08
-Best node found: wp25
-Found path to goal.
-Tracing back to: wp25
-Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp07
-Tracing back to: wp15
-Tracing back to: wp00
-Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp13
-Tracing back to: wp02
-Path reconstructed
-PATHFINDER ACT-COST 8.221
-
-ACT-COST 4.568
-
-DUMMY 4.568
-from_wp: wp02
-to_wp: wp04
-Best node found: wp02
-Best node found: wp20
-Best node found: wp28
-Found path to goal.
-Tracing back to: wp28
-Tracing back to: wp20
-Tracing back to: wp02
-Path reconstructed
-PATHFINDER ACT-COST 5.014
-
-ACT-COST 4.201
-
-DUMMY 4.201
-
-ACT-COST 4.201
-
-DUMMY 4.201
-from_wp: wp03
-to_wp: wp05
-Best node found: wp03
-Best node found: wp25
-Best node found: wp08
-Best node found: wp30
-Best node found: wp10
-Best node found: wp07
-Best node found: wp00
-Best node found: wp11
-Best node found: wp27
-Best node found: wp17
-Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
-Tracing back to: wp00
-Tracing back to: wp07
-Tracing back to: wp30
-Tracing back to: wp10
-Tracing back to: wp08
-Tracing back to: wp25
-Tracing back to: wp03
-Path reconstructed
-PATHFINDER ACT-COST 7.930
-
-ACT-COST 4.201
-
-DUMMY 4.201
-from_wp: wp03
-to_wp: wp00
-Best node found: wp03
-Best node found: wp25
-Best node found: wp08
-Best node found: wp30
-Best node found: wp07
-Found path to goal.
-Tracing back to: wp07
-Tracing back to: wp30
-Tracing back to: wp08
-Tracing back to: wp25
-Tracing back to: wp03
-Path reconstructed
-PATHFINDER ACT-COST 4.036
-
-ACT-COST 4.201
-
-DUMMY 4.201
-from_wp: wp03
-to_wp: wp01
-Best node found: wp03
-Best node found: wp25
-Best node found: wp08
-Best node found: wp10
-Best node found: wp06
-Found path to goal.
-Tracing back to: wp06
-Tracing back to: wp10
-Tracing back to: wp08
-Tracing back to: wp25
-Tracing back to: wp03
-Path reconstructed
-PATHFINDER ACT-COST 6.380
-
-ACT-COST 4.201
-
-DUMMY 4.201
-from_wp: wp03
+DUMMY 4.376
+from_wp: wp01
 to_wp: wp02
-Best node found: wp03
-Best node found: wp25
-Best node found: wp08
+Best node found: wp01
 Best node found: wp30
-Best node found: wp07
-Best node found: wp15
+Best node found: wp06
+Best node found: wp09
 Best node found: wp11
-Best node found: wp27
-Best node found: wp20
 Found path to goal.
-Tracing back to: wp20
-Tracing back to: wp27
 Tracing back to: wp11
-Tracing back to: wp15
-Tracing back to: wp07
+Tracing back to: wp09
+Tracing back to: wp06
 Tracing back to: wp30
-Tracing back to: wp08
-Tracing back to: wp25
-Tracing back to: wp03
+Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 8.539
+PATHFINDER ACT-COST 5.880
 
-ACT-COST 4.201
+ACT-COST 4.376
 
-DUMMY 4.201
-PATHFINDER ACT-COST 0.000
+DUMMY 4.376
+from_wp: wp01
+to_wp: wp03
+Best node found: wp01
+Best node found: wp14
+Best node found: wp26
+Found path to goal.
+Tracing back to: wp26
+Tracing back to: wp14
+Tracing back to: wp01
+Path reconstructed
+PATHFINDER ACT-COST 5.019
 
-ACT-COST 4.201
+ACT-COST 4.376
 
-DUMMY 4.201
-from_wp: wp03
+DUMMY 4.376
+from_wp: wp01
 to_wp: wp04
-Best node found: wp03
+Best node found: wp01
+Best node found: wp14
+Best node found: wp07
+Best node found: wp16
+Best node found: wp00
+Best node found: wp15
+Best node found: wp08
+Found path to goal.
+Tracing back to: wp08
+Tracing back to: wp15
+Tracing back to: wp00
+Tracing back to: wp16
+Tracing back to: wp07
+Tracing back to: wp14
+Tracing back to: wp01
+Path reconstructed
+PATHFINDER ACT-COST 8.530
+
+ACT-COST 5.797
+
+DUMMY 5.797
+
+ACT-COST 5.797
+
+DUMMY 5.797
+from_wp: wp02
+to_wp: wp05
+Best node found: wp02
 Best node found: wp18
-Best node found: wp23
-Best node found: wp19
-Best node found: wp25
-Best node found: wp08
-Best node found: wp30
-Best node found: wp10
-Best node found: wp07
-Best node found: wp15
-Best node found: wp00
-Best node found: wp11
-Best node found: wp27
-Best node found: wp17
 Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
-Tracing back to: wp00
-Tracing back to: wp15
-Tracing back to: wp07
-Tracing back to: wp30
-Tracing back to: wp10
-Tracing back to: wp08
-Tracing back to: wp25
-Tracing back to: wp23
-Tracing back to: wp19
-Tracing back to: wp03
+Tracing back to: wp18
+Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 11.296
+PATHFINDER ACT-COST 2.785
 
-ACT-COST 5.401
+ACT-COST 5.797
 
-DUMMY 5.401
-
-ACT-COST 5.401
-
-DUMMY 5.401
-from_wp: wp04
-to_wp: wp05
-Best node found: wp04
-Found path to goal.
-Tracing back to: wp04
-Path reconstructed
-PATHFINDER ACT-COST 2.550
-
-ACT-COST 5.401
-
-DUMMY 5.401
-from_wp: wp04
+DUMMY 5.797
+from_wp: wp02
 to_wp: wp00
-Best node found: wp04
-Best node found: wp26
-Best node found: wp17
-Best node found: wp27
+Best node found: wp02
+Best node found: wp18
+Best node found: wp22
 Best node found: wp11
-Found path to goal.
-Tracing back to: wp11
-Tracing back to: wp27
-Tracing back to: wp17
-Tracing back to: wp04
-Path reconstructed
-PATHFINDER ACT-COST 5.401
-
-ACT-COST 5.401
-
-DUMMY 5.401
-from_wp: wp04
-to_wp: wp01
-Best node found: wp04
-Best node found: wp26
-Best node found: wp17
-Best node found: wp27
-Best node found: wp14
-Best node found: wp11
-Best node found: wp15
+Best node found: wp09
 Best node found: wp06
+Best node found: wp16
 Found path to goal.
+Tracing back to: wp16
 Tracing back to: wp06
-Tracing back to: wp15
+Tracing back to: wp09
 Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp27
-Tracing back to: wp17
-Tracing back to: wp04
+Tracing back to: wp18
+Tracing back to: wp22
+Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 9.969
+PATHFINDER ACT-COST 6.536
 
-ACT-COST 5.401
+ACT-COST 5.797
 
-DUMMY 5.401
-from_wp: wp04
-to_wp: wp02
-Best node found: wp04
-Best node found: wp28
-Best node found: wp20
-Found path to goal.
-Tracing back to: wp20
-Tracing back to: wp28
-Tracing back to: wp04
-Path reconstructed
-PATHFINDER ACT-COST 5.014
-
-ACT-COST 5.401
-
-DUMMY 5.401
-from_wp: wp04
-to_wp: wp03
-Best node found: wp04
-Best node found: wp26
-Best node found: wp28
-Best node found: wp17
-Best node found: wp27
+DUMMY 5.797
+from_wp: wp02
+to_wp: wp01
+Best node found: wp02
 Best node found: wp11
-Best node found: wp00
-Best node found: wp15
-Best node found: wp07
-Best node found: wp10
-Best node found: wp08
-Best node found: wp25
+Best node found: wp28
+Best node found: wp06
+Best node found: wp30
 Found path to goal.
-Tracing back to: wp25
-Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp07
-Tracing back to: wp15
-Tracing back to: wp00
+Tracing back to: wp30
+Tracing back to: wp06
+Tracing back to: wp28
 Tracing back to: wp11
-Tracing back to: wp27
-Tracing back to: wp17
-Tracing back to: wp04
+Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 9.634
+PATHFINDER ACT-COST 6.152
 
-ACT-COST 5.401
+ACT-COST 5.797
 
-DUMMY 5.401
+DUMMY 5.797
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 3.468
+ACT-COST 5.797
 
-DUMMY 3.468
-
-ACT-COST 3.468
-
-DUMMY 3.468
-from_wp: wp05
-to_wp: wp01
+DUMMY 5.797
+from_wp: wp02
+to_wp: wp03
+Best node found: wp02
+Best node found: wp18
 Best node found: wp05
-Best node found: wp17
-Best node found: wp27
-Best node found: wp14
-Best node found: wp11
-Best node found: wp15
-Best node found: wp06
+Best node found: wp08
+Best node found: wp24
+Best node found: wp29
+Best node found: wp25
+Best node found: wp21
 Found path to goal.
-Tracing back to: wp06
-Tracing back to: wp15
-Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp27
-Tracing back to: wp17
+Tracing back to: wp21
+Tracing back to: wp25
+Tracing back to: wp29
+Tracing back to: wp24
+Tracing back to: wp08
 Tracing back to: wp05
+Tracing back to: wp18
+Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 8.036
+PATHFINDER ACT-COST 9.897
 
-ACT-COST 3.468
+ACT-COST 5.797
 
-DUMMY 3.468
-from_wp: wp05
+DUMMY 5.797
+from_wp: wp02
+to_wp: wp04
+Best node found: wp02
+Best node found: wp18
+Best node found: wp05
+Best node found: wp08
+Found path to goal.
+Tracing back to: wp08
+Tracing back to: wp05
+Tracing back to: wp18
+Tracing back to: wp02
+Path reconstructed
+PATHFINDER ACT-COST 6.469
+
+ACT-COST 4.406
+
+DUMMY 4.406
+
+ACT-COST 4.406
+
+DUMMY 4.406
+from_wp: wp03
+to_wp: wp05
+Best node found: wp03
+Best node found: wp21
+Best node found: wp25
+Best node found: wp29
+Best node found: wp19
+Best node found: wp08
+Found path to goal.
+Tracing back to: wp08
+Tracing back to: wp19
+Tracing back to: wp29
+Tracing back to: wp25
+Tracing back to: wp21
+Tracing back to: wp03
+Path reconstructed
+PATHFINDER ACT-COST 7.374
+
+ACT-COST 4.406
+
+DUMMY 4.406
+from_wp: wp03
 to_wp: wp00
-Best node found: wp05
-Best node found: wp17
-Best node found: wp27
+Best node found: wp03
+Best node found: wp26
+Best node found: wp07
+Best node found: wp16
+Found path to goal.
+Tracing back to: wp16
+Tracing back to: wp07
+Tracing back to: wp26
+Tracing back to: wp03
+Path reconstructed
+PATHFINDER ACT-COST 5.304
+
+ACT-COST 4.406
+
+DUMMY 4.406
+from_wp: wp03
+to_wp: wp01
+Best node found: wp03
+Best node found: wp26
+Best node found: wp14
+Found path to goal.
+Tracing back to: wp14
+Tracing back to: wp26
+Tracing back to: wp03
+Path reconstructed
+PATHFINDER ACT-COST 5.019
+
+ACT-COST 4.406
+
+DUMMY 4.406
+from_wp: wp03
+to_wp: wp02
+Best node found: wp03
+Best node found: wp26
+Best node found: wp07
+Best node found: wp16
+Best node found: wp10
+Best node found: wp06
+Best node found: wp09
 Best node found: wp11
 Found path to goal.
 Tracing back to: wp11
-Tracing back to: wp27
-Tracing back to: wp17
-Tracing back to: wp05
+Tracing back to: wp09
+Tracing back to: wp06
+Tracing back to: wp10
+Tracing back to: wp16
+Tracing back to: wp07
+Tracing back to: wp26
+Tracing back to: wp03
 Path reconstructed
-PATHFINDER ACT-COST 3.468
+PATHFINDER ACT-COST 9.523
 
-ACT-COST 3.468
+ACT-COST 4.406
 
-DUMMY 3.468
-from_wp: wp05
-to_wp: wp02
-Best node found: wp05
+DUMMY 4.406
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 4.406
+
+DUMMY 4.406
+from_wp: wp03
+to_wp: wp04
+Best node found: wp03
+Best node found: wp21
+Best node found: wp25
 Best node found: wp29
 Found path to goal.
 Tracing back to: wp29
+Tracing back to: wp25
+Tracing back to: wp21
+Tracing back to: wp03
+Path reconstructed
+PATHFINDER ACT-COST 6.034
+
+ACT-COST 3.961
+
+DUMMY 3.961
+
+ACT-COST 3.961
+
+DUMMY 3.961
+from_wp: wp04
+to_wp: wp05
+Best node found: wp04
+Best node found: wp08
+Found path to goal.
+Tracing back to: wp08
+Tracing back to: wp04
+Path reconstructed
+PATHFINDER ACT-COST 3.684
+
+ACT-COST 3.961
+
+DUMMY 3.961
+from_wp: wp04
+to_wp: wp00
+Best node found: wp04
+Best node found: wp29
+Best node found: wp24
+Best node found: wp15
+Found path to goal.
+Tracing back to: wp15
+Tracing back to: wp24
+Tracing back to: wp29
+Tracing back to: wp04
+Path reconstructed
+PATHFINDER ACT-COST 5.098
+
+ACT-COST 3.961
+
+DUMMY 3.961
+from_wp: wp04
+to_wp: wp01
+Best node found: wp04
+Best node found: wp29
+Best node found: wp25
+Best node found: wp20
+Best node found: wp00
+Best node found: wp16
+Best node found: wp07
+Best node found: wp13
+Found path to goal.
+Tracing back to: wp13
+Tracing back to: wp07
+Tracing back to: wp16
+Tracing back to: wp00
+Tracing back to: wp20
+Tracing back to: wp25
+Tracing back to: wp29
+Tracing back to: wp04
+Path reconstructed
+PATHFINDER ACT-COST 8.888
+
+ACT-COST 3.961
+
+DUMMY 3.961
+from_wp: wp04
+to_wp: wp02
+Best node found: wp04
+Best node found: wp08
+Best node found: wp05
+Best node found: wp18
+Found path to goal.
+Tracing back to: wp18
+Tracing back to: wp05
+Tracing back to: wp08
+Tracing back to: wp04
+Path reconstructed
+PATHFINDER ACT-COST 6.469
+
+ACT-COST 3.961
+
+DUMMY 3.961
+from_wp: wp04
+to_wp: wp03
+Best node found: wp04
+Best node found: wp29
+Best node found: wp25
+Best node found: wp21
+Found path to goal.
+Tracing back to: wp21
+Tracing back to: wp25
+Tracing back to: wp29
+Tracing back to: wp04
+Path reconstructed
+PATHFINDER ACT-COST 6.034
+
+ACT-COST 3.961
+
+DUMMY 3.961
+PATHFINDER ACT-COST 0.000
+
+ACT-COST 3.012
+
+DUMMY 3.012
+
+ACT-COST 3.012
+
+DUMMY 3.012
+from_wp: wp05
+to_wp: wp01
+Best node found: wp05
+Best node found: wp15
+Best node found: wp00
+Best node found: wp16
+Best node found: wp07
+Best node found: wp13
+Found path to goal.
+Tracing back to: wp13
+Tracing back to: wp07
+Tracing back to: wp16
+Tracing back to: wp00
+Tracing back to: wp15
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 2.557
+PATHFINDER ACT-COST 7.387
 
-ACT-COST 3.468
+ACT-COST 3.012
 
-DUMMY 3.468
+DUMMY 3.012
+from_wp: wp05
+to_wp: wp00
+Best node found: wp05
+Best node found: wp15
+Found path to goal.
+Tracing back to: wp15
+Tracing back to: wp05
+Path reconstructed
+PATHFINDER ACT-COST 3.012
+
+ACT-COST 3.012
+
+DUMMY 3.012
+from_wp: wp05
+to_wp: wp02
+Best node found: wp05
+Best node found: wp18
+Found path to goal.
+Tracing back to: wp18
+Tracing back to: wp05
+Path reconstructed
+PATHFINDER ACT-COST 2.785
+
+ACT-COST 3.012
+
+DUMMY 3.012
 from_wp: wp05
 to_wp: wp03
 Best node found: wp05
-Best node found: wp28
-Best node found: wp26
-Best node found: wp04
-Best node found: wp20
-Best node found: wp17
-Best node found: wp27
-Best node found: wp11
-Best node found: wp00
-Best node found: wp15
-Best node found: wp07
-Best node found: wp10
 Best node found: wp08
+Best node found: wp24
+Best node found: wp29
 Best node found: wp25
+Best node found: wp21
 Found path to goal.
+Tracing back to: wp21
 Tracing back to: wp25
+Tracing back to: wp29
+Tracing back to: wp24
 Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp07
-Tracing back to: wp15
-Tracing back to: wp00
-Tracing back to: wp11
-Tracing back to: wp27
-Tracing back to: wp17
-Tracing back to: wp26
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 11.000
+PATHFINDER ACT-COST 7.112
 
-ACT-COST 3.468
+ACT-COST 3.012
 
-DUMMY 3.468
+DUMMY 3.012
 from_wp: wp05
 to_wp: wp04
 Best node found: wp05
+Best node found: wp08
 Found path to goal.
+Tracing back to: wp08
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 2.550
+PATHFINDER ACT-COST 3.684
 
-ACT-COST 3.468
+ACT-COST 3.012
 
-DUMMY 3.468
+DUMMY 3.012
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 from_wp: wp01
 to_wp: wp05
 Best node found: wp01
-Best node found: wp22
-Best node found: wp24
+Best node found: wp30
 Best node found: wp06
-Best node found: wp15
-Best node found: wp00
-Best node found: wp11
+Best node found: wp10
 Best node found: wp27
-Best node found: wp17
+Best node found: wp00
+Best node found: wp15
 Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
-Tracing back to: wp00
 Tracing back to: wp15
+Tracing back to: wp00
+Tracing back to: wp27
+Tracing back to: wp10
 Tracing back to: wp06
-Tracing back to: wp24
+Tracing back to: wp30
 Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 7.284
+PATHFINDER ACT-COST 7.249
 
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 from_wp: wp01
 to_wp: wp02
 Best node found: wp01
-Best node found: wp22
-Best node found: wp24
-Best node found: wp12
+Best node found: wp30
 Best node found: wp06
-Best node found: wp15
+Best node found: wp09
 Best node found: wp11
-Best node found: wp27
-Best node found: wp20
 Found path to goal.
-Tracing back to: wp20
-Tracing back to: wp27
 Tracing back to: wp11
-Tracing back to: wp15
+Tracing back to: wp09
 Tracing back to: wp06
+Tracing back to: wp30
 Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 8.279
+PATHFINDER ACT-COST 5.880
 
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 from_wp: wp01
 to_wp: wp00
 Best node found: wp01
-Best node found: wp22
-Best node found: wp24
-Best node found: wp06
+Best node found: wp14
+Best node found: wp07
+Best node found: wp16
 Found path to goal.
-Tracing back to: wp06
-Tracing back to: wp24
+Tracing back to: wp16
+Tracing back to: wp07
+Tracing back to: wp14
 Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 3.816
+PATHFINDER ACT-COST 4.569
 
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 from_wp: wp01
 to_wp: wp03
 Best node found: wp01
-Best node found: wp12
-Best node found: wp24
-Best node found: wp06
-Best node found: wp10
-Best node found: wp08
-Best node found: wp25
+Best node found: wp14
+Best node found: wp26
 Found path to goal.
-Tracing back to: wp25
-Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp06
-Tracing back to: wp24
+Tracing back to: wp26
+Tracing back to: wp14
 Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 6.387
+PATHFINDER ACT-COST 5.019
 
-ACT-COST 3.809
+ACT-COST 4.376
 
-DUMMY 3.809
+DUMMY 4.376
 from_wp: wp01
 to_wp: wp04
 Best node found: wp01
-Best node found: wp22
-Best node found: wp06
+Best node found: wp14
 Best node found: wp07
-Best node found: wp15
+Best node found: wp16
 Best node found: wp00
-Best node found: wp30
+Best node found: wp15
 Best node found: wp08
-Best node found: wp10
-Best node found: wp18
-Best node found: wp23
-Best node found: wp19
-Best node found: wp25
-Best node found: wp11
-Best node found: wp27
-Best node found: wp17
 Found path to goal.
-Tracing back to: wp17
-Tracing back to: wp27
-Tracing back to: wp11
-Tracing back to: wp00
-Tracing back to: wp15
-Tracing back to: wp07
-Tracing back to: wp10
 Tracing back to: wp08
-Tracing back to: wp25
-Tracing back to: wp23
-Tracing back to: wp19
-Tracing back to: wp18
-Tracing back to: wp04
-Tracing back to: wp04
-Tracing back to: wp04
-Tracing back to: wp04
-Tracing back to: wp30
-Tracing back to: wp06
+Tracing back to: wp15
+Tracing back to: wp00
+Tracing back to: wp16
+Tracing back to: wp07
+Tracing back to: wp14
 Tracing back to: wp01
 Path reconstructed
-PATHFINDER ACT-COST 14.949
+PATHFINDER ACT-COST 8.530
 
-ACT-COST 11.092
+ACT-COST 11.625
 
-DUMMY 7.284
+DUMMY 7.249
 b (4.000 | 200.002)
-ACT-COST 11.092
+ACT-COST 11.625
 
-DUMMY 11.092
+DUMMY 11.625
 from_wp: wp05
 to_wp: wp02
 Best node found: wp05
-Best node found: wp29
+Best node found: wp18
 Found path to goal.
-Tracing back to: wp29
+Tracing back to: wp18
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 2.557
+PATHFINDER ACT-COST 2.785
 
-ACT-COST 11.092
+ACT-COST 11.625
 
-DUMMY 11.092
+DUMMY 11.625
 from_wp: wp05
 to_wp: wp00
 Best node found: wp05
-Best node found: wp17
-Best node found: wp27
-Best node found: wp11
+Best node found: wp15
 Found path to goal.
-Tracing back to: wp11
-Tracing back to: wp27
-Tracing back to: wp17
+Tracing back to: wp15
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 3.468
+PATHFINDER ACT-COST 3.012
 
-ACT-COST 11.092
+ACT-COST 11.625
 
-DUMMY 11.092
+DUMMY 11.625
 from_wp: wp05
 to_wp: wp01
 Best node found: wp05
-Best node found: wp17
-Best node found: wp27
-Best node found: wp14
-Best node found: wp11
 Best node found: wp15
-Best node found: wp06
+Best node found: wp00
+Best node found: wp16
+Best node found: wp07
+Best node found: wp13
 Found path to goal.
-Tracing back to: wp06
+Tracing back to: wp13
+Tracing back to: wp07
+Tracing back to: wp16
+Tracing back to: wp00
 Tracing back to: wp15
-Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp27
-Tracing back to: wp17
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 8.036
+PATHFINDER ACT-COST 7.387
 
-ACT-COST 11.092
+ACT-COST 11.625
 
-DUMMY 11.092
+DUMMY 11.625
 from_wp: wp05
 to_wp: wp03
 Best node found: wp05
-Best node found: wp28
-Best node found: wp26
-Best node found: wp04
-Best node found: wp20
-Best node found: wp17
-Best node found: wp27
-Best node found: wp11
-Best node found: wp00
-Best node found: wp15
-Best node found: wp07
-Best node found: wp10
 Best node found: wp08
+Best node found: wp24
+Best node found: wp29
 Best node found: wp25
+Best node found: wp21
 Found path to goal.
+Tracing back to: wp21
 Tracing back to: wp25
+Tracing back to: wp29
+Tracing back to: wp24
 Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp07
-Tracing back to: wp15
-Tracing back to: wp00
-Tracing back to: wp11
-Tracing back to: wp27
-Tracing back to: wp17
-Tracing back to: wp26
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 11.000
+PATHFINDER ACT-COST 7.112
 
-ACT-COST 11.092
+ACT-COST 11.625
 
-DUMMY 11.092
+DUMMY 11.625
 from_wp: wp05
 to_wp: wp04
 Best node found: wp05
+Best node found: wp08
 Found path to goal.
+Tracing back to: wp08
 Tracing back to: wp05
 Path reconstructed
-PATHFINDER ACT-COST 2.550
+PATHFINDER ACT-COST 3.684
 
-ACT-COST 11.092
+ACT-COST 11.625
 
-DUMMY 11.092
+DUMMY 11.625
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 8.279
+DUMMY 5.880
 b (3.000 | 200.003)
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp05
 Best node found: wp02
-Best node found: wp29
+Best node found: wp18
 Found path to goal.
-Tracing back to: wp29
+Tracing back to: wp18
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 2.557
+PATHFINDER ACT-COST 2.785
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp00
 Best node found: wp02
-Best node found: wp13
-Best node found: wp14
+Best node found: wp18
+Best node found: wp22
 Best node found: wp11
+Best node found: wp09
+Best node found: wp06
+Best node found: wp16
 Found path to goal.
+Tracing back to: wp16
+Tracing back to: wp06
+Tracing back to: wp09
 Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp13
+Tracing back to: wp18
+Tracing back to: wp22
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 3.989
+PATHFINDER ACT-COST 6.536
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp01
 Best node found: wp02
-Best node found: wp21
-Best node found: wp16
-Best node found: wp14
 Best node found: wp11
-Best node found: wp15
+Best node found: wp28
 Best node found: wp06
+Best node found: wp30
 Found path to goal.
+Tracing back to: wp30
 Tracing back to: wp06
-Tracing back to: wp15
+Tracing back to: wp28
 Tracing back to: wp11
-Tracing back to: wp16
-Tracing back to: wp14
-Tracing back to: wp21
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 10.538
+PATHFINDER ACT-COST 6.152
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp03
 Best node found: wp02
-Best node found: wp13
-Best node found: wp14
-Best node found: wp11
-Best node found: wp00
-Best node found: wp15
-Best node found: wp07
-Best node found: wp10
+Best node found: wp18
+Best node found: wp05
 Best node found: wp08
+Best node found: wp24
+Best node found: wp29
 Best node found: wp25
+Best node found: wp21
 Found path to goal.
+Tracing back to: wp21
 Tracing back to: wp25
+Tracing back to: wp29
+Tracing back to: wp24
 Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp07
-Tracing back to: wp15
-Tracing back to: wp00
-Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp13
+Tracing back to: wp05
+Tracing back to: wp18
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 8.221
+PATHFINDER ACT-COST 9.897
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp04
 Best node found: wp02
-Best node found: wp20
-Best node found: wp28
+Best node found: wp18
+Best node found: wp05
+Best node found: wp08
 Found path to goal.
-Tracing back to: wp28
-Tracing back to: wp20
+Tracing back to: wp08
+Tracing back to: wp05
+Tracing back to: wp18
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 5.014
+PATHFINDER ACT-COST 6.469
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp05
 Best node found: wp02
-Best node found: wp29
+Best node found: wp18
 Found path to goal.
-Tracing back to: wp29
+Tracing back to: wp18
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 2.557
+PATHFINDER ACT-COST 2.785
 b (2.000 | 300.004)
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp00
 Best node found: wp02
-Best node found: wp13
-Best node found: wp14
+Best node found: wp18
+Best node found: wp22
 Best node found: wp11
+Best node found: wp09
+Best node found: wp06
+Best node found: wp16
 Found path to goal.
+Tracing back to: wp16
+Tracing back to: wp06
+Tracing back to: wp09
 Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp13
+Tracing back to: wp18
+Tracing back to: wp22
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 3.989
+PATHFINDER ACT-COST 6.536
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp01
 Best node found: wp02
-Best node found: wp21
-Best node found: wp16
-Best node found: wp14
 Best node found: wp11
-Best node found: wp15
+Best node found: wp28
 Best node found: wp06
+Best node found: wp30
 Found path to goal.
+Tracing back to: wp30
 Tracing back to: wp06
-Tracing back to: wp15
+Tracing back to: wp28
 Tracing back to: wp11
-Tracing back to: wp16
-Tracing back to: wp14
-Tracing back to: wp21
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 10.538
+PATHFINDER ACT-COST 6.152
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 PATHFINDER ACT-COST 0.000
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp03
 Best node found: wp02
-Best node found: wp13
-Best node found: wp14
-Best node found: wp11
-Best node found: wp00
-Best node found: wp15
-Best node found: wp07
-Best node found: wp10
+Best node found: wp18
+Best node found: wp05
 Best node found: wp08
+Best node found: wp24
+Best node found: wp29
 Best node found: wp25
+Best node found: wp21
 Found path to goal.
+Tracing back to: wp21
 Tracing back to: wp25
+Tracing back to: wp29
+Tracing back to: wp24
 Tracing back to: wp08
-Tracing back to: wp10
-Tracing back to: wp07
-Tracing back to: wp15
-Tracing back to: wp00
-Tracing back to: wp11
-Tracing back to: wp14
-Tracing back to: wp13
+Tracing back to: wp05
+Tracing back to: wp18
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 8.221
+PATHFINDER ACT-COST 9.897
 
-ACT-COST 12.087
+ACT-COST 10.256
 
-DUMMY 12.087
+DUMMY 10.256
 from_wp: wp02
 to_wp: wp04
 Best node found: wp02
-Best node found: wp20
-Best node found: wp28
+Best node found: wp18
+Best node found: wp05
+Best node found: wp08
 Found path to goal.
-Tracing back to: wp28
-Tracing back to: wp20
+Tracing back to: wp08
+Tracing back to: wp05
+Tracing back to: wp18
 Tracing back to: wp02
 Path reconstructed
-PATHFINDER ACT-COST 5.014
+PATHFINDER ACT-COST 6.469
 
-ACT-COST 14.644
+ACT-COST 13.041
 
-DUMMY 2.557
+DUMMY 2.785
 b (1.000 | 300.004);;;; Solution Found
 ; States evaluated: 75
-; Cost: 14.644
-; External Solver: 0.010
-; Time 0.05
+; Cost: 13.041
+; External Solver: 0.020
+; Time 0.02
 0.000: (goto_region r2d2 r0 r1)  [100.000]
 100.001: (collect r2d2 r1)  [0.001]
 100.002: (goto_region r2d2 r1 r2)  [100.000]
