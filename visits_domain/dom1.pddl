@@ -42,25 +42,4 @@
 		:effect (and (assign (collected) 0) (given_assignments))
 	)
 
-	; (:durative-action goto_collect
-	; 	:parameters (?v - robot ?from ?to - region)
-	; 	:duration (= ?duration 100)
-	; 	:condition (and (at start (robot_in ?v ?from)) (at start (not (desk ?to))))
-	; 	:effect (and (at start (not (robot_in ?v ?from))) (at start (increase (triggered ?from ?to) 1))
-	; 		(at end (robot_in ?v ?to)) (at end (assign (triggered ?from ?to) 0))
-	; 		(at end (decrease (assignment_in ?to) 1)) (at end (increase (collected) 1))
-	; 		(at end (increase (act-cost) (dummy)))
-	; 	)
-	; )
-
-	; (:durative-action goto_deliver
-	; 	:parameters (?v - robot ?from ?to - region)
-	; 	:duration (= ?duration 100)
-	; 	:condition (and (at start (robot_in ?v ?from)) (at start (desk ?to)))
-	; 	:effect (and (at start (not (robot_in ?v ?from))) (at start (increase (triggered ?from ?to) 1))
-	; 		(at end (robot_in ?v ?to)) (at end (assign (triggered ?from ?to) 0))
-	; 		(at end (assign (collected) 0)) (at end (given_assignments))
-	; 		(at end (increase (act-cost) (dummy)))
-	; 	)
-	; )
 )
