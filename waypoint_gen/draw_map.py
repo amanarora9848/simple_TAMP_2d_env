@@ -103,6 +103,7 @@ if showPath:
                     aux = []
                 aux.append(w1)
 
+        print("Planned Path:", draw)
         x = []
         y = []
         for i in range(len(draw)):

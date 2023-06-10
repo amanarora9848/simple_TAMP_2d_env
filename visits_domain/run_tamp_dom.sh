@@ -16,6 +16,7 @@ display_help() {
 
 USE_EXTMOD=true
 BUILD=false
+GEN_WAYPOINTS=false
 
 # Check for flags
 for arg in "$@"

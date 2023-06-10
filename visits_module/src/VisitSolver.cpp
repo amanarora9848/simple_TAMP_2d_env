@@ -117,7 +117,8 @@ map<string, double> VisitSolver::callExternalSolver(map<string, double> initialS
 					string from = tmp.substr(0, 2);
 					string to = tmp.substr(3, 2);
 
-					act_cost = pathfinder(from, to, "gbfs");
+					// act_cost = pathfinder(from, to, "gbfs");
+					act_cost = dynamic_pathfinder(from, to, "astar");
 					cout << "PATHFINDER ACT-COST " << act_cost << endl;
 				}
 			}
@@ -361,10 +362,107 @@ void VisitSolver::inverse_tracking(string goal_wp)
 	}
 }
 
+float VisitSolver::dynamic_pathfinder(string from_region, string to_region, string algo){
+	
+	if (from_region == to_region)
+	{
+		return 0;
+	}
+
+	string from_wp = region_mapping[from_region][0];
+	std::cout << "from_wp: " << from_wp << endl;
+	string to_wp = region_mapping[to_region][0];
+	std::cout << "to_wp: " << to_wp << endl;
+
+	map<string, float> explored;
+	map<string, float> to_explore{{from_wp, distance_euc(from_wp, to_wp)}};
+	bool path_found = false;
+
+	while (!path_found) {
+
+		// Find the lowest cost node to explore next
+		std::pair<std::string, float> best{"", 1000.0};
+		
+		for (const auto &item : to_explore)
+		{
+			if (item.second < best.second) best = item;
+		}
+
+		cout << "Best node found: " << best.first << endl;
+
+		// Add best node to explored list
+		explored[best.first] = best.second;
+
+		// Remove best node from explore list
+		to_explore.erase(best.first);
+
+		// Add best node children to explore list
+		for (const std::string &w : connection.at(best.first)) {
+			if (w == to_wp) {
+				path_found = true;
+				break;
+			}
+			auto it = explored.find(w);
+			if (it == explored.end()) {
+				if (algo == "gbfs") {
+					to_explore[w] = distance_euc(w, to_wp);
+				} else to_explore[w] = distance_euc(w, to_wp) + distance_euc(best.first, w);
+			}
+		}
+
+	}
+
+	cout << "Found path to goal." << endl;
+
+	// Reconstruct path (with possible optimizations)
+	std::string curr_wp = to_wp;
+	std::vector<std::string> path{to_wp};
+	float total_cost = 0;
+
+	while (curr_wp != from_wp) {
+
+		std::pair<std::string, float> best{to_wp, 1000.0};
+		
+		for (const std::string &w : connection.at(curr_wp)) {
+			auto it = explored.find(w);
+			auto it2 = std::find(path.begin(), path.end(), w);
+			if (it != explored.end() && it2 == path.end() && it->second < best.second) {
+				best.first = it->first;
+				best.second = it->second;
+			}
+		}
+
+		cout << "Tracing back to: " << best.first << endl;
+
+		if (best.first == to_wp) {
+			auto w = path.back();
+			explored.erase(w);
+			path.pop_back();
+			curr_wp = path.back();
+		} else {
+			total_cost += distance_euc(curr_wp, best.first);
+			curr_wp = best.first;
+			path.push_back(curr_wp);
+		}
+
+	}
+
+	// Reverse path
+	std::reverse(path.begin(), path.end());
+	cout << "Path reconstructed" << endl;
+
+	// Write to file
+	ofstream pathFile("../waypoint_gen/path.txt", ios::app);
+	
+	for (const std::string &w : path) {
+		pathFile << w << endl;
+	}
+	pathFile.close();
+	return total_cost;
+}
+
 float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 {
-
-	// Calculate heuristics for every waypoint
 
 	if (from_region == to_region)
 	{
@@ -381,11 +479,6 @@ float VisitSolver::pathfinder(string from_region, string to_region, string algo)
 	string curr_wp = from_wp;
 	string next_wp;
 	ofstream pathFile("../waypoint_gen/path.txt", ios::app);
-
-	if (from_wp == to_wp)
-	{
-		return 0;
-	}
 
 	if (algo == "gbfs")
 	{

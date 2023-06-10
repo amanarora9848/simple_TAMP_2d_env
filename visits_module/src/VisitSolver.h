@@ -66,6 +66,7 @@ private:
     void heuristic_gbf(string goal);
     void inverse_tracking(string goal);
     float pathfinder(string from, string to, string algo);
+    float dynamic_pathfinder(string from, string to, string algo);
 };
 
 #endif // TESTSOLVER_H

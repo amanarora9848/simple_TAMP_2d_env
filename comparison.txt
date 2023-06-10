@@ -1,0 +1,27 @@
+GBFS:
+
+Planner Cost:  14.562
+Planned Path: ['wp00', 'wp00', 'wp06', 'wp01', 'wp01', 'wp22', 'wp06', 'wp00', 'wp11', 'wp16', 'wp13', 'wp02', 'wp02', 'wp20', 'wp05']
+
+A*:
+
+Planner Cost:  14.644
+Planned Path: ['wp00', 'wp00', 'wp06', 'wp01', 'wp01', 'wp06', 'wp15', 'wp11', 'wp27', 'wp20', 'wp02', 'wp02', 'wp29', 'wp05']
+
+Optimal Cost: 14.064446772605926
+
+Optimal path:
+
+wp00
+wp06
+wp01
+wp01
+wp06
+wp15
+wp11
+wp14
+wp13
+wp02
+wp02
+wp29
+wp05
